@@ -43,7 +43,7 @@ function Homepage() {
             </div>
           </div>
         </section>
-        {/* <section className="categories">
+        <section className="categories">
           <div className="categories__item">
             <img src={phoneimg} alt="" />
             <p>Phones</p>
@@ -77,7 +77,7 @@ function Homepage() {
             <img src={beautyimg} alt="" />
             <p>Beauty</p>
           </div>
-        </section> */}
+        </section>
 
         <section className="marketlist__title">
           <h2>
