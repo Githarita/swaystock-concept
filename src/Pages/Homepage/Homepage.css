@@ -428,6 +428,10 @@
     gap: 2rem;
   }
 
+  .header__typography {
+    display: none;
+  }
+
   .header__h1 {
     font-size: 32px;
     line-height: 1.125;
@@ -442,11 +446,21 @@
     letter-spacing: 0.009rem;
   }
 
+  .categories {
+    gap: 1rem;
+    padding-left: 20px;
+  }
+
   .categories__item {
-    padding: 16px 4px;
+    padding: 13px 4px;
     height: 120px;
     gap: 0rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+    border-radius: 18px;
   }
+
+ 
 
   .sneakers__categories__item-info h2 {
     font-size: 21px;
