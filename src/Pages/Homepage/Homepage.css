@@ -502,5 +502,6 @@
 
   .header__username-tag {
     font-size: 12px;
+    margin-top: -0.4rem;
   }
 }
