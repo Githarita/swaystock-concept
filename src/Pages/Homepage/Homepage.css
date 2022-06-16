@@ -3,7 +3,7 @@
     flex-direction: column;
 } */
 .header {
-  padding: 4rem 22px;
+  padding: 1rem 22px;
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
@@ -59,7 +59,7 @@
   margin: 0 auto;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  padding: 10px 0px 40px;
+  padding: 10px 0px 1rem;
   font-size: 17px;
   color: #1d1d1f;
   letter-spacing: -0.374px;
