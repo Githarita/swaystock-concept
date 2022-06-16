@@ -494,4 +494,13 @@
   .difference_typo {
     font-size: 21px;
   }
+
+  .header__username {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .header__username-tag {
+    font-size: 12px;
+  }
 }
