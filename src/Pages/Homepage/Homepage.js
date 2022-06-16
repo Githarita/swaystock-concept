@@ -180,6 +180,213 @@ function Homepage() {
             </div>
           </div>
         </section>
+
+        <section className="marketlist__title">
+          <h2>
+            <span className="header__h1-span">Accessories.</span> Essentials
+            that pair perfectly with your favorite devices
+          </h2>
+        </section>
+        <section className="sneakers__categories">
+          <div className="sneakers__categories__item">
+            <div
+              className="sneakers1img"
+              style={{ backgroundImage: `url(${sneakercatimg})` }}
+            />
+            <div className="sneakers__categories__item-info">
+              <h2>Don't take it lightly</h2>
+              <p>Pro anywhere from.</p>
+            </div>
+          </div>
+
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">Adidas Yeezy Foam RNR Onyx</h2>
+            </div>
+            <div className="imagecnt">
+              <img src={sneaker1} alt="" />
+            </div>{" "}
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN100k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">Only at SwayStock</p>
+              <h2 className="sneaker-name">
+                Jordan 2 Retro A Ma Maniere Airness
+              </h2>
+            </div>
+            <div className="imagecnt">
+              <img src={sneaker2} alt="" />
+            </div>{" "}
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN230k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">Jordan 4 Retro Millitary Black</h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker3} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN150k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">
+                Nike Air Max 1 Kasina Won-Ang Orange
+              </h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker4} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN80k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">Only at SwayStock</p>
+              <h2 className="sneaker-name">Nike Dunk Low Two-Toned Grey(GS)</h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker5} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN50k</p>
+            </div>
+          </div>
+
+          <div className="sneakers__categories__item">
+            <div
+              className="sneakers1img"
+              style={{ backgroundImage: `url(${sneakercatimg})` }}
+            />
+            <div className="sneakers__categories__item-info">
+              <h2>Explore all products.</h2>
+            </div>
+          </div>
+        </section>
+
+        <section className="marketlist__title">
+          <h2>
+            <span className="header__h1-span">TLoud and clear.</span>{" "}
+            Unparalleled choices for rich, high-quality sound.
+          </h2>
+        </section>
+        <section className="sneakers__categories">
+          <div className="sneakers__categories__item">
+            <div
+              className="sneakers1img"
+              style={{ backgroundImage: `url(${sneakercatimg})` }}
+            />
+            <div className="sneakers__categories__item-info">
+              <h2>Get 6 months of Apple Music free.</h2>
+              <p>
+                Included with purchase of select AirPods and Beats products, and
+                HomePod mini.**
+              </p>
+            </div>
+          </div>
+
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">Adidas Yeezy Foam RNR Onyx</h2>
+            </div>
+            <div className="imagecnt">
+              <img src={sneaker1} alt="" />
+            </div>{" "}
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN100k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">Only at SwayStock</p>
+              <h2 className="sneaker-name">
+                Jordan 2 Retro A Ma Maniere Airness
+              </h2>
+            </div>
+            <div className="imagecnt">
+              <img src={sneaker2} alt="" />
+            </div>{" "}
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN230k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">Jordan 4 Retro Millitary Black</h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker3} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN150k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">New</p>
+              <h2 className="sneaker-name">
+                Nike Air Max 1 Kasina Won-Ang Orange
+              </h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker4} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN80k</p>
+            </div>
+          </div>
+          <div className="sneakers__categories__item-group">
+            <div className="sneakers_item-name">
+              <p className="sneaker-tag">Only at SwayStock</p>
+              <h2 className="sneaker-name">Nike Dunk Low Two-Toned Grey(GS)</h2>
+            </div>
+
+            <div className="imagecnt">
+              <img src={sneaker5} alt="" />
+            </div>
+            <div className="price-cnt">
+              <p className="lowask">Lowest Ask</p>
+              <p className="sneaker-price">NGN50k</p>
+            </div>
+          </div>
+
+          <div className="sneakers__categories__item">
+            <div
+              className="sneakers1img"
+              style={{ backgroundImage: `url(${sneakercatimg})` }}
+            />
+            <div className="sneakers__categories__item-info">
+              <h2>Explore all products.</h2>
+            </div>
+          </div>
+        </section>
         <section style={{ marginTop: "3.5rem" }} className="marketlist__title">
           <h2>
             <span className="header__h1-span">The SwayStock difference.</span>{" "}
