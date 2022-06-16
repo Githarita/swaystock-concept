@@ -441,6 +441,7 @@
 
   .marketlist__title h2 {
     font-size: 24px;
+    font-weight: 500;
     line-height: 1.16667;
     letter-spacing: 0.009rem;
   }
