@@ -28,6 +28,7 @@ body {
   line-height: 1.47059;
   color: #1d1d1f;
   font-style: normal;
+  position: relative;
 }
 
 html {
