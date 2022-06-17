@@ -610,11 +610,11 @@
   .homemenu {
     display: flex;
     position: fixed;
-    bottom: 10% ;
+    bottom: 5% ;
     right: 0;
     background-color: #000000ce;
     height: 60px;
-    width: 50px;
+    width: 60px;
     border-radius: 20px 0px 0px 20px;
     align-items: center;
     justify-content: center;
