@@ -659,7 +659,7 @@
     bottom: 6%;
     right: 15px;
     border-radius: 20px;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     /* box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px; */
     -webkit-animation-name: bottomnavslideIn;
@@ -700,6 +700,19 @@
     cursor: pointer;
   }
 
+  .bottomnav_close {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 1rem;
+  }
+
+  .closebottomnav_icon {
+    width: 25px;
+    height: 25px;
+    fill: #1d1d1f;
+    margin-left: auto;
+    cursor: pointer;
+  }
   .bottomnav__image {
     width: 25px;
     height: 25px;
