@@ -651,7 +651,13 @@ function Homepage() {
               </div>
               <div className="bottomnav_item">
                 <p>Search</p>
-                <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+                <div
+                  className="bottonav_icon-cnt"
+                  onClick={() => {
+                    homebtnIconClick();
+                    setSearchmodal(true);
+                  }}
+                >
                   <svg
                     className="bottomnav__icon"
                     viewBox="0 0 15 15"
