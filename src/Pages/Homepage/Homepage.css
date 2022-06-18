@@ -421,8 +421,11 @@
   display: none;
 }
 
-
 .homemenu {
+  display: none;
+}
+
+.bottomnav {
   display: none;
 }
 
@@ -610,7 +613,7 @@
   .homemenu {
     display: flex;
     position: fixed;
-    bottom: 5% ;
+    bottom: 5%;
     right: 0;
     background-color: #000000ce;
     height: 60px;
@@ -620,13 +623,50 @@
     justify-content: center;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
-    
-   }
+    -webkit-animation-name: bottomnavslideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: bottomnavslideIn;
+    animation-duration: 0.4s;
+  }
 
-   .homenuswitchicon {
+  .homenuswitchicon {
     fill: #fff;
     width: 30px;
-   }
+  }
+
+  .bottomnav {
+    display: flex;
+    background-color: #000000ce;
+    position: fixed;
+    bottom: 4.5%;
+    right: 15px;
+    left: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+    -webkit-animation-name: bottomnavslideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: bottomnavslideIn;
+    animation-duration: 0.4s;
+  }
+
+  .bottomnav__icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  .bottomnav__image {
+    width: 30px;
+    height: 30px;
+    border-radius: 9999px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
 }
 
 @-webkit-keyframes slideIn {
@@ -647,6 +687,28 @@
   }
   to {
     top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bottomnavslideIn {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bottomnavslideIn {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
     opacity: 1;
   }
 }
