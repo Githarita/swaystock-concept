@@ -656,6 +656,7 @@ function Homepage() {
                   onClick={() => {
                     homebtnIconClick();
                     setSearchmodal(true);
+                    setHomebtn(false);
                   }}
                 >
                   <svg
