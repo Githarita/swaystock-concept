@@ -666,6 +666,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: bottomnavslideIn;
     animation-duration: 0.4s;
+    z-index: 150;
   }
 
   .bottomnav_item {

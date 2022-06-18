@@ -630,8 +630,8 @@ function Homepage() {
 
       {bottomnav && (
         <>
-          <div className="bottomnav_modalOverlay" onClick={homebtnIconClick} />
-          <div className="bottomnav_modalWrap">
+          <div className="bottomnav_modalOverlay" />
+          <div className="bottomnav_modalWrap" onClick={homebtnIconClick}>
             <div className="bottomnav">
               <div className="bottomnav_item">
                 <p>Home</p>
