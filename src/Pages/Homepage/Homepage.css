@@ -559,7 +559,7 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 15px 15px;
+    padding: 10px 15px;
   }
 
   .searchdinput {
@@ -574,8 +574,8 @@
   }
 
   .searchinput__icon {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     fill: #999;
     cursor: pointer;
   }
