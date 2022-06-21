@@ -659,7 +659,7 @@
     gap: 15px;
     position: fixed;
     bottom: 6%;
-    right: 22px;
+    right: 15px;
     border-radius: 20px;
     align-items: flex-end;
     justify-content: space-around;
@@ -681,9 +681,9 @@
 
   .bottomnav_item p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: auto;
-    color: #fff;
+    
   }
 
   .bottonav_icon-cnt {
