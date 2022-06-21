@@ -176,7 +176,7 @@ function Categories() {
             <div className="bottomnav">
               <div className="bottomnav_item">
                 <p>Home</p>
-                <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+                <Link to="/" className="bottonav_icon-cnt">
                   <svg
                     className="bottomnav__icon"
                     viewBox="0 0 15 15"
@@ -188,7 +188,7 @@ function Categories() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </div>
+                </Link>
               </div>
               <div className="bottomnav_item">
                 <p>Search</p>
