@@ -8,8 +8,7 @@
 .categories_page {
   max-width: 2560px;
   margin: 0 auto;
-  padding: 0px 22px;
-  padding-top: 22px;
+  padding: 22px 22px;
   /* background-color: #fff; */
   display: grid;
   grid-template-columns: 1fr 1fr;
