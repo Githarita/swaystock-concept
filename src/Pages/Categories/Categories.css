@@ -120,7 +120,7 @@
 @media screen and (max-width: 500px) {
   .theheaderp {
     color: #1d1d1f;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: -0.374px;
     line-height: 21.0011px;
     font-weight: 400;
@@ -133,7 +133,7 @@
 
   .categories_item-text h1 {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .categories_top-header {
