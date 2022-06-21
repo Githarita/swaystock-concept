@@ -17,6 +17,7 @@ import sneaker5 from "../../assets/sneaker5.png";
 import olapng from "../../assets/olapic.png";
 import "./Homepage.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   const [searchmodal, setSearchmodal] = useState(false);
@@ -674,7 +675,7 @@ function Homepage() {
               </div>
               <div className="bottomnav_item">
                 <p>Categories</p>
-                <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+                <Link to="/categories" className="bottonav_icon-cnt">
                   <svg
                   className="bottomnav__icon"
                     viewBox="0 0 15 15"
@@ -687,7 +688,7 @@ function Homepage() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </div>
+                </Link>
               </div>
               <div className="bottomnav_item">
                 <p>Nofication</p>

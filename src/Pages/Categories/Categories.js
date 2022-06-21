@@ -8,6 +8,7 @@ import beautycat from "../../assets/beautycat.png";
 import collectiblescat from "../../assets/collectiblescat.png";
 import electronicscat from "../../assets/electronicscat.png";
 import "./Categories.css";
+import { Link } from "react-router-dom";
 
 function Categories() {
   const [searchmodal, setSearchmodal] = useState(false);
@@ -214,7 +215,7 @@ function Categories() {
               </div>
               <div className="bottomnav_item">
                 <p>Categories</p>
-                <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+                <Link to="/categories" className="bottonav_icon-cnt">
                   <svg
                     className="bottomnav__icon"
                     viewBox="0 0 15 15"
@@ -226,7 +227,7 @@ function Categories() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </div>
+                </Link>
               </div>
               <div className="bottomnav_item">
                 <p>Nofication</p>
