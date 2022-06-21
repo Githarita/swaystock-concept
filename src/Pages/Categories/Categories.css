@@ -145,4 +145,34 @@
     margin-top: .5rem;
     gap: 0.5rem;
   }
+
+  .catb {
+    background-color: #6c4e36;
+    padding: 6rem;
+  }
+  
+  .catc {
+    background-color: #fefeff;
+    padding: 6rem;
+  }
+  
+  .catd {
+    background-color: #ded9d4;
+    padding: 9rem 3rem 0 3rem;
+  }
+  
+  .cate {
+    background-color: #b08055;
+    padding: 9rem 3rem 0 3rem;
+  }
+  
+  .catf {
+    background-color: #dfdedf;
+    padding: 9rem 3rem 0 3rem;
+  }
+  
+  .catg {
+    background-color: #e6e6e9;
+    padding: 6rem;
+  }
 }
