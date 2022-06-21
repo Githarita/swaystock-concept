@@ -175,7 +175,7 @@ function Categories() {
           <div className="bottomnav_modalWrap">
             <div className="bottomnav">
               <div className="bottomnav_item">
-                <p>Home</p>
+                {/* <p>Home</p> */}
                 <Link to="/" className="bottonav_icon-cnt">
                   <svg
                     className="bottomnav__icon"
@@ -191,7 +191,7 @@ function Categories() {
                 </Link>
               </div>
               <div className="bottomnav_item">
-                <p>Search</p>
+                {/* <p>Search</p> */}
                 <div
                   className="bottonav_icon-cnt"
                   onClick={() => {
@@ -214,7 +214,7 @@ function Categories() {
                 </div>
               </div>
               <div className="bottomnav_item">
-                <p>Categories</p>
+                {/* <p>Categories</p> */}
                 <Link to="/categories" className="bottonav_icon-cnt">
                   <svg
                     className="bottomnav__icon"
@@ -230,7 +230,7 @@ function Categories() {
                 </Link>
               </div>
               <div className="bottomnav_item">
-                <p>Nofication</p>
+                {/* <p>Nofication</p> */}
                 <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
                   <svg
                     className="bottomnav__icon"
@@ -247,7 +247,7 @@ function Categories() {
               </div>
 
               <div className="bottomnav_item">
-                <p>Profile</p>
+                {/* <p>Profile</p> */}
                 <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
                   <img
                     className="bottomnav__image"
