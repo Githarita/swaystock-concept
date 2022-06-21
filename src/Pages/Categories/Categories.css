@@ -111,7 +111,8 @@
 
 @media screen and (max-width: 1080px) {
   .categories_page {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 
