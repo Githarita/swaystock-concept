@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@
 
 .categories {
   display: flex;
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -97,7 +97,7 @@
 }
 
 .marketlist__title {
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0 22px;
 }
@@ -120,7 +120,7 @@
 }
 
 .sneakers__categories {
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 22px 22px;
   display: flex;
@@ -254,7 +254,7 @@
 }
 
 .difference {
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 22px 22px;
   display: flex;
@@ -372,7 +372,7 @@
   letter-spacing: -0.374px;
   line-height: 25px;
   padding: 22px 22px;
-  max-width: 1200px;
+  max-width: 2560px;
   margin: 0 auto;
 }
 

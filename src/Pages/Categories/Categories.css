@@ -1,0 +1,147 @@
+.categories_page {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.categories_top-header {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: grid;
+}
+
+.categories-header_item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fee703;
+  padding: 6rem 1rem;
+  gap: 2rem;
+  /* box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+  border-radius: 18px; */
+}
+
+.categories-header_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.categories-header_item-text {
+  display: grid;
+}
+
+.theheadertext {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.theheaderp {
+  color: #1d1d1f;
+  font-size: 24px;
+  letter-spacing: -0.374px;
+  line-height: 21.0011px;
+  font-weight: 400;
+}
+
+.catview {
+  font-weight: normal;
+  margin-top: 1rem;
+  color: #111;
+  text-decoration: underline;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -0.374px;
+  cursor: pointer;
+}
+
+.categories_item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  /* box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+  border-radius: 18px; */
+}
+
+.categories_item-text h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #1d1d1f;
+}
+
+.categories_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.catb {
+  background-color: #6c4e36;
+  padding: 3rem;
+}
+
+.catc {
+  background-color: #fefeff;
+  padding: 3rem;
+}
+
+.catd {
+  background-color: #ded9d4;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.cate {
+  background-color: #b08055;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.catf {
+  background-color: #dfdedf;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.catg {
+  background-color: #e6e6e9;
+  padding: 3rem 3rem 0 3rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .categories_page {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .theheaderp {
+    color: #1d1d1f;
+    font-size: 18px;
+    letter-spacing: -0.374px;
+    line-height: 21.0011px;
+    font-weight: 400;
+  }
+
+  .theheadertext {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .categories_item-text h1 {
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  .categories_top-header {
+    padding: 0px;
+  }
+
+  .categories_page {
+    padding: 0px;
+    margin-top: 1rem;
+  }
+}
