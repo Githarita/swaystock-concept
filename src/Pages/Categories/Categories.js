@@ -25,7 +25,7 @@ function Categories() {
     setBottomnav(false);
   };
 
-  let sneakers = "sneakers"
+  let sneakers = "Sneakers"
 
   return (
     <>
