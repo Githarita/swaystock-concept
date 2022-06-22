@@ -109,6 +109,10 @@
   padding: 3rem 3rem 0 3rem;
 }
 
+.categoryitem_list-page {
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
   .categories_page {
     display: flex;
@@ -183,4 +187,7 @@
     background-color: #e6e6e9;
     padding: 6rem;
   }
+
+  /* Category list page css */
+  
 }

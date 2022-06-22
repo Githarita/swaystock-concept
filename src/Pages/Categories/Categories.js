@@ -25,6 +25,8 @@ function Categories() {
     setBottomnav(false);
   };
 
+  let sneakers = "sneakers"
+
   return (
     <>
       <Header />
@@ -44,7 +46,7 @@ function Categories() {
           <div className="categories_item-text">
             <h1>Sneakers</h1>
             <p className="theheaderp">Oh. So. Comfy.</p>
-            <p className="catview">View All </p>
+            <Link to={`/categories/${sneakers}`} className="catview" >View All </Link>
           </div>
           <img src={sneakerscat} alt="" className="categories_item-image" />
         </div>
@@ -275,6 +277,8 @@ function Categories() {
           </div>
         </>
       )}
+
+      
     </>
   );
 }
