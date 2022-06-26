@@ -59,6 +59,7 @@ function Categoryproducts() {
 
         <div className="navquantityam">
           <svg
+            onClick={() => setSearchmodal(true)}
             viewBox="0 0 15 15"
             className="categoryproductsnav-icon"
             xmlns="http://www.w3.org/2000/svg"
