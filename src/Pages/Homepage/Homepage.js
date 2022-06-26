@@ -33,6 +33,15 @@ function Homepage() {
     setHomebtn(true);
     setBottomnav(false);
   };
+
+  let phones = "phones";
+  let sneakers = "sneakers";
+  let electronics = "electronics";
+  let accessories = "accessories";
+  let apparel = "apparel";
+  let bags = "bag";
+  let beauty = "beauty";
+  let collectibles = "collectibles";
   return (
     <div>
       <Header />
@@ -78,39 +87,39 @@ function Homepage() {
           </div>
         </section>
         <section className="categories">
-          <div className="categories__item">
+          <Link to={`/categories/${phones}`} className="categories__item">
             <img src={phoneimg} alt="" />
             <p>Phones</p>
-          </div>
+          </Link>
 
-          <div className="categories__item">
+          <Link to={`/categories/${sneakers}`} className="categories__item">
             <img src={sneakerimg} alt="" />
             <p>Sneakers</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${apparel}`} className="categories__item">
             <img src={apparelimg} alt="" />
             <p>Apparel</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${electronics}`} className="categories__item">
             <img src={electronicsimg} alt="" />
             <p>Electronics</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${collectibles}`} className="categories__item">
             <img src={collectiblesimg} alt="" />
             <p>Collectibles</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${bags}`} className="categories__item">
             <img src={bagsimg} alt="" />
             <p>Bags</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${accessories}`} className="categories__item">
             <img src={accessoriesimg} alt="" />
             <p>Accessories</p>
-          </div>
-          <div className="categories__item">
+          </Link>
+          <Link to={`/categories/${beauty}`} className="categories__item">
             <img src={beautyimg} alt="" />
             <p>Beauty</p>
-          </div>
+          </Link>
         </section>
 
         <section className="marketlist__title">
@@ -120,7 +129,10 @@ function Homepage() {
           </h2>
         </section>
         <section className="sneakers__categories">
-          <div className="sneakers__categories__item">
+          <Link
+            to={`/categories/${sneakers}`}
+            className="sneakers__categories__item"
+          >
             <div
               className="sneakers1img"
               style={{ backgroundImage: `url(${sneakercatimg})` }}
@@ -129,7 +141,7 @@ function Homepage() {
               <h2>In with the new.</h2>
               <p>Discover fresh new colors for your favorite accessories.</p>
             </div>
-          </div>
+          </Link>
 
           <div className="sneakers__categories__item-group">
             <div className="sneakers_item-name">
@@ -204,7 +216,10 @@ function Homepage() {
             </div>
           </div>
 
-          <div className="sneakers__categories__item">
+          <Link
+            to={`/categories/${sneakers}`}
+            className="sneakers__categories__item"
+          >
             <div
               className="sneakers1img"
               style={{ backgroundImage: `url(${sneakercatimg})` }}
@@ -212,7 +227,7 @@ function Homepage() {
             <div className="sneakers__categories__item-info">
               <h2>Explore all products.</h2>
             </div>
-          </div>
+          </Link>
         </section>
 
         <section className="marketlist__title">
@@ -222,7 +237,10 @@ function Homepage() {
           </h2>
         </section>
         <section className="sneakers__categories">
-          <div className="sneakers__categories__item">
+          <Link
+            to={`/categories/${accessories}`}
+            className="sneakers__categories__item"
+          >
             <div
               className="sneakers1img"
               style={{ backgroundImage: `url(${sneakercatimg})` }}
@@ -231,7 +249,7 @@ function Homepage() {
               <h2>Don't take it lightly</h2>
               <p>Pro anywhere from.</p>
             </div>
-          </div>
+          </Link>
 
           <div className="sneakers__categories__item-group">
             <div className="sneakers_item-name">
@@ -306,7 +324,10 @@ function Homepage() {
             </div>
           </div>
 
-          <div className="sneakers__categories__item">
+          <Link
+            to={`/categories/${accessories}`}
+            className="sneakers__categories__item"
+          >
             <div
               className="sneakers1img"
               style={{ backgroundImage: `url(${sneakercatimg})` }}
@@ -314,12 +335,12 @@ function Homepage() {
             <div className="sneakers__categories__item-info">
               <h2>Explore all products.</h2>
             </div>
-          </div>
+          </Link>
         </section>
 
         <section className="marketlist__title">
           <h2>
-            <span className="header__h1-span">TLoud and clear.</span>{" "}
+            <span className="header__h1-span">Loud and clear.</span>{" "}
             Unparalleled choices for rich, high-quality sound.
           </h2>
         </section>

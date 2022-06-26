@@ -25,8 +25,13 @@ function Categories() {
     setBottomnav(false);
   };
 
-  let sneakers = "eneakers";
+  let sneakers = "sneakers";
   let electronics = "electronics";
+  let accessories = "accessories";
+  let apparel = "apparel";
+  let bags = "bag";
+  let beauty = "beauty";
+  let collectibles = "collectibles";
 
   return (
     <>
@@ -61,7 +66,9 @@ function Categories() {
             <p className="theheaderp">
               Love the power. Love the Wears. Love the price
             </p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${accessories}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={accessoriescat} alt="" className="categories_item-image" />
         </div>
@@ -69,7 +76,9 @@ function Categories() {
           <div className="categories_item-text">
             <h1>Apparel</h1>
             <p className="theheaderp">Light. Bright. Full of might.</p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${apparel}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={apparelcat} alt="" className="categories_item-image" />
         </div>
@@ -77,7 +86,9 @@ function Categories() {
           <div className="categories_item-text">
             <h1>Bags</h1>
             <p className="theheaderp">A sight to be bold with.</p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${bags}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={bagcat} alt="" className="categories_item-image" />
         </div>
@@ -87,7 +98,9 @@ function Categories() {
             <p className="theheaderp">
               Your mega power. Mini your look to the beauty.
             </p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${beauty}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={beautycat} alt="" className="categories_item-image" />
         </div>
@@ -95,7 +108,9 @@ function Categories() {
           <div className="categories_item-text">
             <h1>Collectibles</h1>
             <p className="theheaderp">Lose your knack for losing things.</p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${collectibles}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={collectiblescat} alt="" className="categories_item-image" />
         </div>

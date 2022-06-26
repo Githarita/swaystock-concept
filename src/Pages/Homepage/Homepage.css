@@ -76,6 +76,7 @@
   padding: 18px 8px 16px;
   display: grid;
   align-items: center;
+  text-decoration: none;
 }
 
 .categories__item img {
