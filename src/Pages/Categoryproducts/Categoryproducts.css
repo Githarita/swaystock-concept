@@ -32,6 +32,16 @@
   display: none;
 }
 
+.whatyowant {
+    max-width: 2560px;
+    margin: 3rem auto;
+    text-align: center;
+    
+}
+
+.whatyowant h1 {
+    font-size: 32px;
+}
 @media screen and (max-width: 500px) {
   .categoryproducts_header {
     padding: 0px 0px;
@@ -88,4 +98,13 @@
     display: flex;
     align-items: center;
   }
+
+  .whatyowant h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #1d1d1f;
+    letter-spacing: 0.128px;
+    line-height: 36px;
+    padding: 0px 18px
+}
 }

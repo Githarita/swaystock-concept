@@ -120,6 +120,10 @@ function Categoryproducts() {
         </div>
       </header>
 
+      <section className="whatyowant">
+        <h1>Which {categoryId} is right for you?</h1>
+      </section>
+
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
