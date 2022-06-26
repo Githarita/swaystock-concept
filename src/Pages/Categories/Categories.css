@@ -170,29 +170,33 @@
     margin-top: 10px;
   }
 
+  .categories-header_item {
+    padding: 5.5rem 1rem;
+  }
+
   .catb {
     background-color: #6c4e36;
-    padding: 8rem 3rem;
+    padding: 6rem 3rem;
   }
 
   .catc {
     background-color: #fefeff;
-    padding: 6rem;
+    padding: 5rem 3rem;
   }
 
   .catd {
     background-color: #ded9d4;
-    padding: 9rem 3rem 0 3rem;
+    padding: 9rem 0 0 0;
   }
 
   .cate {
     background-color: #b08055;
-    padding: 9rem 3rem 0 3rem;
+    padding: 9.5rem 3rem 0 3rem;
   }
 
   .catf {
     background-color: #dfdedf;
-    padding: 9rem 3rem 0 3rem;
+    padding: 9.5rem 3rem 0 3rem;
   }
 
   .catg {
