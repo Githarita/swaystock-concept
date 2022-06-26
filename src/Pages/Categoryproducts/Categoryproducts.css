@@ -25,7 +25,10 @@
 }
 
 .suggestlink {
-  color: #1d1d1d;
+  color: #0077ed;
+  font-size: 14px;
+  letter-spacing: -0.12px;
+  line-height: 16.0004px;
 }
 
 .categoryproductsnav {
@@ -33,14 +36,13 @@
 }
 
 .whatyowant {
-    max-width: 2560px;
-    margin: 3rem auto;
-    text-align: center;
-    
+  max-width: 2560px;
+  margin: 3rem auto;
+  text-align: center;
 }
 
 .whatyowant h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 @media screen and (max-width: 500px) {
   .categoryproducts_header {
@@ -100,11 +102,11 @@
   }
 
   .whatyowant h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     color: #1d1d1f;
     letter-spacing: 0.128px;
     line-height: 36px;
-    padding: 0px 18px
-}
+    padding: 0px 18px;
+  }
 }
