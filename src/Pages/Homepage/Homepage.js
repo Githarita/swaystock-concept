@@ -652,7 +652,7 @@ function Homepage() {
 
       {bottomnav && (
         <>
-          <div className="bottomnav_modalOverlay" />
+          {/* <div className="bottomnav_modalOverlay" /> */}
           <div className="bottomnav_modalWrap">
             <div className="bottomnav">
               <div className="bottomnav_item">
