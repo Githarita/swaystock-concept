@@ -25,7 +25,8 @@ function Categories() {
     setBottomnav(false);
   };
 
-  let sneakers = "Sneakers"
+  let sneakers = "eneakers";
+  let electronics = "electronics";
 
   return (
     <>
@@ -36,7 +37,9 @@ function Categories() {
             <h1 className="theheadertext">Electronics</h1>
             <p className="theheaderp">Mega power. Mini sized. </p>
             <p className="theheaderp">Your new superpower. Full of might</p>
-            <p className="catview">View All</p>
+            <Link to={`/categories/${electronics}`} className="catview">
+              View All
+            </Link>
           </div>
           <img src={electronicscat} alt="" />
         </div>
@@ -46,7 +49,9 @@ function Categories() {
           <div className="categories_item-text">
             <h1>Sneakers</h1>
             <p className="theheaderp">Oh. So. Comfy.</p>
-            <Link to={`/categories/${sneakers}`} className="catview" >View All </Link>
+            <Link to={`/categories/${sneakers}`} className="catview">
+              View All{" "}
+            </Link>
           </div>
           <img src={sneakerscat} alt="" className="categories_item-image" />
         </div>
@@ -277,8 +282,6 @@ function Categories() {
           </div>
         </>
       )}
-
-      
     </>
   );
 }
