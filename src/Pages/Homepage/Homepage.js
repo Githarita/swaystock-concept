@@ -448,8 +448,7 @@ function Homepage() {
             Even more reasons to shop with us.
           </h2>
         </section>
-
-        <section className="difference">
+        <section  className="difference">
           <div className="difference_item">
             <svg
               className="difference_icon1"
