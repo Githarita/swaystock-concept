@@ -124,6 +124,14 @@ function Categoryproducts() {
         <h1>Which {categoryId} is right for you?</h1>
       </section>
 
+      <section className="whatyowant">
+        <h1>Which {categoryId} is right for you?</h1>
+      </section>
+
+      <section className="whatyowant">
+        <h1>Which {categoryId} is right for you?</h1>
+      </section>
+
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
