@@ -25,7 +25,11 @@
 }
 
 .suggestlink {
-    color: #1d1d1d;
+  color: #1d1d1d;
+}
+
+.categoryproductsnav {
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -51,5 +55,16 @@
     letter-spacing: -0.374px;
     line-height: 21.0011px;
     font-weight: 400;
+  }
+
+  .categoryproductsnav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000ce;
+    /* background-color: rgba(0, 0, 0, .8); */
+    color: #fff;
   }
 }

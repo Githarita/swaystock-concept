@@ -42,6 +42,10 @@ function Categoryproducts() {
         </div>
       </header>
 
+      <div className="categoryproductsnav">
+        na we dey here
+      </div>
+
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
