@@ -60,25 +60,6 @@ function Categoryproducts() {
   return (
     <>
       <Header />
-      <header className="categoryproducts_header">
-        <div className="categoryproducts_header-item">
-          <div className="categoryproducts_header-item-text">
-            <h1 className="categoryidname">{categoryId}</h1>
-            <div className="categorytextcnt">
-              <p className="categpryp">Oh. So. Comfy.</p>
-              <p className="categpryp">Love the power. Love the price.</p>
-              <p className="categpryp">
-                Check back later fo more available products.
-              </p>
-            </div>
-            <Link to="/" className="suggestlink">
-              Suggest a product
-            </Link>
-          </div>
-          <img src={sneakercatpageimg} alt="" />
-        </div>
-      </header>
-
       <div className="categoryproductsnav">
         <svg
           viewBox="0 0 15 15"
@@ -120,6 +101,24 @@ function Categoryproducts() {
           <div className="navwhatoview">{viewbtn}</div>
         </div>
       </div>
+      <header className="categoryproducts_header">
+        <div className="categoryproducts_header-item">
+          <div className="categoryproducts_header-item-text">
+            <h1 className="categoryidname">{categoryId}</h1>
+            <div className="categorytextcnt">
+              <p className="categpryp">Oh. So. Comfy.</p>
+              <p className="categpryp">Love the power. Love the price.</p>
+              <p className="categpryp">
+                Check back later fo more available products.
+              </p>
+            </div>
+            <Link to="/" className="suggestlink">
+              Suggest a product
+            </Link>
+          </div>
+          <img src={sneakercatpageimg} alt="" />
+        </div>
+      </header>
 
       {searchmodal && (
         <div className="searchproductmodal">
