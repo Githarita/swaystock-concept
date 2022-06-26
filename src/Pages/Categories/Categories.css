@@ -123,7 +123,7 @@
 @media screen and (max-width: 500px) {
   .theheaderp {
     color: #1d1d1f;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: -0.374px;
     line-height: 21.0011px;
     font-weight: 400;
@@ -132,12 +132,13 @@
   .theheadertext {
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: .5rem;
   }
 
-  .categories_item-text h1 {
+  /* .categories_item-text h1 {
     font-weight: 500;
     font-size: 24px;
-  }
+  } */
 
   /* .categories-header_item {
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
@@ -171,37 +172,48 @@
   }
 
   .categories-header_item {
-    padding: 5.5rem 1rem;
+    height: 700px;
+    padding: 2rem 0 0 0;
+  }
+
+  .categories_item {
+    height: 600px;
+
+  }
+
+  .categories_item h1 {
+    font-size: 32px;
+    margin-bottom: .5rem;
   }
 
   .catb {
     background-color: #6c4e36;
-    padding: 6rem 3rem;
+    padding: 2rem 0rem;
   }
 
   .catc {
     background-color: #fefeff;
-    padding: 5rem 3rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
 
   .catd {
     background-color: #ded9d4;
-    padding: 9rem 0 0 0;
+    padding: 2rem 0 0 0;
   }
 
   .cate {
     background-color: #b08055;
-    padding: 9.5rem 3rem 0 3rem;
+    padding: 2rem 0 0 0;
   }
 
   .catf {
     background-color: #dfdedf;
-    padding: 9.5rem 3rem 0 3rem;
+    padding: 2rem 0 0 0;
   }
 
   .catg {
     background-color: #e6e6e9;
-    padding: 6rem;
+    padding: 2rem 0 0 0;
   }
 
   /* Category list page css */
