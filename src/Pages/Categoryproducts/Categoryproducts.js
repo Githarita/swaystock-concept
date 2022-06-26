@@ -106,8 +106,6 @@ function Categoryproducts() {
               clipRule="evenodd"
             ></path>
           </svg>
-
-          <div className="navwhatoview">{viewbtn}</div>
           <svg
             viewBox="0 0 15 15"
             className="categoryproductsnav-icon"
@@ -118,7 +116,8 @@ function Categoryproducts() {
               fillRule="evenodd"
               clipRule="evenodd"
             ></path>
-          </svg>
+          </svg>{" "}
+          <div className="navwhatoview">{viewbtn}</div>
         </div>
       </div>
 
