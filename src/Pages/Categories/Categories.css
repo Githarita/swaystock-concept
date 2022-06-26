@@ -173,7 +173,12 @@
 
   .categories-header_item {
     height: 600px;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .categories-header_item img {
+    width: 100%;
+    height: 100%;
   }
 
   .categories_item {
@@ -188,32 +193,32 @@
 
   .catb {
     background-color: #6c4e36;
-    padding: 2rem 0rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 
   .catc {
     background-color: #fefeff;
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .catd {
     background-color: #ded9d4;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .cate {
     background-color: #b08055;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .catf {
     background-color: #dfdedf;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .catg {
     background-color: #e6e6e9;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 2rem 2rem;
   }
 
   /* Category list page css */
