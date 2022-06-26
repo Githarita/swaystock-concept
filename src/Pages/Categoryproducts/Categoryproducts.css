@@ -6,15 +6,23 @@
 
 .categoryproducts_header-item {
     background-color: #DFBAB0;
-    padding: 4rem 2rem 0 2rem;
+    padding: 4rem 2rem 4rem 2rem;
     display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 2.5rem;
 }
 
 .categoryproducts_header-item img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+
+@media screen and (max-width: 500px) {
+    .categoryproducts_header {
+        padding: 0px 0px;
+    }
 }
