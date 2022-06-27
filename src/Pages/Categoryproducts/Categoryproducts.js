@@ -225,9 +225,9 @@ function Categoryproducts() {
                 </svg>
               </Link>
             </div>
-            <div className="bottomnav_item">
+            {/* <div className="bottomnav_item">
               {/* <p>Search</p> */}
-              <div
+              {/* <div
                 className="bottonav_icon-cnt"
                 onClick={() => {
                   homebtnIconClick();
@@ -247,8 +247,8 @@ function Categoryproducts() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </div>
-            </div>
+              </div> 
+            </div> */}
             <div className="bottomnav_item">
               {/* <p>Categories</p> */}
               <Link to="/categories" className="bottonav_icon-cnt">
