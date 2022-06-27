@@ -46,7 +46,7 @@
 }
 
 .categoryproductsnav-filteram {
-    display: none;
+  display: none;
 }
 
 .filternavbar {
@@ -142,11 +142,65 @@
     right: 8px;
     left: 8px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
+  }
+
+  .filternavbar-top {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .filternavbar-top__icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .filternavbar-top h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1d1d1f;
+  }
+
+  .filternavbar-body {
+    display: grid;
+    gap: 0.7rem;
+    padding: 12px 15px;
+  }
+
+  .bottomsheetsort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .btssort {
+    font-size: 14px;
+  }
+
+  .category-worda-value {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+  }
+
+  .categoryproducts_products {
+    font-size: 13px;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nagender {
+    margin-bottom: 0.5rem;
   }
 }
