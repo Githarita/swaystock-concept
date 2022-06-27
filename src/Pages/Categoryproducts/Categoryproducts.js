@@ -273,6 +273,7 @@ function Categoryproducts() {
             onClick={() => {
               setSearchmodal(true);
               setBottomnav(false);
+              setFilterActive(false);
             }}
             viewBox="0 0 15 15"
             className="categoryproductsnav-icon"
@@ -330,6 +331,7 @@ function Categoryproducts() {
           onClick={() => {
             setFilterActive(true);
             setBottomnav(false);
+            setSearchmodal(false);
           }}
         >
           <path
