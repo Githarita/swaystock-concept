@@ -11,7 +11,7 @@ function Categoryproducts() {
 
   const [searchmodal, setSearchmodal] = useState(false);
   const [homebtn, setHomebtn] = useState(true);
-  const [bottomnav, setBottomnav] = useState(false);
+  const [bottomnav, setBottomnav] = useState(true);
   const [isListed, setIslisted] = useState(false);
 
   let viewbtn;
@@ -184,7 +184,7 @@ function Categoryproducts() {
         </div>
       )}
 
-      {homebtn && (
+      {/* {homebtn && (
         <div className="homemenu" onClick={homebuttonmenu}>
           <svg
             viewBox="0 0 15 15"
@@ -198,12 +198,12 @@ function Categoryproducts() {
             ></path>
           </svg>
         </div>
-      )}
+      )} */}
 
       {bottomnav && (
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
-          <div className="bottomnav_modalWrap">
+         
             <div className="bottomnav">
               <div className="bottomnav_item">
                 {/* <p>Home</p> */}
@@ -287,7 +287,7 @@ function Categoryproducts() {
                   />
                 </div>
               </div>
-              <div className="bottomnav_close">
+              {/* <div className="bottomnav_close">
                 <div className="closebottomnav_item" onClick={homebtnIconClick}>
                   <svg
                     viewBox="0 0 15 15"
@@ -301,9 +301,9 @@ function Categoryproducts() {
                     ></path>
                   </svg>
                 </div>
-              </div>
+              </div> */}
             </div>
-          </div>
+         
         </>
       )}
     </>

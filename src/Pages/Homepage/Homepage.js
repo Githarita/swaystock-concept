@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 function Homepage() {
   const [searchmodal, setSearchmodal] = useState(false);
   const [homebtn, setHomebtn] = useState(true);
-  const [bottomnav, setBottomnav] = useState(false);
+  const [bottomnav, setBottomnav] = useState(true);
 
   const homebuttonmenu = () => {
     setHomebtn(false);
@@ -633,7 +633,7 @@ function Homepage() {
         </div>
       )}
 
-      {homebtn && (
+      {/* {homebtn && (
         <div className="homemenu" onClick={homebuttonmenu}>
           <svg
             viewBox="0 0 15 15"
@@ -647,12 +647,12 @@ function Homepage() {
             ></path>
           </svg>
         </div>
-      )}
+      )} */}
 
       {bottomnav && (
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
-          <div className="bottomnav_modalWrap">
+         
             <div className="bottomnav">
               <div className="bottomnav_item">
                 {/* <p>Home</p> */}
@@ -736,7 +736,7 @@ function Homepage() {
                   />
                 </div>
               </div>
-              <div className="bottomnav_close">
+              {/* <div className="bottomnav_close">
                 <div className="closebottomnav_item" onClick={homebtnIconClick}>
                   <svg
                     viewBox="0 0 15 15"
@@ -750,9 +750,8 @@ function Homepage() {
                     ></path>
                   </svg>
                 </div>
-              </div>
+              </div> */}
             </div>
-          </div>
         </>
       )}
     </div>
