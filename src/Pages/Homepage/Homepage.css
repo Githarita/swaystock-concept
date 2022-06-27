@@ -546,10 +546,7 @@
     left: 8px;
     margin: 0 auto;
     background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
