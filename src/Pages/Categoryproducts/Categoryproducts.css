@@ -189,20 +189,22 @@
   }
 
   .category-worda-value {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 300;
     color: #999;
   }
 
+  .nagender {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    gap: 15px;
+  }
   .categoryproducts_products {
     font-size: 13px;
-    margin-left: 1rem;
-    padding-bottom: 0.8rem;
-    padding-top: 0.8rem;
-    border-bottom: 1px solid #f5f5f7;
-  }
-
-  .nagender {
-    margin-bottom: 0.5rem;
+    border: 1px solid #f5f5f7;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 }
