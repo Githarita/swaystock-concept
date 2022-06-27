@@ -70,6 +70,7 @@ function Homepage() {
             className="searchhome"
             onClick={() => {
               setSearchmodal(true);
+              setBottomnav(false);
               // setHomebtn(false);
             }}
           >
