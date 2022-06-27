@@ -44,6 +44,10 @@
 .whatyowant h1 {
   font-size: 32px;
 }
+
+.categoryproductsnav-filteram {
+    display: none;
+}
 @media screen and (max-width: 500px) {
   .categoryproducts_header {
     padding: 0px 0px;
@@ -90,6 +94,13 @@
     cursor: pointer;
   }
 
+  .categoryproductsnav-iconn {
+    fill: #1d1d1f;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
   .navquantityam {
     display: flex;
     align-items: center;
@@ -108,5 +119,14 @@
     letter-spacing: 0.128px;
     line-height: 36px;
     padding: 0px 18px;
+  }
+
+  .categoryproductsnav-filteram {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 15px 18px;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
   }
 }
