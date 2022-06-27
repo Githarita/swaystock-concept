@@ -12,40 +12,40 @@ function Categoryproducts() {
   const [searchmodal, setSearchmodal] = useState(false);
   // const [homebtn, setHomebtn] = useState(true);
   const [bottomnav, setBottomnav] = useState(true);
-  const [isListed, setIslisted] = useState(false);
+  // const [isListed, setIslisted] = useState(false);
 
-  let viewbtn;
-  if (isListed) {
-    viewbtn = (
-      <svg
-        viewBox="0 0 15 15"
-        className="categoryproductsnav-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        onClick={() => setIslisted(false)}
-      >
-        <path
-          d="M1.5 5.25C1.91421 5.25 2.25 4.91421 2.25 4.5C2.25 4.08579 1.91421 3.75 1.5 3.75C1.08579 3.75 0.75 4.08579 0.75 4.5C0.75 4.91421 1.08579 5.25 1.5 5.25ZM4 4.5C4 4.22386 4.22386 4 4.5 4H13.5C13.7761 4 14 4.22386 14 4.5C14 4.77614 13.7761 5 13.5 5H4.5C4.22386 5 4 4.77614 4 4.5ZM4.5 7C4.22386 7 4 7.22386 4 7.5C4 7.77614 4.22386 8 4.5 8H13.5C13.7761 8 14 7.77614 14 7.5C14 7.22386 13.7761 7 13.5 7H4.5ZM4.5 10C4.22386 10 4 10.2239 4 10.5C4 10.7761 4.22386 11 4.5 11H13.5C13.7761 11 14 10.7761 14 10.5C14 10.2239 13.7761 10 13.5 10H4.5ZM2.25 7.5C2.25 7.91421 1.91421 8.25 1.5 8.25C1.08579 8.25 0.75 7.91421 0.75 7.5C0.75 7.08579 1.08579 6.75 1.5 6.75C1.91421 6.75 2.25 7.08579 2.25 7.5ZM1.5 11.25C1.91421 11.25 2.25 10.9142 2.25 10.5C2.25 10.0858 1.91421 9.75 1.5 9.75C1.08579 9.75 0.75 10.0858 0.75 10.5C0.75 10.9142 1.08579 11.25 1.5 11.25Z"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        ></path>
-      </svg>
-    );
-  } else {
-    viewbtn = (
-      <svg
-        onClick={() => setIslisted(true)}
-        viewBox="0 0 15 15"
-        className="categoryproductsnav-icon"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7 2H1.5C1.22386 2 1 2.22386 1 2.5V7H7V2ZM8 2V7H14V2.5C14 2.22386 13.7761 2 13.5 2H8ZM7 8H1V12.5C1 12.7761 1.22386 13 1.5 13H7V8ZM8 13V8H14V12.5C14 12.7761 13.7761 13 13.5 13H8ZM1.5 1C0.671573 1 0 1.67157 0 2.5V12.5C0 13.3284 0.671573 14 1.5 14H13.5C14.3284 14 15 13.3284 15 12.5V2.5C15 1.67157 14.3284 1 13.5 1H1.5Z"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        ></path>
-      </svg>
-    );
-  }
+  // let viewbtn;
+  // if (isListed) {
+  //   viewbtn = (
+  //     <svg
+  //       viewBox="0 0 15 15"
+  //       className="categoryproductsnav-icon"
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       onClick={() => setIslisted(false)}
+  //     >
+  //       <path
+  //         d="M1.5 5.25C1.91421 5.25 2.25 4.91421 2.25 4.5C2.25 4.08579 1.91421 3.75 1.5 3.75C1.08579 3.75 0.75 4.08579 0.75 4.5C0.75 4.91421 1.08579 5.25 1.5 5.25ZM4 4.5C4 4.22386 4.22386 4 4.5 4H13.5C13.7761 4 14 4.22386 14 4.5C14 4.77614 13.7761 5 13.5 5H4.5C4.22386 5 4 4.77614 4 4.5ZM4.5 7C4.22386 7 4 7.22386 4 7.5C4 7.77614 4.22386 8 4.5 8H13.5C13.7761 8 14 7.77614 14 7.5C14 7.22386 13.7761 7 13.5 7H4.5ZM4.5 10C4.22386 10 4 10.2239 4 10.5C4 10.7761 4.22386 11 4.5 11H13.5C13.7761 11 14 10.7761 14 10.5C14 10.2239 13.7761 10 13.5 10H4.5ZM2.25 7.5C2.25 7.91421 1.91421 8.25 1.5 8.25C1.08579 8.25 0.75 7.91421 0.75 7.5C0.75 7.08579 1.08579 6.75 1.5 6.75C1.91421 6.75 2.25 7.08579 2.25 7.5ZM1.5 11.25C1.91421 11.25 2.25 10.9142 2.25 10.5C2.25 10.0858 1.91421 9.75 1.5 9.75C1.08579 9.75 0.75 10.0858 0.75 10.5C0.75 10.9142 1.08579 11.25 1.5 11.25Z"
+  //         fillRule="evenodd"
+  //         clipRule="evenodd"
+  //       ></path>
+  //     </svg>
+  //   );
+  // } else {
+  //   viewbtn = (
+  //     <svg
+  //       onClick={() => setIslisted(true)}
+  //       viewBox="0 0 15 15"
+  //       className="categoryproductsnav-icon"
+  //       xmlns="http://www.w3.org/2000/svg"
+  //     >
+  //       <path
+  //         d="M7 2H1.5C1.22386 2 1 2.22386 1 2.5V7H7V2ZM8 2V7H14V2.5C14 2.22386 13.7761 2 13.5 2H8ZM7 8H1V12.5C1 12.7761 1.22386 13 1.5 13H7V8ZM8 13V8H14V12.5C14 12.7761 13.7761 13 13.5 13H8ZM1.5 1C0.671573 1 0 1.67157 0 2.5V12.5C0 13.3284 0.671573 14 1.5 14H13.5C14.3284 14 15 13.3284 15 12.5V2.5C15 1.67157 14.3284 1 13.5 1H1.5Z"
+  //         fillRule="evenodd"
+  //         clipRule="evenodd"
+  //       ></path>
+  //     </svg>
+  //   );
+  // }
 
   // const homebuttonmenu = () => {
   //   setHomebtn(false);
@@ -90,7 +90,7 @@ function Categoryproducts() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <svg
+          {/* <svg
             viewBox="0 0 15 15"
             className="categoryproductsnav-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ function Categoryproducts() {
               clipRule="evenodd"
             ></path>
           </svg>{" "}
-          <div className="navwhatoview">{viewbtn}</div>
+          <div className="navwhatoview">{viewbtn}</div> */}
         </div>
       </div>
       <header className="categoryproducts_header">
