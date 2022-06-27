@@ -137,8 +137,8 @@
   .filternavbar {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 8px;
+    position: fixed;
+    bottom: 8px;
     right: 8px;
     left: 8px;
     background-color: #fff;
@@ -146,9 +146,9 @@
     padding-bottom: 25px;
     padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
-    -webkit-animation-name: slideIn;
+    -webkit-animation-name: bottomnavslideIn;
     -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
+    animation-name: bottomnavslideIn;
     animation-duration: 0.4s;
   }
 
