@@ -123,10 +123,10 @@ function Categoryproducts() {
         </div>
       </header>
 
-      <section className="whatyowant">
+      {/* <section className="whatyowant">
         
         <h1>Which {categoryId} is right for you?</h1>
-      </section>
+      </section> */}
 
       <section className="categoryproductsnav-filteram">
         <svg

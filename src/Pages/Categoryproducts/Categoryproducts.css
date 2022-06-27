@@ -124,8 +124,8 @@
   .categoryproductsnav-filteram {
     display: flex;
     align-items: center;
-    justify-content: right;
-    padding: 15px 18px;
+    justify-content: center;
+    padding: 18px 18px;
     gap: 1.5rem;
     margin-bottom: 5rem;
   }
