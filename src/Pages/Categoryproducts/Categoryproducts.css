@@ -48,6 +48,10 @@
 .categoryproductsnav-filteram {
     display: none;
 }
+
+.filternavbar {
+  display: none;
+}
 @media screen and (max-width: 500px) {
   .categoryproducts_header {
     padding: 0px 0px;
@@ -128,5 +132,21 @@
     padding: 25px 25px;
     gap: 3rem;
     margin-bottom: 5rem;
+  }
+
+  .filternavbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
   }
 }

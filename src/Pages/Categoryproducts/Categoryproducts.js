@@ -10,9 +10,57 @@ function Categoryproducts() {
   const navigate = useNavigate();
 
   const [searchmodal, setSearchmodal] = useState(false);
+  // const [selectedChoice, setSelectedChoice] = useState("");
   // const [homebtn, setHomebtn] = useState(true);
   const [bottomnav, setBottomnav] = useState(true);
   const [isListed, setIslisted] = useState(false);
+  const [sortaby, setSortaby] = useState("not-active");
+  const [productacat, setProductacat] = useState("not-active");
+  const [sortaprice, setSortaprice] = useState("not-active");
+  const [sortagender, setSortagender] = useState("not-active");
+  const [sortbyValue, setSortbyValue] = useState("");
+  const [sortpriceValue, setSortpriceValue] = useState("");
+  const [sortgenderValue, setSortgenderValue] = useState("");
+  const [productcatValue, setProductcatValue] = useState("");
+  const [filteractive, setFilterActive] = useState(false);
+
+  const sorttBy = () => {
+    setSortaby("active");
+    setProductacat("not-active");
+    setSortagender("not-active");
+    setSortaprice("not-active");
+  };
+  const producttCat = () => {
+    setProductacat("active");
+    setSortaby("not-active");
+
+    setSortagender("not-active");
+    setSortaprice("not-active");
+  };
+  const sorttPrice = () => {
+    setSortaprice("active");
+    setSortaby("not-active");
+    setProductacat("not-active");
+    setSortagender("not-active");
+  };
+  const sorttGender = () => {
+    setSortagender("active");
+    setSortaby("not-active");
+    setProductacat("not-active");
+    setSortaprice("not-active");
+  };
+
+  const closeModal = () => {
+    setFilterActive(false);
+    setSortaby("not-active");
+    setProductacat("not-active");
+    setSortaprice("not-active");
+    setSortagender("not-active");
+    setSortbyValue("");
+    setSortpriceValue("");
+    setSortgenderValue("");
+    setProductcatValue("");
+  };
 
   let viewbtn;
   if (isListed) {
@@ -47,6 +95,151 @@ function Categoryproducts() {
     );
   }
 
+  // const showme = (name) => {
+  //   setSelectedChoice(name);
+  //   console.log(name);
+  // };
+
+  const sortBy = {
+    sortType: [
+      {
+        name: "Featured",
+        value: "featured",
+      },
+      {
+        name: "Most Popular",
+        value: "most popular",
+      },
+      {
+        name: "New Lowest Asks",
+        value: "new lowest asks",
+      },
+      {
+        name: "New Highest Bids",
+        value: "new highest bids",
+      },
+      {
+        name: "Average Sale Price",
+        value: "average sale price",
+      },
+      {
+        name: "Total Sold",
+        value: "total sold",
+      },
+      {
+        name: "Volatility",
+        value: "volatility",
+      },
+      {
+        name: "Price Premium",
+        value: "price premium",
+      },
+      {
+        name: "Last Sale",
+        value: "last sale",
+      },
+      {
+        name: "Lowest Ask",
+        value: "lowest ask",
+      },
+      {
+        name: "Highest Bid",
+        value: "highest bid",
+      },
+      {
+        name: "Release Date",
+        value: "release date",
+      },
+    ],
+  };
+
+  const productCat = {
+    productCatType: [
+      {
+        name: "Sneakers",
+        value: "sneakers",
+      },
+      {
+        name: "Collectibles",
+        value: "collectibles",
+      },
+      {
+        name: "Apparel",
+        value: "apparel",
+      },
+      {
+        name: "Electronics",
+        value: "electronics",
+      },
+      {
+        name: "Accessories",
+        value: "accessories",
+      },
+      {
+        name: "Beauty",
+        value: "beauty",
+      },
+      {
+        name: "Bags",
+        value: "bags",
+      },
+      {
+        name: "NFTs",
+        value: "nfts",
+      },
+    ],
+  };
+
+  const byPrice = {
+    byPriceType: [
+      {
+        name: "Under ₦50,000",
+        value: "under 50,000",
+      },
+      {
+        name: "₦50,000 - ₦100,000",
+        value: "50,000 - 100,000",
+      },
+      {
+        name: "₦100,000 - ₦250,000",
+        value: "100,000 - 250,000",
+      },
+      {
+        name: "₦250,000 - ₦500,000",
+        value: "250,000 - 500,000",
+      },
+      {
+        name: "₦500,000 - ₦1,000,000",
+        value: "500,000 - 1,000,000",
+      },
+      {
+        name: "₦1,000,000 +",
+        value: "1,000,000 +",
+      },
+    ],
+  };
+
+  const byGenders = {
+    byGendersType: [
+      {
+        name: "Men",
+        value: "men",
+      },
+
+      {
+        name: "Women",
+        value: "women",
+      },
+      {
+        name: "Kids",
+        value: "kids",
+      },
+      {
+        name: "Unisex",
+        value: "unisex",
+      },
+    ],
+  };
   // const homebuttonmenu = () => {
   //   setHomebtn(false);
   //   setBottomnav(true);
@@ -130,17 +323,18 @@ function Categoryproducts() {
 
       <section className="categoryproductsnav-filteram">
         <svg
-            viewBox="0 0 15 15"
-            className="categoryproductsnav-iconn"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.5 3C4.67157 3 4 3.67157 4 4.5C4 5.32843 4.67157 6 5.5 6C6.32843 6 7 5.32843 7 4.5C7 3.67157 6.32843 3 5.5 3ZM3 5C3.01671 5 3.03323 4.99918 3.04952 4.99758C3.28022 6.1399 4.28967 7 5.5 7C6.71033 7 7.71978 6.1399 7.95048 4.99758C7.96677 4.99918 7.98329 5 8 5H13.5C13.7761 5 14 4.77614 14 4.5C14 4.22386 13.7761 4 13.5 4H8C7.98329 4 7.96677 4.00082 7.95048 4.00242C7.71978 2.86009 6.71033 2 5.5 2C4.28967 2 3.28022 2.86009 3.04952 4.00242C3.03323 4.00082 3.01671 4 3 4H1.5C1.22386 4 1 4.22386 1 4.5C1 4.77614 1.22386 5 1.5 5H3ZM11.9505 10.9976C11.7198 12.1399 10.7103 13 9.5 13C8.28967 13 7.28022 12.1399 7.04952 10.9976C7.03323 10.9992 7.01671 11 7 11H1.5C1.22386 11 1 10.7761 1 10.5C1 10.2239 1.22386 10 1.5 10H7C7.01671 10 7.03323 10.0008 7.04952 10.0024C7.28022 8.8601 8.28967 8 9.5 8C10.7103 8 11.7198 8.8601 11.9505 10.0024C11.9668 10.0008 11.9833 10 12 10H13.5C13.7761 10 14 10.2239 14 10.5C14 10.7761 13.7761 11 13.5 11H12C11.9833 11 11.9668 10.9992 11.9505 10.9976ZM8 10.5C8 9.67157 8.67157 9 9.5 9C10.3284 9 11 9.67157 11 10.5C11 11.3284 10.3284 12 9.5 12C8.67157 12 8 11.3284 8 10.5Z"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            ></path>
-          </svg>{" "}
-          <div className="navwhatoview">{viewbtn}</div>
+          viewBox="0 0 15 15"
+          className="categoryproductsnav-iconn"
+          xmlns="http://www.w3.org/2000/svg"
+          onClick={() => setFilterActive(true)}
+        >
+          <path
+            d="M5.5 3C4.67157 3 4 3.67157 4 4.5C4 5.32843 4.67157 6 5.5 6C6.32843 6 7 5.32843 7 4.5C7 3.67157 6.32843 3 5.5 3ZM3 5C3.01671 5 3.03323 4.99918 3.04952 4.99758C3.28022 6.1399 4.28967 7 5.5 7C6.71033 7 7.71978 6.1399 7.95048 4.99758C7.96677 4.99918 7.98329 5 8 5H13.5C13.7761 5 14 4.77614 14 4.5C14 4.22386 13.7761 4 13.5 4H8C7.98329 4 7.96677 4.00082 7.95048 4.00242C7.71978 2.86009 6.71033 2 5.5 2C4.28967 2 3.28022 2.86009 3.04952 4.00242C3.03323 4.00082 3.01671 4 3 4H1.5C1.22386 4 1 4.22386 1 4.5C1 4.77614 1.22386 5 1.5 5H3ZM11.9505 10.9976C11.7198 12.1399 10.7103 13 9.5 13C8.28967 13 7.28022 12.1399 7.04952 10.9976C7.03323 10.9992 7.01671 11 7 11H1.5C1.22386 11 1 10.7761 1 10.5C1 10.2239 1.22386 10 1.5 10H7C7.01671 10 7.03323 10.0008 7.04952 10.0024C7.28022 8.8601 8.28967 8 9.5 8C10.7103 8 11.7198 8.8601 11.9505 10.0024C11.9668 10.0008 11.9833 10 12 10H13.5C13.7761 10 14 10.2239 14 10.5C14 10.7761 13.7761 11 13.5 11H12C11.9833 11 11.9668 10.9992 11.9505 10.9976ZM8 10.5C8 9.67157 8.67157 9 9.5 9C10.3284 9 11 9.67157 11 10.5C11 11.3284 10.3284 12 9.5 12C8.67157 12 8 11.3284 8 10.5Z"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+        <div className="navwhatoview">{viewbtn}</div>
       </section>
 
       {searchmodal && (
@@ -204,6 +398,292 @@ function Categoryproducts() {
         </div>
       )}
 
+      {filteractive && (
+        <div className="filternavbar">
+          <div className="filternavbar-top">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              onClick={closeModal}
+            >
+              <path
+                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <h2>Filter</h2>
+          </div>
+
+          <div className="filternavbar-body">
+            {sortaby === "not-active" ? (
+              <div className="bottomsheetsort" onClick={() => sorttBy()}>
+                <div className="category-worda">
+                  <p className="btssort">Sort By</p>
+                  <p className="category-worda-value">{sortbyValue}</p>
+                </div>
+
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="bottomsheetsort"
+                onClick={() => setSortaby("not-active")}
+              >
+                <div className="category-worda">
+                  <p className="btssort">Sort By</p>
+                  <p className="category-worda-value">{sortbyValue}</p>
+                </div>
+
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            )}
+            {sortaby === "active" && (
+              <div>
+                {sortBy.sortType.map((worklist, key) => {
+                  return (
+                    <div
+                      className="categoryproducts_products"
+                      key={key}
+                      onClick={() => {
+                        setSortbyValue(worklist.name);
+                        setSortaby("not-active");
+                      }}
+                    >
+                      {worklist.name}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {productacat === "not-active" ? (
+              <div className="bottomsheetsort" onClick={() => producttCat()}>
+                <div className="category-worda">
+                  <p className="btssort">Product Category</p>
+                  <p className="category-worda-value">{productcatValue}</p>
+                </div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="bottomsheetsort"
+                onClick={() => setProductacat("not-active")}
+              >
+                <div className="category-worda">
+                  <p className="btssort">Product Category</p>
+                  <p className="category-worda-value">{productcatValue}</p>
+                </div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            )}
+            {productacat === "active" && (
+              <div>
+                {productCat.productCatType.map((worklist, key) => {
+                  return (
+                    <div
+                      className="categoryproducts_products"
+                      key={key}
+                      onClick={() => {
+                        setProductcatValue(worklist.name);
+                        setProductacat("not-active");
+                      }}
+                    >
+                      {worklist.name}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {sortaprice === "not-active" ? (
+              <div className="bottomsheetsort" onClick={() => sorttPrice()}>
+                <div className="category-worda">
+                  <p className="btssort">Price</p>
+                  <p className="category-worda-value">{sortpriceValue}</p>
+                </div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="bottomsheetsort"
+                onClick={() => setSortaprice("not-active")}
+              >
+                <div className="category-worda">
+                  <p className="btssort">Product Category</p>
+                  <p className="category-worda-value">{sortpriceValue}</p>
+                </div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            )}
+            {sortaprice === "active" && (
+              <div>
+                {byPrice.byPriceType.map((worklist, key) => {
+                  return (
+                    <div
+                      className="categoryproducts_products"
+                      key={key}
+                      onClick={() => {
+                        setSortpriceValue(worklist.name);
+                        setSortaprice("not-active");
+                      }}
+                    >
+                      {worklist.name}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {sortagender === "not-active" ? (
+              <div className="bottomsheetsort" onClick={() => sorttGender()}>
+                <div className="category-worda">
+                  <p className="btssort">Genders</p>
+                  <p className="category-worda-value">{sortgenderValue}</p>
+                </div>
+
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="bottomsheetsort"
+                onClick={() => setSortagender("not-active")}
+              >
+                <div className="category-worda">
+                  <p className="btssort">Genders</p>
+                  <p className="category-worda-value">{sortgenderValue}</p>
+                </div>
+
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            )}
+            {sortagender === "active" && (
+              <div>
+                {byGenders.byGendersType.map((worklist, key) => {
+                  return (
+                    <div
+                      className="categoryproducts_products"
+                      key={key}
+                      onClick={() => {
+                        setSortgenderValue(worklist.name);
+                        setSortagender("not-active");
+                      }}
+                    >
+                      {worklist.name}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* {homebtn && (
         <div className="homemenu" onClick={homebuttonmenu}>
           <svg
@@ -243,7 +723,7 @@ function Categoryproducts() {
             </div>
             {/* <div className="bottomnav_item">
               {/* <p>Search</p> */}
-              {/* <div
+            {/* <div
                 className="bottonav_icon-cnt"
                 onClick={() => {
                   homebtnIconClick();
