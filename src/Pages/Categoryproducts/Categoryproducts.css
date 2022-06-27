@@ -137,20 +137,18 @@
   .filternavbar {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 8px;
+    position: absolute;
+    top: 8px;
     right: 8px;
     left: 8px;
     background-color: #fff;
     border-radius: 10px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
     padding-bottom: 25px;
     padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
-    -webkit-animation-name: bottomnavslideIn;
+    -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
-    animation-name: bottomnavslideIn;
+    animation-name: slideIn;
     animation-duration: 0.4s;
   }
 
