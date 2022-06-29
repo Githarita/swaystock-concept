@@ -141,7 +141,7 @@
   .filternavbar {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 8px;
     right: 8px;
     left: 8px;
