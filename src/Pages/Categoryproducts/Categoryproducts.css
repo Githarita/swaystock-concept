@@ -265,7 +265,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    border-radius: 18px;
+    border-radius: 10px;
   }
 
   .catproductlist .catproductlist-item-name {
