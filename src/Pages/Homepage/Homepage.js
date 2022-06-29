@@ -367,7 +367,7 @@ function Homepage() {
             </div>
             <div className="imagecnt">
               <img src={sneaker1} alt="" />
-            </div>{" "}
+            </div>
             <div className="price-cnt">
               <p className="lowask">Lowest Ask</p>
               <p className="sneaker-price">NGN100k</p>
@@ -382,7 +382,7 @@ function Homepage() {
             </div>
             <div className="imagecnt">
               <img src={sneaker2} alt="" />
-            </div>{" "}
+            </div>
             <div className="price-cnt">
               <p className="lowask">Lowest Ask</p>
               <p className="sneaker-price">NGN230k</p>
