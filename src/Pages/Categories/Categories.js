@@ -255,7 +255,7 @@ function Categories() {
             </div>
             <div className="bottomnav_item">
               {/* <p>Nofication</p> */}
-              <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+              <div className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
                   viewBox="0 0 15 15"
@@ -272,7 +272,7 @@ function Categories() {
 
             <div className="bottomnav_item">
               {/* <p>Profile</p> */}
-              <div className="bottonav_icon-cnt" onClick={homebtnIconClick}>
+              <div className="bottonav_icon-cnt">
                 <img
                   className="bottomnav__image"
                   src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -281,7 +281,7 @@ function Categories() {
               </div>
             </div>
             {/* <div className="bottomnav_close">
-                <div className="closebottomnav_item" onClick={homebtnIconClick}>
+                <div className="closebottomnav_item" >
                   <svg
                     viewBox="0 0 15 15"
                     className="closebottomnav_icon"
