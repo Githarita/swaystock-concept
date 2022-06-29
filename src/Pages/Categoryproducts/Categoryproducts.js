@@ -3,6 +3,11 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import "./Categoryproducts.css";
 import sneakercatpageimg from "../../assets/sneakercatimg.png";
+import sneaker1 from "../../assets/sneaker1.png";
+import sneaker2 from "../../assets/sneaker2.png";
+import sneaker3 from "../../assets/sneaker3.png";
+import sneaker4 from "../../assets/sneaker4.png";
+import sneaker5 from "../../assets/sneaker5.png";
 import { Link, useNavigate } from "react-router-dom";
 
 function Categoryproducts() {
@@ -95,8 +100,6 @@ function Categoryproducts() {
       </svg>
     );
   }
-
-  
 
   const sortBy = {
     sortType: [
@@ -239,7 +242,6 @@ function Categoryproducts() {
     ],
   };
 
-
   const homebtnIconClick = () => {
     setBottomnav(false);
   };
@@ -317,14 +319,77 @@ function Categoryproducts() {
         </div>
       </header>
 
-      <section className="whatyowant">
-        
+      {/* <section className="whatyowant">
         <h1>Which {categoryId} is right for you?</h1>
+      </section> */}
+
+      <section className="catproductlist">
+        <div className="catproductlist-item">
+          <div className="catproductlist-item-name">
+            <p className="catproductlisttag">New</p>
+            <h2 className="catproductlistname">Adidas Yeezy Foam RNR Onyx</h2>
+          </div>
+          <img src={sneaker1} alt="" className="catproductlistimage" />{" "}
+          <div className="catproductlistprice-cnt">
+            <p className="catproductlistlwask">Lowest Ask</p>
+            <p className="catproductlisprice">NGN100k</p>
+          </div>
+        </div>
+        <div className="catproductlist-item">
+          <div className="catproductlist-item-name">
+            <p className="catproductlisttag">Only at SwayStock</p>
+            <h2 className="catproductlistname">
+              Jordan 2 Retro A Ma Maniere Airness
+            </h2>
+          </div>
+          <img src={sneaker2} alt="" className="catproductlistimage" />{" "}
+          <div className="catproductlistprice-cnt">
+            <p className="catproductlistlwask">Lowest Ask</p>
+            <p className="catproductlisprice">NGN230k</p>
+          </div>
+        </div>
+        <div className="catproductlist-item">
+          <div className="catproductlist-item-name">
+            <p className="catproductlisttag">New</p>
+            <h2 className="catproductlistname">
+              Jordan 4 Retro Millitary Black
+            </h2>
+          </div>
+          <img src={sneaker3} alt="" className="catproductlistimage" />{" "}
+          <div className="catproductlistprice-cnt">
+            <p className="catproductlistlwask">Lowest Ask</p>
+            <p className="catproductlisprice">NGN150k</p>
+          </div>
+        </div>
+        <div className="catproductlist-item">
+          <div className="catproductlist-item-name">
+            <p className="catproductlisttag">New</p>
+            <h2 className="catproductlistname">
+              Nike Air Max 1 Kasina Wono-Ang Orange
+            </h2>
+          </div>
+          <img src={sneaker4} alt="" className="catproductlistimage" />{" "}
+          <div className="catproductlistprice-cnt">
+            <p className="catproductlistlwask">Lowest Ask</p>
+            <p className="catproductlisprice">NGN80k</p>
+          </div>
+        </div>
+        <div className="catproductlist-item">
+          <div className="catproductlist-item-name">
+            <p className="catproductlisttag">Only at SwayStock</p>
+            <h2 className="catproductlistname">
+              Nike Dunk Low Tow-Toned Grey(GS)
+            </h2>
+          </div>
+          <img src={sneaker5} alt="" className="catproductlistimage" />{" "}
+          <div className="catproductlistprice-cnt">
+            <p className="catproductlistlwask">Lowest Ask</p>
+            <p className="catproductlisprice">NGN50k</p>
+          </div>
+        </div>
       </section>
 
-      <section className="categoryproductsnav-filteram">
-        
-      </section>
+      <section className="categoryproductsnav-filteram"></section>
 
       {searchmodal && (
         <div className="searchproductmodal">
@@ -673,8 +738,6 @@ function Categoryproducts() {
           </div>
         </div>
       )}
-
-      
 
       {bottomnav && (
         <>

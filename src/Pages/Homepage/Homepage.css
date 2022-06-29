@@ -239,6 +239,7 @@
 .imagecnt {
   height: 274px;
   width: 256px;
+  object-fit: contain;
   padding: 41px 0px 0px;
   line-height: 25px;
   text-align: left;
