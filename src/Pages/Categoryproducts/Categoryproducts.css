@@ -233,7 +233,7 @@
     grid-template-columns: 1fr 1fr;
     /* gap: 1rem; */
     margin: 0.5rem 0;
-    padding: 1.5rem 15px;
+    padding: 1.5rem 8px;
     background-color: #fff;
   }
 
@@ -247,6 +247,7 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     /* background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
