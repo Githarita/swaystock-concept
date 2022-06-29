@@ -319,13 +319,16 @@
 
   .catproductlist-grid .catproductlistname {
     color: #1d1d1f;
-    display: -webkit-box;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: -0.374px;
     line-height: 18.0011px;
     text-align: left;
     margin-top: 0.2rem;
+    letter-spacing: 0.004rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .catproductlist .catproductlistprice-cnt {
