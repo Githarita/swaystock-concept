@@ -257,7 +257,6 @@
 
   .catproductlist-grid .catproductlist-item {
     border: 1px solid #f5f5f7;
-    height:440px;
     font-size: 17px;
     line-height: 25px;
     letter-spacing: -0.374px;
@@ -320,10 +319,10 @@
   .catproductlist-grid .catproductlistname {
     color: #1d1d1f;
     display: -webkit-box;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: -0.374px;
-    line-height: 21.0011px;
+    line-height: 18.0011px;
     text-align: left;
     margin-top: 0.2rem;
   }
