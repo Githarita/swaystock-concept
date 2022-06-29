@@ -152,8 +152,16 @@
     animation-duration: 0.4s;
   }
 
+  .filtersway {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px; 
+    border-bottom: 1px solid #f5f5f7;
+  }
+
   .filternavbar-top {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     display: flex;
     align-items: center;
     gap: 2rem;
