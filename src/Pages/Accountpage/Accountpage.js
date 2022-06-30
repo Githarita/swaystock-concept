@@ -1,198 +1,25 @@
-import React, { useState } from "react";
-import Header from "../../components/Header/Header";
-import sneakerscat from "../../assets/sneakerscat.png";
-import accessoriescat from "../../assets/accessoriescat.png";
-import apparelcat from "../../assets/apparelcat.png";
-import bagcat from "../../assets/bagcat.png";
-import beautycat from "../../assets/beautycat.png";
-import collectiblescat from "../../assets/collectiblescat.png";
-import electronicscat from "../../assets/electronicscat.png";
-import "./Categories.css";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./Accountpage.css";
 
-function Categories() {
-  const [searchmodal, setSearchmodal] = useState(false);
+function Accountpage() {
   // const [homebtn, setHomebtn] = useState(true);
-  const [bottomnav, setBottomnav] = useState(true);
+  //   const [bottomnav, setBottomnav] = useState(true);
 
   // const homebuttonmenu = () => {
   //   setHomebtn(false);
   //   setBottomnav(true);
   // };
 
-  const homebtnIconClick = () => {
-    // setHomebtn(true);
-    setBottomnav(false);
-  };
-
-  let sneakers = "sneakers";
-  let electronics = "electronics";
-  let accessories = "accessories";
-  let apparel = "apparel";
-  let bags = "bag";
-  let beauty = "beauty";
-  let collectibles = "collectibles";
-
+  //   const homebtnIconClick = () => {
+  //     // setHomebtn(true);
+  //     setBottomnav(false);
+  //   };
   return (
     <>
-      <Header />
-      <section className="categories_top-header">
-        <div className="categories-header_item">
-          <div className="categories-header_item-text">
-            <h1 className="theheadertext">Electronics</h1>
-            <p className="theheaderp">Mega power. Mini sized. </p>
-            <p className="theheaderp">Your new superpower. Full of might</p>
-            <Link to={`/categories/${electronics}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={electronicscat} alt="" />
-        </div>
-      </section>
-      <section className="categories_page">
-        <div className="categories_item catb">
-          <div className="categories_item-text">
-            <h1>Sneakers</h1>
-            <p className="theheaderp">Oh. So. Comfy.</p>
-            <Link to={`/categories/${sneakers}`} className="catview">
-              View All{" "}
-            </Link>
-          </div>
-          <img src={sneakerscat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catc">
-          <div className="categories_item-text">
-            <h1>Accessories</h1>
-            <p className="theheaderp">
-              Love the power. Love the Wears. Love the price
-            </p>
-            <Link to={`/categories/${accessories}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={accessoriescat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catd">
-          <div className="categories_item-text">
-            <h1>Apparel</h1>
-            <p className="theheaderp">Light. Bright. Full of might.</p>
-            <Link to={`/categories/${apparel}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={apparelcat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item cate">
-          <div className="categories_item-text">
-            <h1>Bags</h1>
-            <p className="theheaderp">A sight to be bold with.</p>
-            <Link to={`/categories/${bags}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={bagcat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catf">
-          <div className="categories_item-text">
-            <h1>Beauty</h1>
-            <p className="theheaderp">
-              Your mega power. Mini your look to the beauty.
-            </p>
-            <Link to={`/categories/${beauty}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={beautycat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catg">
-          <div className="categories_item-text">
-            <h1>Collectibles</h1>
-            <p className="theheaderp">Lose your knack for losing things.</p>
-            <Link to={`/categories/${collectibles}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={collectiblescat} alt="" className="categories_item-image" />
-        </div>
-      </section>
-      {searchmodal && (
-        <div className="searchproductmodal">
-          <div className="searchinput">
-            <svg
-              viewBox="0 0 15 15"
-              xmlns="http://www.w3.org/2000/svg"
-              className="searchinput__icon"
-            >
-              <path
-                d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            <input
-              type="text"
-              placeholder="Search for brand, color, etc."
-              className="searchdinput"
-              autoFocus
-            />
-            <svg
-              viewBox="0 0 15 15"
-              xmlns="http://www.w3.org/2000/svg"
-              className="searchinput__icon"
-              onClick={() => {
-                setSearchmodal(false);
-                // setHomebtn(true);
-                setBottomnav(true);
-              }}
-            >
-              <path
-                d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </div>
+      <div>Accountpage</div>
 
-          <div className="searchproductmodal__list">
-            <p className="quicklinks">QUICK LINKS</p>
-            <div className="searchproductmodal__list__it">
-              <div className="searchproductmodal__items">
-                <p>Visiting SwayStock FAQ</p>
-              </div>
-              <div className="searchproductmodal__items">
-                <p>Sneakers</p>
-              </div>
-              <div className="searchproductmodal__items">
-                <p>Accessories</p>
-              </div>
-              <div className="searchproductmodal__items">
-                <p>Iphone 13</p>
-              </div>
-              <div className="searchproductmodal__items">
-                <p>NFTs</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* {homebtn && (
-        <div className="homemenu" onClick={homebuttonmenu}>
-          <svg
-            viewBox="0 0 15 15"
-            className="homenuswitchicon"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.5 2C3.11929 2 2 3.11929 2 4.5C2 5.88072 3.11929 7 4.5 7C5.88072 7 7 5.88072 7 4.5C7 3.11929 5.88072 2 4.5 2ZM3 4.5C3 3.67157 3.67157 3 4.5 3C5.32843 3 6 3.67157 6 4.5C6 5.32843 5.32843 6 4.5 6C3.67157 6 3 5.32843 3 4.5ZM10.5 2C9.11929 2 8 3.11929 8 4.5C8 5.88072 9.11929 7 10.5 7C11.8807 7 13 5.88072 13 4.5C13 3.11929 11.8807 2 10.5 2ZM9 4.5C9 3.67157 9.67157 3 10.5 3C11.3284 3 12 3.67157 12 4.5C12 5.32843 11.3284 6 10.5 6C9.67157 6 9 5.32843 9 4.5ZM2 10.5C2 9.11929 3.11929 8 4.5 8C5.88072 8 7 9.11929 7 10.5C7 11.8807 5.88072 13 4.5 13C3.11929 13 2 11.8807 2 10.5ZM4.5 9C3.67157 9 3 9.67157 3 10.5C3 11.3284 3.67157 12 4.5 12C5.32843 12 6 11.3284 6 10.5C6 9.67157 5.32843 9 4.5 9ZM10.5 8C9.11929 8 8 9.11929 8 10.5C8 11.8807 9.11929 13 10.5 13C11.8807 13 13 11.8807 13 10.5C13 9.11929 11.8807 8 10.5 8ZM9 10.5C9 9.67157 9.67157 9 10.5 9C11.3284 9 12 9.67157 12 10.5C12 11.3284 11.3284 12 10.5 12C9.67157 12 9 11.3284 9 10.5Z"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </div>
-      )} */}
-
-      {bottomnav && (
+      {/* {bottomnav && ( */}
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
 
@@ -213,13 +40,12 @@ function Categories() {
                 </svg>
               </Link>
             </div>
-            <div className="bottomnav_item">
-              {/* <p>Search</p> */}
+            {/* <div className="bottomnav_item">
+              {/* <p>Search</p> 
               <div
                 className="bottonav_icon-cnt"
                 onClick={() => {
                   homebtnIconClick();
-                  setSearchmodal(true);
                   // setHomebtn(false);
                   setBottomnav(false);
                 }}
@@ -236,7 +62,7 @@ function Categories() {
                   ></path>
                 </svg>
               </div>
-            </div>
+            </div> */}
             <div className="bottomnav_item">
               {/* <p>Categories</p> */}
               <Link to="/categories" className="bottonav_icon-cnt">
@@ -281,7 +107,7 @@ function Categories() {
               </Link>
             </div>
             {/* <div className="bottomnav_close">
-                <div className="closebottomnav_item" >
+                <div className="closebottomnav_item" onClick={homebtnIconClick}>
                   <svg
                     viewBox="0 0 15 15"
                     className="closebottomnav_icon"
@@ -297,9 +123,9 @@ function Categories() {
               </div> */}
           </div>
         </>
-      )}
+      {/* )} */}
     </>
   );
 }
 
-export default Categories;
+export default Accountpage;
