@@ -2,10 +2,6 @@
   background-color: #fff;
   margin-bottom: 5rem;
   display: grid;
-  -webkit-animation-name: homenavslideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: homenavslideIn;
-  animation-duration: 0.4s;
 }
 
 .accountpage-cnt-top {
