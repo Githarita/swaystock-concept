@@ -571,7 +571,7 @@
     font-family: inherit;
     border: none;
     background-color: transparent;
-    font-size: 14px;
+    font-size: 13px;
     outline: none;
     font-weight: 400;
     color: #999;
@@ -606,7 +606,7 @@
   }
 
   .searchproductmodal__items p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .searchproductmodal__items:hover {
