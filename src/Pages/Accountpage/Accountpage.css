@@ -6,7 +6,7 @@
 
 .accountpage-cnt-top {
   position: fixed;
-  background-color: #fff;
+  background-color: #f5f5f7;
   left: 0;
   right: 0;
   display: flex;
@@ -14,7 +14,7 @@
   justify-content: space-between;
   gap: 4rem;
   padding: 10px 18px 25px 18px;
-  border-bottom: 2px solid #f5f5f7;
+  /* border-bottom: 2px solid #f5f5f7; */
 }
 
 .accountpage-top-info h2 {
@@ -43,13 +43,13 @@
 }
 
 .accountpage-cnt-botm-text {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
 }
 
 .accountpage-cnt-typ-p {
-    font-size: 11px;
-    color: #999;
-    max-width: 250px;
-    display: none;
+  font-size: 11px;
+  color: #999;
+  max-width: 250px;
+  display: none;
 }
