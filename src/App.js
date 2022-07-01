@@ -4,6 +4,7 @@ import Accountpage from "./Pages/Accountpage/Accountpage";
 import Categories from "./Pages/Categories/Categories";
 import Categoryproducts from "./Pages/Categoryproducts/Categoryproducts";
 import Homepage from "./Pages/Homepage/Homepage";
+import Settingspage from "./Pages/Settingspage/Settingspage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:categoryId" element={<Categoryproducts />} />
         <Route path="/account" element={<Accountpage />} />
+        <Route path="/settings" element={<Settingspage />} />
         
       </Routes>
     </BrowserRouter>
