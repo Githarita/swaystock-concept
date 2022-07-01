@@ -24,6 +24,7 @@
 
 .settings-bottom {
   margin-top: 3.3rem;
+  padding: 0 18px;
   background-color: #fff;
 }
 
@@ -31,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 18px;
+  padding: 22px 8px;
   border-bottom: 1px solid #f5f5f7;
   cursor: pointer;
 }
