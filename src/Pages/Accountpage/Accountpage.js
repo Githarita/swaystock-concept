@@ -39,6 +39,9 @@ function Accountpage() {
             ></path>
           </svg>
         </div>
+        <div className="accountpage-cnt-bottom">
+          account bottom
+        </div>
       </div>
 
       {/* {bottomnav && ( */}
