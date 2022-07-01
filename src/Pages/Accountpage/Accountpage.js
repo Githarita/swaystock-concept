@@ -40,8 +40,14 @@ function Accountpage() {
           </svg>
         </div>
         <div className="accountpage-cnt-bottom">
-          <div className="accountpage-cnt-bottom-item qsq">
-            <p className="accountpage-cnt-botm-text">Profile</p>
+          <div className="accountpage-cnt-bottom-item">
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-botm-text">Profile</p>
+              <p className="accountpage-cnt-typ-p">
+                Edit your Password, Name, Shoe Size, Email, Username
+              </p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -58,7 +64,13 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Storage</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-botm-text">Storage</p>
+              <p className="accountpage-cnt-typ-p">
+                Resell your products, save space at home
+              </p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -75,7 +87,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Buying</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Buying</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -92,7 +108,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Selling</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Selling</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -109,7 +129,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Bids</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Bids</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -126,7 +150,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Ask</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Ask</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -143,7 +171,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Portfolio</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Portfolio</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -160,7 +192,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Following</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Following</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -177,7 +213,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">How it Works</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>{" "}
+              <p className="accountpage-cnt-botm-text">How it Works</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -194,7 +234,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Suggest a Product</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Suggest a Product</p>
+            </div>
+
             <svg
               width="15"
               height="15"
@@ -211,7 +255,11 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <p className="accountpage-cnt-botm-text">Support</p>
+            <div className="accountpage-cnt-typ">
+              <p className="accountpage-cnt-typ-p"></p>
+              <p className="accountpage-cnt-botm-text">Support</p>
+            </div>
+
             <svg
               width="15"
               height="15"
