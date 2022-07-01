@@ -87,9 +87,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Buying</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Buying</p>
+              <p className="accountpage-cnt-typ-p">Active Buying, In-Progress, and Completed orders</p>
+              
             </div>
 
             <svg
@@ -108,9 +108,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Selling</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Selling</p>
+              <p className="accountpage-cnt-typ-p">Active Selling, Sales, Seller Profile</p>
+              
             </div>
 
             <svg
@@ -129,9 +129,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Bids</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Bids</p>
+              <p className="accountpage-cnt-typ-p">Active Biding, In-progress, and Connected Bids</p>
+              
             </div>
 
             <svg
@@ -150,9 +150,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Ask</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Ask</p>
+              <p className="accountpage-cnt-typ-p">Active Asks, In-progress, and Connected Ask</p>
+              
             </div>
 
             <svg
@@ -171,9 +171,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Portfolio</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Portfolio</p>
+              <p className="accountpage-cnt-typ-p">See the value of your items</p>
+              
             </div>
 
             <svg
@@ -192,9 +192,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>
-              <p className="accountpage-cnt-botm-text">Following</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">Following</p>
+              <p className="accountpage-cnt-typ-p">Products you are watching</p>
+              
             </div>
 
             <svg
@@ -213,9 +213,9 @@ function Accountpage() {
             </svg>
           </div>
           <div className="accountpage-cnt-bottom-item">
-            <div className="accountpage-cnt-typ">
-              <p className="accountpage-cnt-typ-p"></p>{" "}
-              <p className="accountpage-cnt-botm-text">How it Works</p>
+            <div className="accountpage-cnt-typ"><p className="accountpage-cnt-botm-text">How it Works</p>
+              <p className="accountpage-cnt-typ-p"></p>
+              
             </div>
 
             <svg

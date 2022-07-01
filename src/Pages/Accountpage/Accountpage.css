@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 12px;
-  /* border-bottom: 1px solid #f5f5f7; */
+  border-bottom: 1px solid #f5f5f7;
 }
 
 .accountpage-cnt-bottom-item:hover {
