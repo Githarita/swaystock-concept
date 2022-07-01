@@ -26,7 +26,7 @@ function Accountpage() {
             <p>@yemicodes</p>
           </div>
 
-          <Link to="/settings">
+          <Link to="/account/settings">
             <svg
               className="accntst"
               width="20"
