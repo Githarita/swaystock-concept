@@ -42,10 +42,11 @@
 }
 
 .accountpage-cnt-botm-text {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .accountpage-cnt-typ-p {
-    font-size: 12px;
+    font-size: 11px;
+    color: #999;
 }
