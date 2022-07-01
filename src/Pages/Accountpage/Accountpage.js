@@ -40,7 +40,7 @@ function Accountpage() {
           </svg>
         </div>
         <div className="accountpage-cnt-bottom">
-          <div className="accountpage-cnt-bottom-item">
+          <div className="accountpage-cnt-bottom-item qsq">
             <p className="accountpage-cnt-botm-text">Profile</p>
             <svg
               width="15"
