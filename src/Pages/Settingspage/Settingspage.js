@@ -20,7 +20,7 @@ function Settingspage() {
           ></path>
         </svg>
 
-        <p className="settings-top-text">Settingss</p>
+        <p className="settings-top-text">Settings</p>
       </header>
       <section className="settings-bottom">
         <div className="settings-bottom-item">
