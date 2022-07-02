@@ -66,7 +66,7 @@ function Homepage() {
               </div>
             </div>
           </Link>
-          {/* <div
+          <div
             className="searchhome"
             onClick={() => {
               setSearchmodal(true);
@@ -85,7 +85,7 @@ function Homepage() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </div> */}
+          </div>
         </section>
         <section className="categories">
           <Link to={`/categories/${phones}`} className="categories__item">
