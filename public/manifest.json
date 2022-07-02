@@ -18,48 +18,6 @@
       "type": "image/png"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "Account",
-      "short_name": "Account",
-      "url": "/account"
-    },
-    {
-      "name": "Sneakers",
-      "short_name": "Sneakers",
-      "url": "/categories/sneakers"
-    },
-    {
-      "name": "Electronics",
-      "short_name": "Electronics",
-      "url": "/categories/electronics"
-    },
-    {
-      "name": "Accessories",
-      "short_name": "Accessories",
-      "url": "/categories/accessories"
-    },
-    {
-      "name": "Apparel",
-      "short_name": "Apparel",
-      "url": "/categories/apparel"
-    },
-    {
-      "name": "Bag",
-      "short_name": "Bag",
-      "url": "/categories/bag"
-    },
-    {
-      "name": "Beauty",
-      "short_name": "Beauty",
-      "url": "/categories/beauty"
-    },
-    {
-      "name": "Collectibles",
-      "short_name": "Collectibles",
-      "url": "/categories/collectibles"
-    }
-  ],
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#ffffff",
