@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import sneakerimg from "../../assets/sneakers.png";
-import apparelimg from "../../assets/apparel.png";
-import electronicsimg from "../../assets/electronics.png";
-import collectiblesimg from "../../assets/collectibles.png";
-import bagsimg from "../../assets/bags.png";
-import accessoriesimg from "../../assets/accessories.png";
-import beautyimg from "../../assets/beauty.png";
+import sneakerimg from "../../assets/sneakerscat.png";
+import apparelimg from "../../assets/apparelcat.png";
+import electronicsimg from "../../assets/electronicscat.png";
+import collectiblesimg from "../../assets/collectiblescat.png";
+import bagsimg from "../../assets/bagcat.png";
+import accessoriesimg from "../../assets/accessoriescat.png";
+import beautyimg from "../../assets/beautycat.png";
 import phoneimg from "../../assets/phone.png";
 import sneakercatimg from "../../assets/sneakercat.png";
 import sneaker1 from "../../assets/sneaker1.png";
@@ -88,11 +88,6 @@ function Homepage() {
           </div>
         </section>
         <section className="categories">
-          <Link to={`/categories/${phones}`} className="categories__item">
-            <img src={phoneimg} alt="" />
-            <p>Phones</p>
-          </Link>
-
           <Link to={`/categories/${sneakers}`} className="categories__item">
             <img src={sneakerimg} alt="" />
             <p>Sneakers</p>
@@ -120,6 +115,10 @@ function Homepage() {
           <Link to={`/categories/${beauty}`} className="categories__item">
             <img src={beautyimg} alt="" />
             <p>Beauty</p>
+          </Link>{" "}
+          <Link to={`/categories/${phones}`} className="categories__item">
+            <img src={phoneimg} alt="" />
+            <p>Phones</p>
           </Link>
         </section>
 

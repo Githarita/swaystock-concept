@@ -503,6 +503,11 @@
     border-radius: 18px; */
   }
 
+  .categories__item img {
+    width: 80px;
+    object-fit: contain;
+  }
+
   .categories__item p {
     font-size: 12px;
     color: #1d1d1f;
