@@ -259,7 +259,7 @@ function Categoryproducts() {
       <div className="categoryproductsnav">
         <svg
           viewBox="0 0 15 15"
-          className="categoryproductsnav-icon"
+          className="categoryproductsnav-icon demicon"
           xmlns="http://www.w3.org/2000/svg"
           onClick={() => navigate(-1)}
         >
