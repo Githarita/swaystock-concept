@@ -1,13 +1,6 @@
 import React from "react";
+import { categoriesItem } from "../../Utils/datas";
 import Header from "../../components/Header/Header";
-import sneakerimg from "../../assets/sneakerscat.png";
-import apparelimg from "../../assets/apparelcat.png";
-import electronicsimg from "../../assets/electronicscat.png";
-import collectiblesimg from "../../assets/collectiblescat.png";
-import bagsimg from "../../assets/bagcat.png";
-import accessoriesimg from "../../assets/accessoriescat.png";
-import beautyimg from "../../assets/beautycat.png";
-import phoneimg from "../../assets/phone.png";
 import sneakercatimg from "../../assets/sneakercat.png";
 import sneaker1 from "../../assets/sneaker1.png";
 import sneaker2 from "../../assets/sneaker2.png";
@@ -21,27 +14,13 @@ import { Link } from "react-router-dom";
 
 function Homepage() {
   const [searchmodal, setSearchmodal] = useState(false);
-  // const [homebtn, setHomebtn] = useState(true);
   const [bottomnav, setBottomnav] = useState(true);
 
-  // const homebuttonmenu = () => {
-  //   setHomebtn(false);
-  //   setBottomnav(true);
-  // };
-
   const homebtnIconClick = () => {
-    // setHomebtn(true);
     setBottomnav(false);
   };
 
-  let phones = "phones";
-  let sneakers = "sneakers";
-  let electronics = "electronics";
-  let accessories = "accessories";
-  let apparel = "apparel";
-  let bags = "bag";
-  let beauty = "beauty";
-  let collectibles = "collectibles";
+ 
   return (
     <div>
       <Header />
@@ -71,7 +50,6 @@ function Homepage() {
             onClick={() => {
               setSearchmodal(true);
               setBottomnav(false);
-              // setHomebtn(false);
             }}
           >
             <svg
@@ -88,38 +66,18 @@ function Homepage() {
           </div>
         </section>
         <section className="categories">
-          <Link to={`/categories/${sneakers}`} className="categories__item">
-            <img src={sneakerimg} alt="" />
-            <p>Sneakers</p>
-          </Link>
-          <Link to={`/categories/${apparel}`} className="categories__item">
-            <img src={apparelimg} alt="" />
-            <p>Apparel</p>
-          </Link>
-          <Link to={`/categories/${electronics}`} className="categories__item">
-            <img src={electronicsimg} alt="" />
-            <p>Electronics</p>
-          </Link>
-          <Link to={`/categories/${collectibles}`} className="categories__item">
-            <img src={collectiblesimg} alt="" />
-            <p>Collectibles</p>
-          </Link>
-          <Link to={`/categories/${bags}`} className="categories__item">
-            <img src={bagsimg} alt="" />
-            <p>Bags</p>
-          </Link>
-          <Link to={`/categories/${accessories}`} className="categories__item">
-            <img src={accessoriesimg} alt="" />
-            <p>Accessories</p>
-          </Link>
-          <Link to={`/categories/${beauty}`} className="categories__item">
-            <img src={beautyimg} alt="" />
-            <p>Beauty</p>
-          </Link>{" "}
-          <Link to={`/categories/${phones}`} className="categories__item">
-            <img src={phoneimg} alt="" />
-            <p>Phones</p>
-          </Link>
+          {categoriesItem.categoriestProc.map((linklist, key) => {
+            return (
+              <Link
+                key={key}
+                to={`/categories/${linklist.link}`}
+                className="categories__item"
+              >
+                <img src={linklist.image} alt="" />
+                <p>{linklist.name}</p>
+              </Link>
+            );
+          })}
         </section>
 
         <section className="marketlist__title">

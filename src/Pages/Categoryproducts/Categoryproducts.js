@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import "./Categoryproducts.css";
 import sneakercatpageimg from "../../assets/sneakercatimg.png";
-import sneaker1 from "../../assets/sneaker1.png";
-import sneaker2 from "../../assets/sneaker2.png";
-import sneaker3 from "../../assets/sneaker3.png";
-import sneaker4 from "../../assets/sneaker4.png";
-import sneaker5 from "../../assets/sneaker5.png";
 import { Link, useNavigate } from "react-router-dom";
+import {
+  sortBy,
+  productCat,
+  byPrice,
+  byGenders,
+  categoryProductList,
+} from "../../Utils/datas";
 
 function Categoryproducts() {
   let { categoryId } = useParams();
@@ -29,6 +31,39 @@ function Categoryproducts() {
   const [productcatValue, setProductcatValue] = useState("");
   const [filteractive, setFilterActive] = useState(false);
   const [displayGrid, setDisplayGrid] = useState("catproductlist");
+
+  const addbtnShow = (
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  );
+  const minusbtnShow = (
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  );
 
   const sorttBy = () => {
     setSortaby("active");
@@ -108,147 +143,6 @@ function Categoryproducts() {
     );
   }
 
-  const sortBy = {
-    sortType: [
-      {
-        name: "Featured",
-        value: "featured",
-      },
-      {
-        name: "Most Popular",
-        value: "most popular",
-      },
-      {
-        name: "New Lowest Asks",
-        value: "new lowest asks",
-      },
-      {
-        name: "New Highest Bids",
-        value: "new highest bids",
-      },
-      {
-        name: "Average Sale Price",
-        value: "average sale price",
-      },
-      {
-        name: "Total Sold",
-        value: "total sold",
-      },
-      {
-        name: "Volatility",
-        value: "volatility",
-      },
-      {
-        name: "Price Premium",
-        value: "price premium",
-      },
-      {
-        name: "Last Sale",
-        value: "last sale",
-      },
-      {
-        name: "Lowest Ask",
-        value: "lowest ask",
-      },
-      {
-        name: "Highest Bid",
-        value: "highest bid",
-      },
-      {
-        name: "Release Date",
-        value: "release date",
-      },
-    ],
-  };
-
-  const productCat = {
-    productCatType: [
-      {
-        name: "Sneakers",
-        value: "sneakers",
-      },
-      {
-        name: "Collectibles",
-        value: "collectibles",
-      },
-      {
-        name: "Apparel",
-        value: "apparel",
-      },
-      {
-        name: "Electronics",
-        value: "electronics",
-      },
-      {
-        name: "Accessories",
-        value: "accessories",
-      },
-      {
-        name: "Beauty",
-        value: "beauty",
-      },
-      {
-        name: "Bags",
-        value: "bags",
-      },
-      {
-        name: "NFTs",
-        value: "nfts",
-      },
-    ],
-  };
-
-  const byPrice = {
-    byPriceType: [
-      {
-        name: "Under ₦50,000",
-        value: "under 50,000",
-      },
-      {
-        name: "₦50,000 - ₦100,000",
-        value: "50,000 - 100,000",
-      },
-      {
-        name: "₦100,000 - ₦250,000",
-        value: "100,000 - 250,000",
-      },
-      {
-        name: "₦250,000 - ₦500,000",
-        value: "250,000 - 500,000",
-      },
-      {
-        name: "₦500,000 - ₦1,000,000",
-        value: "500,000 - 1,000,000",
-      },
-      {
-        name: "₦1,000,000 +",
-        value: "1,000,000 +",
-      },
-    ],
-  };
-
-  const byGenders = {
-    byGendersType: [
-      {
-        name: "Men",
-        value: "men",
-      },
-
-      {
-        name: "Women",
-        value: "women",
-      },
-      {
-        name: "Kids",
-        value: "kids",
-      },
-      {
-        name: "Unisex",
-        value: "unisex",
-      },
-    ],
-  };
-
   const homebtnIconClick = () => {
     setBottomnav(false);
   };
@@ -271,22 +165,6 @@ function Categoryproducts() {
         </svg>
 
         <div className="navquantityam">
-          {/* <svg
-            onClick={() => {
-              setSearchmodal(true);
-              setBottomnav(false);
-              setFilterActive(false);
-            }}
-            viewBox="0 0 15 15"
-            className="categoryproductsnav-icon"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            ></path>
-          </svg> */}
           <svg
             viewBox="0 0 15 15"
             className="categoryproductsnav-icon"
@@ -303,8 +181,6 @@ function Categoryproducts() {
               clipRule="evenodd"
             ></path>
           </svg>
-          {/* {" "}
-          <div className="navwhatoview">{viewbtn}</div> */}
         </div>
       </div>
       <header className="categoryproducts_header">
@@ -326,74 +202,26 @@ function Categoryproducts() {
         </div>
       </header>
 
-      {/* <section className="whatyowant">
-        <h1>Which {categoryId} is right for you?</h1>
-      </section> */}
-
       <section className={`${displayGrid}`}>
-        <div className="catproductlist-item">
-          <div className="catproductlist-item-name">
-            <p className="catproductlisttag">New</p>
-            <h2 className="catproductlistname">Adidas Yeezy Foam RNR Onyx</h2>
-          </div>
-          <img src={sneaker1} alt="" className="catproductlistimage" />{" "}
-          <div className="catproductlistprice-cnt">
-            <p className="catproductlistlwask">Lowest Ask</p>
-            <p className="catproductlisprice">NGN100k</p>
-          </div>
-        </div>
-        <div className="catproductlist-item">
-          <div className="catproductlist-item-name">
-            <p className="catproductlisttag">Only at SwayStock</p>
-            <h2 className="catproductlistname">
-              Jordan 2 Retro A Ma Maniere Airness
-            </h2>
-          </div>
-          <img src={sneaker2} alt="" className="catproductlistimage" />{" "}
-          <div className="catproductlistprice-cnt">
-            <p className="catproductlistlwask">Lowest Ask</p>
-            <p className="catproductlisprice">NGN230k</p>
-          </div>
-        </div>
-        <div className="catproductlist-item">
-          <div className="catproductlist-item-name">
-            <p className="catproductlisttag">New</p>
-            <h2 className="catproductlistname">
-              Jordan 4 Retro Millitary Black
-            </h2>
-          </div>
-          <img src={sneaker3} alt="" className="catproductlistimage" />{" "}
-          <div className="catproductlistprice-cnt">
-            <p className="catproductlistlwask">Lowest Ask</p>
-            <p className="catproductlisprice">NGN150k</p>
-          </div>
-        </div>
-        <div className="catproductlist-item">
-          <div className="catproductlist-item-name">
-            <p className="catproductlisttag">New</p>
-            <h2 className="catproductlistname">
-              Nike Air Max 1 Kasina Wono-Ang Orange
-            </h2>
-          </div>
-          <img src={sneaker4} alt="" className="catproductlistimage" />{" "}
-          <div className="catproductlistprice-cnt">
-            <p className="catproductlistlwask">Lowest Ask</p>
-            <p className="catproductlisprice">NGN80k</p>
-          </div>
-        </div>
-        <div className="catproductlist-item">
-          <div className="catproductlist-item-name">
-            <p className="catproductlisttag">Only at SwayStock</p>
-            <h2 className="catproductlistname">
-              Nike Dunk Low Tow-Toned Grey(GS)
-            </h2>
-          </div>
-          <img src={sneaker5} alt="" className="catproductlistimage" />{" "}
-          <div className="catproductlistprice-cnt">
-            <p className="catproductlistlwask">Lowest Ask</p>
-            <p className="catproductlisprice">NGN50k</p>
-          </div>
-        </div>
+        {categoryProductList.catProductType.map((catprolist, key) => {
+          return (
+            <div className="catproductlist-item">
+              <div className="catproductlist-item-name" key={key}>
+                <p className="catproductlisttag">{catprolist.tag}</p>
+                <h2 className="catproductlistname">{catprolist.name}</h2>
+              </div>
+              <img
+                src={`${catprolist.image}`}
+                alt=""
+                className="catproductlistimage"
+              />
+              <div className="catproductlistprice-cnt">
+                <p className="catproductlistlwask">Lowest Ask</p>
+                <p className="catproductlisprice">NGN100k</p>
+              </div>
+            </div>
+          );
+        })}
       </section>
 
       <section className="categoryproductsnav-filteram"></section>
@@ -488,21 +316,7 @@ function Categoryproducts() {
                   <p className="btssort">Sort By</p>
                   <p className="category-worda-value">{sortbyValue}</p>
                 </div>
-
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {addbtnShow}
               </div>
             ) : (
               <div
@@ -513,21 +327,7 @@ function Categoryproducts() {
                   <p className="btssort">Sort By</p>
                   <p className="category-worda-value">{sortbyValue}</p>
                 </div>
-
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {minusbtnShow}
               </div>
             )}
             {sortaby === "active" && (
@@ -554,20 +354,7 @@ function Categoryproducts() {
                   <p className="btssort">Product Category</p>
                   <p className="category-worda-value">{productcatValue}</p>
                 </div>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {addbtnShow}
               </div>
             ) : (
               <div
@@ -578,20 +365,7 @@ function Categoryproducts() {
                   <p className="btssort">Product Category</p>
                   <p className="category-worda-value">{productcatValue}</p>
                 </div>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {minusbtnShow}
               </div>
             )}
             {productacat === "active" && (
@@ -618,20 +392,7 @@ function Categoryproducts() {
                   <p className="btssort">Price</p>
                   <p className="category-worda-value">{sortpriceValue}</p>
                 </div>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {addbtnShow}
               </div>
             ) : (
               <div
@@ -642,20 +403,7 @@ function Categoryproducts() {
                   <p className="btssort">Price</p>
                   <p className="category-worda-value">{sortpriceValue}</p>
                 </div>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {minusbtnShow}
               </div>
             )}
             {sortaprice === "active" && (
@@ -683,20 +431,7 @@ function Categoryproducts() {
                   <p className="category-worda-value">{sortgenderValue}</p>
                 </div>
 
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {addbtnShow}
               </div>
             ) : (
               <div
@@ -707,21 +442,7 @@ function Categoryproducts() {
                   <p className="btssort">Genders</p>
                   <p className="category-worda-value">{sortgenderValue}</p>
                 </div>
-
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {minusbtnShow}
               </div>
             )}
             {sortagender === "active" && (
@@ -752,7 +473,6 @@ function Categoryproducts() {
 
           <div className="bottomnav">
             <div className="bottomnav_item">
-              {/* <p>Home</p> */}
               <Link to="/" className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
@@ -768,7 +488,6 @@ function Categoryproducts() {
               </Link>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Search</p> */}
               <div
                 className="bottonav_icon-cnt"
                 onClick={() => {
@@ -792,7 +511,6 @@ function Categoryproducts() {
               </div>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Categories</p> */}
               <Link to="/categories" className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
@@ -808,8 +526,7 @@ function Categoryproducts() {
               </Link>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Nofication</p> */}
-              <div className="bottonav_icon-cnt" >
+              <div className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
                   viewBox="0 0 15 15"
@@ -826,7 +543,7 @@ function Categoryproducts() {
 
             <div className="bottomnav_item">
               {/* <p>Profile</p> */}
-              <Link to="/account" className="bottonav_icon-cnt" >
+              <Link to="/account" className="bottonav_icon-cnt">
                 <img
                   className="bottomnav__image"
                   src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -834,21 +551,6 @@ function Categoryproducts() {
                 />
               </Link>
             </div>
-            {/* <div className="bottomnav_close">
-                <div className="closebottomnav_item" >
-                  <svg
-                    viewBox="0 0 15 15"
-                    className="closebottomnav_icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div> */}
           </div>
         </>
       )}
