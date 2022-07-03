@@ -606,7 +606,7 @@
   }
 
   .searchproductmodal__list {
-    border-top: 2px solid #f5f5f7;
+    border-top: 1px solid #f5f5f7;
     padding: 15px 8px 20px 8px;
     display: grid;
     gap: 0.6rem;
@@ -738,7 +738,7 @@
   .bottomnav__icon {
     width: 23px;
     height: 23px;
-    fill: #6e6e73;
+    fill: #1d1d1f;
     cursor: pointer;
   }
 
