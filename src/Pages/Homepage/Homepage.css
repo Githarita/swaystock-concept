@@ -692,7 +692,7 @@
     /* padding: 15px 0; */
     /* border-radius: 20px; */
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
     align-items: flex-end;
     justify-content: space-around;
     /* box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px; */
@@ -733,8 +733,8 @@
   }
 
   .bottomnav__icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     fill: #1d1d1f;
     cursor: pointer;
   }
@@ -753,8 +753,8 @@
     cursor: pointer;
   }
   .bottomnav__image {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 9999px;
     object-fit: cover;
     object-position: center;
