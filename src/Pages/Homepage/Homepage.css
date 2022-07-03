@@ -592,7 +592,7 @@
     font-family: inherit;
     border: none;
     background-color: transparent;
-    font-size: 13px;
+    font-size: 14px;
     outline: none;
     font-weight: 400;
     color: #999;
@@ -613,7 +613,7 @@
   }
 
   .quicklinks {
-    font-size: 13px;
+    font-size: 14px;
     color: #9999;
     margin-left: 2.3rem;
   }
