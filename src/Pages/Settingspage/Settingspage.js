@@ -27,7 +27,7 @@ function Settingspage() {
         {settingsPageList.settingsPageListType.map((item, index) => {
           return (
             <div className="settings-bottom-item" key={index}>
-              <p className={`settings-bottom-item-text ${item.css}`}>
+              <p className={`settings-bottom-item-text ${item?.css}`}>
                 {item.name}
               </p>
               <svg
