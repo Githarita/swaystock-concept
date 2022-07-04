@@ -1,37 +1,19 @@
 import React, { useState } from "react";
 import Header from "../../components/Header/Header";
-import sneakerscat from "../../assets/sneakerscat.png";
-import accessoriescat from "../../assets/accessoriescat.png";
-import apparelcat from "../../assets/apparelcat.png";
-import bagcat from "../../assets/bagcat.png";
-import beautycat from "../../assets/beautycat.png";
-import collectiblescat from "../../assets/collectiblescat.png";
 import electronicscat from "../../assets/electronicscat.png";
 import "./Categories.css";
 import { Link } from "react-router-dom";
+import { categories } from "../../Utils/datas";
 
 function Categories() {
   const [searchmodal, setSearchmodal] = useState(false);
-  // const [homebtn, setHomebtn] = useState(true);
   const [bottomnav, setBottomnav] = useState(true);
 
-  // const homebuttonmenu = () => {
-  //   setHomebtn(false);
-  //   setBottomnav(true);
-  // };
-
   const homebtnIconClick = () => {
-    // setHomebtn(true);
     setBottomnav(false);
   };
 
-  let sneakers = "sneakers";
   let electronics = "electronics";
-  let accessories = "accessories";
-  let apparel = "apparel";
-  let bags = "bag";
-  let beauty = "beauty";
-  let collectibles = "collectibles";
 
   return (
     <>
@@ -50,70 +32,24 @@ function Categories() {
         </div>
       </section>
       <section className="categories_page">
-        <div className="categories_item catb">
-          <div className="categories_item-text">
-            <h1>Sneakers</h1>
-            <p className="theheaderp">Oh. So. Comfy.</p>
-            <Link to={`/categories/${sneakers}`} className="catview">
-              View All{" "}
-            </Link>
-          </div>
-          <img src={sneakerscat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catc">
-          <div className="categories_item-text">
-            <h1>Accessories</h1>
-            <p className="theheaderp">
-              Love the power. Love the Wears. Love the price
-            </p>
-            <Link to={`/categories/${accessories}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={accessoriescat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catd">
-          <div className="categories_item-text">
-            <h1>Apparel</h1>
-            <p className="theheaderp">Light. Bright. Full of might.</p>
-            <Link to={`/categories/${apparel}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={apparelcat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item cate">
-          <div className="categories_item-text">
-            <h1>Bags</h1>
-            <p className="theheaderp">A sight to be bold with.</p>
-            <Link to={`/categories/${bags}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={bagcat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catf">
-          <div className="categories_item-text">
-            <h1>Beauty</h1>
-            <p className="theheaderp">
-              Your mega power. Mini your look to the beauty.
-            </p>
-            <Link to={`/categories/${beauty}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={beautycat} alt="" className="categories_item-image" />
-        </div>
-        <div className="categories_item catg">
-          <div className="categories_item-text">
-            <h1>Collectibles</h1>
-            <p className="theheaderp">Lose your knack for losing things.</p>
-            <Link to={`/categories/${collectibles}`} className="catview">
-              View All
-            </Link>
-          </div>
-          <img src={collectiblescat} alt="" className="categories_item-image" />
-        </div>
+        {categories.categoriesType.map((category, key) => {
+          return (
+            <div className={"categories__item"`${category.css}`} key={key}>
+              <div className="categories_item-text">
+                <h1>{category.title}</h1>
+                <p className="theheaderp">{category.name}</p>
+                <Link to={`/categories/${category.link}`} className="catview">
+                  View All
+                </Link>
+              </div>
+              <img
+                src={category.image}
+                alt=""
+                className="categories_item-image"
+              />
+            </div>
+          );
+        })}
       </section>
       {searchmodal && (
         <div className="searchproductmodal">
@@ -141,7 +77,6 @@ function Categories() {
               className="searchinput__icon"
               onClick={() => {
                 setSearchmodal(false);
-                // setHomebtn(true);
                 setBottomnav(true);
               }}
             >
@@ -176,29 +111,12 @@ function Categories() {
         </div>
       )}
 
-      {/* {homebtn && (
-        <div className="homemenu" onClick={homebuttonmenu}>
-          <svg
-            viewBox="0 0 15 15"
-            className="homenuswitchicon"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.5 2C3.11929 2 2 3.11929 2 4.5C2 5.88072 3.11929 7 4.5 7C5.88072 7 7 5.88072 7 4.5C7 3.11929 5.88072 2 4.5 2ZM3 4.5C3 3.67157 3.67157 3 4.5 3C5.32843 3 6 3.67157 6 4.5C6 5.32843 5.32843 6 4.5 6C3.67157 6 3 5.32843 3 4.5ZM10.5 2C9.11929 2 8 3.11929 8 4.5C8 5.88072 9.11929 7 10.5 7C11.8807 7 13 5.88072 13 4.5C13 3.11929 11.8807 2 10.5 2ZM9 4.5C9 3.67157 9.67157 3 10.5 3C11.3284 3 12 3.67157 12 4.5C12 5.32843 11.3284 6 10.5 6C9.67157 6 9 5.32843 9 4.5ZM2 10.5C2 9.11929 3.11929 8 4.5 8C5.88072 8 7 9.11929 7 10.5C7 11.8807 5.88072 13 4.5 13C3.11929 13 2 11.8807 2 10.5ZM4.5 9C3.67157 9 3 9.67157 3 10.5C3 11.3284 3.67157 12 4.5 12C5.32843 12 6 11.3284 6 10.5C6 9.67157 5.32843 9 4.5 9ZM10.5 8C9.11929 8 8 9.11929 8 10.5C8 11.8807 9.11929 13 10.5 13C11.8807 13 13 11.8807 13 10.5C13 9.11929 11.8807 8 10.5 8ZM9 10.5C9 9.67157 9.67157 9 10.5 9C11.3284 9 12 9.67157 12 10.5C12 11.3284 11.3284 12 10.5 12C9.67157 12 9 11.3284 9 10.5Z"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </div>
-      )} */}
-
       {bottomnav && (
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
 
           <div className="bottomnav">
             <div className="bottomnav_item">
-              {/* <p>Home</p> */}
               <Link to="/" className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
@@ -214,13 +132,11 @@ function Categories() {
               </Link>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Search</p> */}
               <div
                 className="bottonav_icon-cnt"
                 onClick={() => {
                   homebtnIconClick();
                   setSearchmodal(true);
-                  // setHomebtn(false);
                   setBottomnav(false);
                 }}
               >
@@ -238,7 +154,6 @@ function Categories() {
               </div>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Categories</p> */}
               <Link to="/categories" className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
@@ -254,7 +169,6 @@ function Categories() {
               </Link>
             </div>
             <div className="bottomnav_item">
-              {/* <p>Nofication</p> */}
               <div className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
@@ -271,7 +185,6 @@ function Categories() {
             </div>
 
             <div className="bottomnav_item">
-              {/* <p>Profile</p> */}
               <Link to="/account" className="bottonav_icon-cnt">
                 <img
                   className="bottomnav__image"
@@ -280,21 +193,6 @@ function Categories() {
                 />
               </Link>
             </div>
-            {/* <div className="bottomnav_close">
-                <div className="closebottomnav_item" >
-                  <svg
-                    viewBox="0 0 15 15"
-                    className="closebottomnav_icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div> */}
           </div>
         </>
       )}

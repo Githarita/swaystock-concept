@@ -217,12 +217,14 @@ function Categoryproducts() {
               />
               <div className="catproductlistprice-cnt">
                 <p className="catproductlistlwask">Lowest Ask</p>
-                <p className="catproductlisprice">NGN100k</p>
+                <p className="catproductlisprice">{catprolist.price}</p>
               </div>
             </div>
           );
         })}
       </section>
+
+     
 
       <section className="categoryproductsnav-filteram"></section>
 
