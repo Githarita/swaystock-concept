@@ -415,3 +415,39 @@ export const categories = {
     {},
   ],
 };
+
+export const accountPageList = {
+  accountPageListType: [
+    { name: "Profile" },
+    {
+      name: "Storage",
+    },
+    { name: "Buying" },
+    { name: "Selling" },
+    { name: "Bids" },
+    { name: "Ask" },
+    { name: "Portfolio" },
+    { name: "Following" },
+    { name: "How it Works" },
+    { name: "Suggest a Product" },
+    { name: "Support" },
+  ],
+};
+
+export const settingsPageList = {
+  settingsPageListType: [
+    { name: "Buying Info" },
+    {
+      name: "Selling Info",
+    },
+    { name: "Payment Method" },
+    { name: "Return Address" },
+    { name: "Shipping Address" },
+    { name: "Notification" },
+    { name: "Privacy Settings" },
+    { name: "Privacy Policy" },
+    { name: "Terms of Use" },
+    { name: "Sign Out", css: "signss" },
+    { name: "V.0.01 - (1221)", css: "vsers" },
+  ],
+};
