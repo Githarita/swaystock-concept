@@ -396,14 +396,14 @@ export const categories = {
       name: "Your mega power. Mini your look to the beauty.",
       link: "bags",
       css: "cate",
-      images: bagcat,
+      image: bagcat,
     },
     {
       title: "Beauty",
       name: "Your mega power. Mini your look to the beauty.",
       link: "beauty",
       css: "catf",
-      images: beautycat,
+      image: beautycat,
     },
     {
       title: "Collectibles",

@@ -34,7 +34,7 @@ function Categories() {
       <section className="categories_page">
         {categories.categoriesType.map((category, key) => {
           return (
-            <div className={"categories__item"`${category.css}`} key={key}>
+            <div className={`categories_item ${category.css}`} key={key}>
               <div className="categories_item-text">
                 <h1>{category.title}</h1>
                 <p className="theheaderp">{category.name}</p>
@@ -117,6 +117,7 @@ function Categories() {
 
           <div className="bottomnav">
             <div className="bottomnav_item">
+              {/* <p>Home</p> */}
               <Link to="/" className="bottonav_icon-cnt">
                 <svg
                   className="bottomnav__icon"
