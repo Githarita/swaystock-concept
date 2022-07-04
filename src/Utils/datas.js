@@ -436,7 +436,7 @@ export const accountPageList = {
 
 export const settingsPageList = {
   settingsPageListType: [
-    { name: "Buying Info" },
+    { name: "Buying Info", link: "buying_info" },
     {
       name: "Selling Info",
     },

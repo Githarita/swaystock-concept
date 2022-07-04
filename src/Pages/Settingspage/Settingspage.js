@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { settingsPageList } from "../../Utils/datas";
 import "./Settingspage.css";
 
@@ -26,7 +26,7 @@ function Settingspage() {
       <section className="settings-bottom">
         {settingsPageList.settingsPageListType.map((item, index) => {
           return (
-            <div className="settings-bottom-item" key={index}>
+            <Link to={`/account/settings/${item.link}`} className="settings-bottom-item" key={index}>
               <p className={`settings-bottom-item-text ${item?.css}`}>
                 {item.name}
               </p>
@@ -44,7 +44,7 @@ function Settingspage() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </div>
+            </Link>
           );
         })}
       </section>
