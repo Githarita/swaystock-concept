@@ -1702,5 +1702,118 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Imo",
+      lga: [
+        {
+          name: "Aboh Mbaise",
+          area: [],
+        },
+        {
+          name: "Ahiazu Mbaise",
+          area: [],
+        },
+        {
+          name: "Ehime Mbano",
+          area: [],
+        },
+        {
+          name: "Ezinihitte",
+          area: [],
+        },
+        {
+          name: "Ideato North",
+          area: [],
+        },
+        {
+          name: "Ideato South",
+          area: [],
+        },
+        {
+          name: "Ihitte-Uboma",
+          area: [],
+        },
+        {
+          name: "Ikeduru",
+          area: [],
+        },
+        {
+          name: "Isiala Mbano",
+          area: [],
+        },
+        {
+          name: "Isu",
+          area: [],
+        },
+        {
+          name: "Mbaitoli",
+          area: [],
+        },
+        {
+          name: "Ngor Okpala",
+          area: [],
+        },
+        {
+          name: "Njaba",
+          area: [],
+        },
+        {
+          name: "Nkwerre",
+          area: [],
+        },
+        {
+          name: "Nwangele",
+          area: [],
+        },
+        {
+          name: "Obowo",
+          area: [],
+        },
+        {
+          name: "Oguta",
+          area: [],
+        },
+        {
+          name: "Ohaji-Egbema",
+          area: [],
+        },
+        {
+          name: "Okigwe",
+          area: [],
+        },
+        {
+          name: "Orlu",
+          area: [],
+        },
+        {
+          name: "Orsu",
+          area: [],
+        },
+        {
+          name: "Oru East",
+          area: [],
+        },
+        {
+          name: "Oru West",
+          area: [],
+        },
+        {
+          name: "Owerri Municipal",
+          area: [],
+        },
+        {
+          name: "Owerri North",
+          area: [],
+        },
+        {
+          name: "Owerri West",
+          area: [],
+        },
+        {
+          name: "Unuimo",
+          area: [],
+        },
+      ],
+    },
   ],
 };
