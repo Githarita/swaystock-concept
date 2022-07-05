@@ -1551,5 +1551,78 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Enugu",
+      lga: [
+        {
+          name: "Aninri",
+          area: [],
+        },
+        {
+          name: "Awgu",
+          area: [],
+        },
+        {
+          name: "Enugu East",
+          area: [],
+        },
+        {
+          name: "Enugu North",
+          area: [],
+        },
+        {
+          name: "Enugu South",
+          area: [],
+        },
+        {
+          name: "Ezeagu",
+          area: [],
+        },
+        {
+          name: "Igbo Etiti",
+          area: [],
+        },
+        {
+          name: "Igbo Eze North",
+          area: [],
+        },
+        {
+          name: "Igbo Eze South",
+          area: [],
+        },
+        {
+          name: "Isi Uzo",
+          area: [],
+        },
+        {
+          name: "Nkanu East",
+          area: [],
+        },
+        {
+          name: "Nkanu West",
+          area: [],
+        },
+        {
+          name: "Nsukka",
+          area: [],
+        },
+        {
+          name: "Oji River",
+          area: [],
+        },
+        {
+          name: "Udenu",
+          area: [],
+        },
+        {
+          name: "Udi",
+          area: [],
+        },
+        {
+          name: "Uzo Uwani",
+          area: [],
+        },
+      ],
+    },
   ],
 };
