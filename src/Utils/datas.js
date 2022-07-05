@@ -745,5 +745,94 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Anambra",
+      lga: [
+        {
+          name: "Aguata",
+          area: [],
+        },
+        {
+          name: "Anambra East",
+          area: [],
+        },
+        {
+          name: "Anambra West",
+          area: [],
+        },
+        {
+          name: "Anaocha",
+          area: [],
+        },
+        {
+          name: "Awka North",
+          area: [],
+        },
+        {
+          name: "Awka South",
+          area: [],
+        },
+        {
+          name: "Ayamelum",
+          area: [],
+        },
+        {
+          name: "Dunukofia",
+          area: [],
+        },
+        {
+          name: "Ekwusigo",
+          area: [],
+        },
+        {
+          name: "Idemili North",
+          area: [],
+        },
+        {
+          name: "Idemili South",
+          area: [],
+        },
+        {
+          name: "Ihiala",
+          area: [],
+        },
+        {
+          name: "Njikoka",
+          area: [],
+        },
+        {
+          name: "Nnewi North",
+          area: [],
+        },
+        {
+          name: "Nnewi South",
+          area: [],
+        },
+        {
+          name: "Ogbaru",
+          area: [],
+        },
+        {
+          name: "Onitsha North",
+          area: [],
+        },
+        {
+          name: "Onitsha South",
+          area: [],
+        },
+        {
+          name: "Orumba North",
+          area: [],
+        },
+        {
+          name: "Orumba South",
+          area: [],
+        },
+        {
+          name: "Oyi",
+          area: [],
+        },
+      ],
+    },
   ],
 };
