@@ -102,8 +102,6 @@ const difIcon6 = (
   </svg>
 );
 
-
-
 export const differenceList = {
   differenceitem: [
     {
@@ -461,164 +459,162 @@ export const locationData = {
       lga: [
         {
           name: "Aba North",
-          area: []
+          area: [],
         },
         {
           name: "Aba South",
-          area: []
+          area: [],
         },
         {
           name: "AroChukwu",
-          area: []
+          area: [],
         },
         {
           name: "Bende",
-          area: []
+          area: [],
         },
         {
           name: "Ikwuano",
-          area: []
+          area: [],
         },
         {
           name: "Isiala Ngwa North",
-          area: []
+          area: [],
         },
         {
           name: "Isiala Ngwa South",
-          area: []
+          area: [],
         },
         {
           name: "Isuikwuato",
-          area: []
+          area: [],
         },
         {
           name: "Obi Ngwa",
-          area: []
+          area: [],
         },
         {
           name: "Ohafia",
-          area: []
+          area: [],
         },
         {
           name: "Osisioma",
-          area: []
+          area: [],
         },
         {
           name: "Ugwunagbo",
-          area: []
+          area: [],
         },
         {
           name: "Ukwa East",
-          area: []
+          area: [],
         },
         {
           name: "Ukwa West",
-          area: []
+          area: [],
         },
         {
           name: "Umuahia North",
-          area: []
+          area: [],
         },
         {
           name: "Umuahia South",
-          area: []
+          area: [],
         },
         {
           name: "Umu Nneochi",
-          area: []
+          area: [],
         },
-
-      ]
+      ],
     },
     {
       name: "Adamawa",
       lga: [
         {
           name: "Demsa",
-          area: []
+          area: [],
         },
         {
           name: "Fufure",
-          area: []
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Ganye",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Gayuk",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Gombi",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Grie",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Hong",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Jada",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Larmurde",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Madagali",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Maiha",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Mayo Belwa",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Michika",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Mubi North",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Mubi South",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Numan",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Shelleng",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Song",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Toungo",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Yola North",
+          area: [],
         },
         {
-          name: "",
-          area: []
+          name: "Yola South",
+          area: [],
         },
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 };
-
