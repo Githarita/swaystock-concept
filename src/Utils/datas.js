@@ -834,5 +834,90 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Bauchi",
+      lga: [
+        {
+          name: "Alkaleri",
+          area: [],
+        },
+        {
+          name: "Bauchi",
+          area: [],
+        },
+        {
+          name: "Bogoro",
+          area: [],
+        },
+        {
+          name: "Damban",
+          area: [],
+        },
+        {
+          name: "Darazo",
+          area: [],
+        },
+        {
+          name: "Dass",
+          area: [],
+        },
+        {
+          name: "Gamawa",
+          area: [],
+        },
+        {
+          name: "Ganjuwa",
+          area: [],
+        },
+        {
+          name: "Giade",
+          area: [],
+        },
+        {
+          name: "Itas/Gadau",
+          area: [],
+        },
+        {
+          name: "Jama are",
+          area: [],
+        },
+        {
+          name: "Katagum",
+          area: [],
+        },
+        {
+          name: "Kirfi",
+          area: [],
+        },
+        {
+          name: "Misau",
+          area: [],
+        },
+        {
+          name: "Ningi",
+          area: [],
+        },
+        {
+          name: "Shira",
+          area: [],
+        },
+        {
+          name: "Tafawa Balewa",
+          area: [],
+        },
+        {
+          name: "Toro",
+          area: [],
+        },
+        {
+          name: "Warji",
+          area: [],
+        },
+        {
+          name: "Zaki",
+          area: [],
+        },
+      ],
+    },
   ],
 };
