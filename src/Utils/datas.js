@@ -1243,5 +1243,110 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Delta",
+      lga: [
+        {
+          name: "Aniocha North",
+          area: [],
+        },
+        {
+          name: "Aniocha South",
+          area: [],
+        },
+        {
+          name: "Bomadi",
+          area: [],
+        },
+        {
+          name: "Burutu",
+          area: [],
+        },
+        {
+          name: "Ethiope East",
+          area: [],
+        },
+        {
+          name: "Ethiope West",
+          area: [],
+        },
+        {
+          name: "Ika North East",
+          area: [],
+        },
+        {
+          name: "Ika South",
+          area: [],
+        },
+        {
+          name: "Isoko North",
+          area: [],
+        },
+        {
+          name: "Isoko South",
+          area: [],
+        },
+        {
+          name: "Ndokwa East",
+          area: [],
+        },
+        {
+          name: "Ndokwa West",
+          area: [],
+        },
+        {
+          name: "Okpe",
+          area: [],
+        },
+        {
+          name: "Oshimili North",
+          area: [],
+        },
+        {
+          name: "Oshimili South",
+          area: [],
+        },
+        {
+          name: "Patani",
+          area: [],
+        },
+        {
+          name: "Sapele",
+          area: [],
+        },
+        {
+          name: "Udu",
+          area: [],
+        },
+        {
+          name: "Ughelli North",
+          area: [],
+        },
+        {
+          name: "Ughelli South",
+          area: [],
+        },
+        {
+          name: "Ukwuani",
+          area: [],
+        },
+        {
+          name: "Uvwie",
+          area: [],
+        },
+        {
+          name: "Warri North",
+          area: [],
+        },
+        {
+          name: "Warri South",
+          area: [],
+        },
+        {
+          name: "Warri South West",
+          area: [],
+        },
+      ],
+    },
   ],
 };
