@@ -2025,5 +2025,186 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Kano",
+      lga: [
+        {
+          name: "Ajingi",
+          area: [],
+        },
+        {
+          name: "Albasu",
+          area: [],
+        },
+        {
+          name: "Bagwai",
+          area: [],
+        },
+        {
+          name: "Bebeji",
+          area: [],
+        },
+        {
+          name: "Bichi",
+          area: [],
+        },
+        {
+          name: "Bunkure",
+          area: [],
+        },
+        {
+          name: "Dala",
+          area: [],
+        },
+        {
+          name: "Dambatta",
+          area: [],
+        },
+        {
+          name: "Dawakin Kudu",
+          area: [],
+        },
+        {
+          name: "Dawakin Tofa",
+          area: [],
+        },
+        {
+          name: "Doguwa",
+          area: [],
+        },
+        {
+          name: "Fagge",
+          area: [],
+        },
+        {
+          name: "Gabasawa",
+          area: [],
+        },
+        {
+          name: "Garko",
+          area: [],
+        },
+        {
+          name: "Garun Mallam",
+          area: [],
+        },
+        {
+          name: "Gaya",
+          area: [],
+        },
+        {
+          name: "Gezawa",
+          area: [],
+        },
+        {
+          name: "Gwale",
+          area: [],
+        },
+        {
+          name: "Gwarzo",
+          area: [],
+        },
+        {
+          name: "Kabo",
+          area: [],
+        },
+        {
+          name: "Kano Municipal",
+          area: [],
+        },
+        {
+          name: "Karaye",
+          area: [],
+        },
+        {
+          name: "Kibiya",
+          area: [],
+        },
+        {
+          name: "Kiru",
+          area: [],
+        },
+        {
+          name: "Kumbotso",
+          area: [],
+        },
+        {
+          name: "Kunchi",
+          area: [],
+        },
+        {
+          name: "Kura",
+          area: [],
+        },
+        {
+          name: "Madobi",
+          area: [],
+        },
+        {
+          name: "Makoda",
+          area: [],
+        },
+        {
+          name: "Minjibir",
+          area: [],
+        },
+        {
+          name: "Nasarawa",
+          area: [],
+        },
+        {
+          name: "Rano",
+          area: [],
+        },
+        {
+          name: "Rimin Gado",
+          area: [],
+        },
+        {
+          name: "Rogo",
+          area: [],
+        },
+        {
+          name: "Shanono",
+          area: [],
+        },
+        {
+          name: "Sumaila",
+          area: [],
+        },
+        {
+          name: "Takai",
+          area: [],
+        },
+        {
+          name: "Tarauni",
+          area: [],
+        },
+        {
+          name: "Tofa",
+          area: [],
+        },
+        {
+          name: "Tsanyawa",
+          area: [],
+        },
+        {
+          name: "Tudun Wada",
+          area: [],
+        },
+        {
+          name: "Ungogo",
+          area: [],
+        },
+        {
+          name: "Warawa",
+          area: [],
+        },
+        {
+          name: "Wudil",
+          area: [],
+        },
+      ],
+    },
   ],
 };
