@@ -1405,5 +1405,82 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Edo",
+      lga: [
+        {
+          name: "Akoko-Edo",
+          area: [],
+        },
+        {
+          name: "Egor",
+          area: [],
+        },
+        {
+          name: "Esan Central",
+          area: [],
+        },
+        {
+          name: "Esan North-East",
+          area: [],
+        },
+        {
+          name: "Esan South-East",
+          area: [],
+        },
+        {
+          name: "Esan West",
+          area: [],
+        },
+        {
+          name: "Etsako Central",
+          area: [],
+        },
+        {
+          name: "Etsako East",
+          area: [],
+        },
+        {
+          name: "Etsako West",
+          area: [],
+        },
+        {
+          name: "Igueben",
+          area: [],
+        },
+        {
+          name: "Ikpoba Okha",
+          area: [],
+        },
+        {
+          name: "Orhionmwon",
+          area: [],
+        },
+        {
+          name: "Oredo",
+          area: [],
+        },
+        {
+          name: "Ovia North-East",
+          area: [],
+        },
+        {
+          name: "Ovia South-West",
+          area: [],
+        },
+        {
+          name: "Owan East",
+          area: [],
+        },
+        {
+          name: "Owan West",
+          area: [],
+        },
+        {
+          name: "Uhunmwonde",
+          area: [],
+        },
+      ],
+    },
   ],
 };
