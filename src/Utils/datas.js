@@ -2206,5 +2206,235 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Katsina",
+      lga: [
+        {
+          name: "Bakori",
+          area: [],
+        },
+        {
+          name: "Batagarawa",
+          area: [],
+        },
+        {
+          name: "Batsari",
+          area: [],
+        },
+        {
+          name: "Baure",
+          area: [],
+        },
+        {
+          name: "Bindawa",
+          area: [],
+        },
+        {
+          name: "Charanchi",
+          area: [],
+        },
+        {
+          name: "Dandume",
+          area: [],
+        },
+        {
+          name: "Danja",
+          area: [],
+        },
+        {
+          name: "Dan Musa",
+          area: [],
+        },
+        {
+          name: "Daura",
+          area: [],
+        },
+        {
+          name: "Dutsi",
+          area: [],
+        },
+        {
+          name: "Dutsin Ma",
+          area: [],
+        },
+        {
+          name: "Faskari",
+          area: [],
+        },
+        {
+          name: "Funtua",
+          area: [],
+        },
+        {
+          name: "Ingawa",
+          area: [],
+        },
+        {
+          name: "Jibia",
+          area: [],
+        },
+        {
+          name: "Kafur",
+          area: [],
+        },
+        {
+          name: "Kaita",
+          area: [],
+        },
+        {
+          name: "Kankara",
+          area: [],
+        },
+        {
+          name: "Kankia",
+          area: [],
+        },
+        {
+          name: "Katsina",
+          area: [],
+        },
+        {
+          name: "Kurfi",
+          area: [],
+        },
+        {
+          name: "Kusada",
+          area: [],
+        },
+        {
+          name: "Mai Adua",
+          area: [],
+        },
+        {
+          name: "Malumfashi",
+          area: [],
+        },
+        {
+          name: "Mani",
+          area: [],
+        },
+        {
+          name: "Mashi",
+          area: [],
+        },
+        {
+          name: "Matazu",
+          area: [],
+        },
+        {
+          name: "Musawa",
+          area: [],
+        },
+        {
+          name: "Rimi",
+          area: [],
+        },
+        {
+          name: "Sabuwa",
+          area: [],
+        },
+        {
+          name: "Safana",
+          area: [],
+        },
+        {
+          name: "Sandamu",
+          area: [],
+        },
+        {
+          name: "Zango",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Kebbi",
+      lga: [
+        {
+          name: "Aleiro",
+          area: [],
+        },
+        {
+          name: "Arewa Dandi",
+          area: [],
+        },
+        {
+          name: "Argungu",
+          area: [],
+        },
+        {
+          name: "Augie",
+          area: [],
+        },
+        {
+          name: "Bagudo",
+          area: [],
+        },
+        {
+          name: "Birnin Kebbi",
+          area: [],
+        },
+        {
+          name: "Bunza",
+          area: [],
+        },
+        {
+          name: "Dandi",
+          area: [],
+        },
+        {
+          name: "Fakai",
+          area: [],
+        },
+        {
+          name: "Gwandu",
+          area: [],
+        },
+        {
+          name: "Jega",
+          area: [],
+        },
+        {
+          name: "Kalgo",
+          area: [],
+        },
+        {
+          name: "Koko Besse",
+          area: [],
+        },
+        {
+          name: "Maiyama",
+          area: [],
+        },
+        {
+          name: "Ngaski",
+          area: [],
+        },
+        {
+          name: "Sakaba",
+          area: [],
+        },
+        {
+          name: "Shanga",
+          area: [],
+        },
+        {
+          name: "Suru",
+          area: [],
+        },
+        {
+          name: "Wasagu Danko",
+          area: [],
+        },
+        {
+          name: "Yauri",
+          area: [],
+        },
+        {
+          name: "Zuru",
+          area: [],
+        },
+      ],
+    },
   ],
 };
