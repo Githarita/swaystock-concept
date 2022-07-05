@@ -919,5 +919,42 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Bayelsa",
+      lga: [
+        {
+          name: "Brass",
+          area: [],
+        },
+        {
+          name: "Ekeremor",
+          area: [],
+        },
+        {
+          name: "Kolokuma/Opokuma",
+          area: [],
+        },
+        {
+          name: "Nembe",
+          area: [],
+        },
+        {
+          name: "Ogbia",
+          area: [],
+        },
+        {
+          name: "Sagbama",
+          area: [],
+        },
+        {
+          name: "Southern Ijaw",
+          area: [],
+        },
+        {
+          name: "Yenagoa",
+          area: [],
+        },
+      ],
+    },
   ],
 };
