@@ -1348,5 +1348,62 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Ebonyi",
+      lga: [
+        {
+          name: "Abakaliki",
+          area: [],
+        },
+        {
+          name: "Afikpo North",
+          area: [],
+        },
+        {
+          name: "Afikpo South",
+          area: [],
+        },
+        {
+          name: "Ebonyi",
+          area: [],
+        },
+        {
+          name: "Ezza North",
+          area: [],
+        },
+        {
+          name: "Ezza South",
+          area: [],
+        },
+        {
+          name: "Ikwo",
+          area: [],
+        },
+        {
+          name: "Ishielu",
+          area: [],
+        },
+        {
+          name: "Ivo",
+          area: [],
+        },
+        {
+          name: "Izzi",
+          area: [],
+        },
+        {
+          name: "Ohaozara",
+          area: [],
+        },
+        {
+          name: "Ohaukwu",
+          area: [],
+        },
+        {
+          name: "Onicha",
+          area: [],
+        },
+      ],
+    },
   ],
 };
