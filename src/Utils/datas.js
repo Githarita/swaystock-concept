@@ -1624,5 +1624,34 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "FCT",
+      lga: [
+        {
+          name: "Abaji",
+          area: [],
+        },
+        {
+          name: "Bwari",
+          area: [],
+        },
+        {
+          name: "Gwagwalada",
+          area: [],
+        },
+        {
+          name: "Kuje",
+          area: [],
+        },
+        {
+          name: "Kwali",
+          area: [],
+        },
+        {
+          name: "Municipal Area Council",
+          area: [],
+        },
+      ],
+    },
   ],
 };
