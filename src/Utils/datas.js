@@ -1653,5 +1653,54 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Gombe",
+      lga: [
+        {
+          name: "Akko",
+          area: [],
+        },
+        {
+          name: "Balanga",
+          area: [],
+        },
+        {
+          name: "Billiri",
+          area: [],
+        },
+        {
+          name: "Dukku",
+          area: [],
+        },
+        {
+          name: "Funakaye",
+          area: [],
+        },
+        {
+          name: "Gombe",
+          area: [],
+        },
+        {
+          name: "Kaltungo",
+          area: [],
+        },
+        {
+          name: "Kwami",
+          area: [],
+        },
+        {
+          name: "Nafada",
+          area: [],
+        },
+        {
+          name: "Shongom",
+          area: [],
+        },
+        {
+          name: "Yamaltu-Deba",
+          area: [],
+        },
+      ],
+    },
   ],
 };
