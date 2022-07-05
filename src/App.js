@@ -2,10 +2,22 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Accountpage from "./Pages/Accountpage/Accountpage";
 import BuyingInfopage from "./Pages/BuyingInfopage/BuyingInfopage";
+import Buyingpage from "./Pages/Buyingpage/Buyingpage";
 import Categories from "./Pages/Categories/Categories";
 import Categoryproducts from "./Pages/Categoryproducts/Categoryproducts";
 import Homepage from "./Pages/Homepage/Homepage";
+import Notificationpage from "./Pages/Notificationpage/Notificationpage";
+import Paymentmethodpage from "./Pages/Paymentmethodpage/Paymentmethodpage";
+import Privacypolicy from "./Pages/Privacypolicy/Privacypolicy";
+import Privacysettings from "./Pages/Privacysettings/Privacysettings";
+import Profilepage from "./Pages/Profilepage/Profilepage";
+import Returnaddresspage from "./Pages/Returnaddresspage/Returnaddresspage";
+import Sellinginfopage from "./Pages/Sellinginfopage/Sellinginfopage";
+import Sellingpage from "./Pages/Sellingpage/Sellingpage";
 import Settingspage from "./Pages/Settingspage/Settingspage";
+import Shippingaddresspage from "./Pages/Shippingaddresspage/Shippingaddresspage";
+import Storagepage from "./Pages/Storagepage/Storagepage";
+import Termsofuse from "./Pages/Termsofuse/Termsofuse";
 
 function App() {
   return (
@@ -16,8 +28,51 @@ function App() {
         <Route path="/categories/:categoryId" element={<Categoryproducts />} />
         <Route path="/account" element={<Accountpage />} />
         <Route path="/account/settings" element={<Settingspage />} />
-        <Route path="/account/settings/buying_info" element={<BuyingInfopage />} />
-        
+        <Route path="/account/profile" element={<Profilepage />} />
+        <Route path="/account/storage" element={<Storagepage />} />
+        <Route path="/account/buying" element={<Buyingpage />} />
+        <Route path="/account/selling" element={<Sellingpage />} />
+        <Route path="/account/bids" element={<Storagepage />} />
+        <Route path="/account/ask" element={<Buyingpage />} />
+        <Route path="/account/portfolio" element={<Storagepage />} />
+        <Route path="/account/following" element={<Buyingpage />} />
+        <Route path="/account/how_it_works" element={<Sellingpage />} />
+        <Route path="/account/suggest_a_product" element={<Storagepage />} />
+        <Route path="/account/support" element={<Buyingpage />} />
+
+        <Route
+          path="/account/settings/buying_info"
+          element={<BuyingInfopage />}
+        />
+        <Route
+          path="/account/settings/selling_info"
+          element={<Sellinginfopage />}
+        />
+        <Route
+          path="/account/settings/payment_method"
+          element={<Paymentmethodpage />}
+        />
+        <Route
+          path="/account/settings/return_address"
+          element={<Returnaddresspage />}
+        />
+        <Route
+          path="/account/settings/shipping_address"
+          element={<Shippingaddresspage />}
+        />
+        <Route
+          path="/account/settings/notification"
+          element={<Notificationpage />}
+        />
+        <Route
+          path="/account/settings/privacy_settings"
+          element={<Privacysettings />}
+        />
+        <Route
+          path="/account/settings/privacy_policy"
+          element={<Privacypolicy />}
+        />
+        <Route path="/account/settings/terms_of_use" element={<Termsofuse />} />
       </Routes>
     </BrowserRouter>
   );

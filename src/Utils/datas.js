@@ -438,9 +438,9 @@ export const settingsPageList = {
   settingsPageListType: [
     { name: "Buying Info", link: "buying_info" },
     {
-      name: "Selling Info",
+      name: "Selling Info", link: "selling_info",
     },
-    { name: "Payment Method" },
+    { name: "Payment Method", link },
     { name: "Return Address" },
     { name: "Shipping Address" },
     { name: "Notification" },
