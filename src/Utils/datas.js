@@ -102,7 +102,7 @@ const difIcon6 = (
   </svg>
 );
 
-export const locationData = {};
+
 
 export const differenceList = {
   differenceitem: [
@@ -452,5 +452,173 @@ export const settingsPageList = {
     { name: "Sign Out", css: "signss" },
     { name: "V.0.01 - (1221)", css: "vsers" },
   ],
+};
+
+export const locationData = {
+  states: [
+    {
+      name: "Abia",
+      lga: [
+        {
+          name: "Aba North",
+          area: []
+        },
+        {
+          name: "Aba South",
+          area: []
+        },
+        {
+          name: "AroChukwu",
+          area: []
+        },
+        {
+          name: "Bende",
+          area: []
+        },
+        {
+          name: "Ikwuano",
+          area: []
+        },
+        {
+          name: "Isiala Ngwa North",
+          area: []
+        },
+        {
+          name: "Isiala Ngwa South",
+          area: []
+        },
+        {
+          name: "Isuikwuato",
+          area: []
+        },
+        {
+          name: "Obi Ngwa",
+          area: []
+        },
+        {
+          name: "Ohafia",
+          area: []
+        },
+        {
+          name: "Osisioma",
+          area: []
+        },
+        {
+          name: "Ugwunagbo",
+          area: []
+        },
+        {
+          name: "Ukwa East",
+          area: []
+        },
+        {
+          name: "Ukwa West",
+          area: []
+        },
+        {
+          name: "Umuahia North",
+          area: []
+        },
+        {
+          name: "Umuahia South",
+          area: []
+        },
+        {
+          name: "Umu Nneochi",
+          area: []
+        },
+
+      ]
+    },
+    {
+      name: "Adamawa",
+      lga: [
+        {
+          name: "Demsa",
+          area: []
+        },
+        {
+          name: "Fufure",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+        {
+          name: "",
+          area: []
+        },
+      ]
+    }
+  ]
 };
 
