@@ -956,5 +956,292 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Benue",
+      lga: [
+        {
+          name: "Agatu",
+          area: [],
+        },
+        {
+          name: "Apa",
+          area: [],
+        },
+        {
+          name: "Ado",
+          area: [],
+        },
+        {
+          name: "Buruku",
+          area: [],
+        },
+        {
+          name: "Gboko",
+          area: [],
+        },
+        {
+          name: "Guma",
+          area: [],
+        },
+        {
+          name: "Gwer East",
+          area: [],
+        },
+        {
+          name: "Gwer West",
+          area: [],
+        },
+        {
+          name: "Katsina-Ala",
+          area: [],
+        },
+        {
+          name: "Konshisha",
+          area: [],
+        },
+        {
+          name: "Kwande",
+          area: [],
+        },
+        {
+          name: "Logo",
+          area: [],
+        },
+        {
+          name: "Makurdi",
+          area: [],
+        },
+        {
+          name: "Obi",
+          area: [],
+        },
+        {
+          name: "Ogbadibo",
+          area: [],
+        },
+        {
+          name: "Ohimini",
+          area: [],
+        },
+        {
+          name: "Oju",
+          area: [],
+        },
+        {
+          name: "Okpokwu",
+          area: [],
+        },
+        {
+          name: "Oturkpo",
+          area: [],
+        },
+        {
+          name: "Tarka",
+          area: [],
+        },
+        {
+          name: "Ukum",
+          area: [],
+        },
+        {
+          name: "Ushongo",
+          area: [],
+        },
+        {
+          name: "Vandeikya",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Borno",
+      lga: [
+        {
+          name: "Abadam",
+          area: [],
+        },
+        {
+          name: "Askira/Uba",
+          area: [],
+        },
+        {
+          name: "Bama",
+          area: [],
+        },
+        {
+          name: "Bayo",
+          area: [],
+        },
+        {
+          name: "Biu",
+          area: [],
+        },
+        {
+          name: "Chibok",
+          area: [],
+        },
+        {
+          name: "Damboa",
+          area: [],
+        },
+        {
+          name: "Dikwa",
+          area: [],
+        },
+        {
+          name: "Gubio",
+          area: [],
+        },
+        {
+          name: "Guzamala",
+          area: [],
+        },
+        {
+          name: "Gwoza",
+          area: [],
+        },
+        {
+          name: "Hawul",
+          area: [],
+        },
+        {
+          name: "Jere",
+          area: [],
+        },
+        {
+          name: "Kaga",
+          area: [],
+        },
+        {
+          name: "Kala/Balge",
+          area: [],
+        },
+        {
+          name: "Konduga",
+          area: [],
+        },
+        {
+          name: "kukawa",
+          area: [],
+        },
+        {
+          name: "Kwaya-Kusar",
+          area: [],
+        },
+        {
+          name: "Mafa",
+          area: [],
+        },
+        {
+          name: "Magumeri",
+          area: [],
+        },
+        {
+          name: "Maiduguri",
+          area: [],
+        },
+        {
+          name: "Marte",
+          area: [],
+        },
+        {
+          name: "Mobbar",
+          area: [],
+        },
+        {
+          name: "Monguno",
+          area: [],
+        },
+        {
+          name: "Ngala",
+          area: [],
+        },
+        {
+          name: "Nganzai",
+          area: [],
+        },
+        {
+          name: "Shani",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Cross River",
+      lga: [
+        {
+          name: "Abi",
+          area: [],
+        },
+        {
+          name: "Akamkpa",
+          area: [],
+        },
+        {
+          name: "Akpabuyo",
+          area: [],
+        },
+        {
+          name: "Bakassi",
+          area: [],
+        },
+        {
+          name: "Bekwarra",
+          area: [],
+        },
+        {
+          name: "Biase",
+          area: [],
+        },
+        {
+          name: "Boki",
+          area: [],
+        },
+        {
+          name: "Calabar Municipal",
+          area: [],
+        },
+        {
+          name: "Calabar South",
+          area: [],
+        },
+        {
+          name: "Etung",
+          area: [],
+        },
+        {
+          name: "Ikom",
+          area: [],
+        },
+        {
+          name: "Obanliku",
+          area: [],
+        },
+        {
+          name: "Obubra",
+          area: [],
+        },
+        {
+          name: "Obudu",
+          area: [],
+        },
+        {
+          name: "Odukpani",
+          area: [],
+        },
+        {
+          name: "Ogoja",
+          area: [],
+        },
+        {
+          name: "Yakuur",
+          area: [],
+        },
+        {
+          name: "Yala",
+          area: [],
+        },
+      ],
+    },
   ],
 };
