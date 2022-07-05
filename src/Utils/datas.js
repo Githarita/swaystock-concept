@@ -418,19 +418,20 @@ export const categories = {
 
 export const accountPageList = {
   accountPageListType: [
-    { name: "Profile" },
+    { name: "Profile", link: "profile" },
     {
       name: "Storage",
+      link: "storage",
     },
-    { name: "Buying" },
-    { name: "Selling" },
-    { name: "Bids" },
-    { name: "Ask" },
-    { name: "Portfolio" },
-    { name: "Following" },
-    { name: "How it Works" },
-    { name: "Suggest a Product" },
-    { name: "Support" },
+    { name: "Buying", link: "buying" },
+    { name: "Selling", link: "selling" },
+    { name: "Bids", link: "bids" },
+    { name: "Ask", link: "ask" },
+    { name: "Portfolio", link: "portfolio" },
+    { name: "Following", link: "following" },
+    { name: "How it Works", link: "how_it_works" },
+    { name: "Suggest a Product", link: "suggest_a_product" },
+    { name: "Support", link: "support" },
   ],
 };
 
@@ -452,3 +453,4 @@ export const settingsPageList = {
     { name: "V.0.01 - (1221)", css: "vsers" },
   ],
 };
+

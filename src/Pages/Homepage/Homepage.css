@@ -27,7 +27,6 @@
 .header__user-profile {
   display: flex;
   gap: 0.5rem;
-  align-items: start;
   text-decoration: none;
 }
 

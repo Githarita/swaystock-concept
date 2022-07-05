@@ -40,7 +40,7 @@ function Accountpage() {
         <div className="accountpage-cnt-bottom">
           {accountPageList.accountPageListType.map((item, index) => {
             return (
-              <div className="accountpage-cnt-bottom-item" key={index}>
+              <Link to={item.link} className="accountpage-cnt-bottom-item" key={index}>
                 <div className="accountpage-cnt-typ">
                   <p className="accountpage-cnt-botm-text">{item.name}</p>
                 </div>
@@ -59,7 +59,7 @@ function Accountpage() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </div>
+              </Link>
             );
           })}
 
