@@ -1815,5 +1815,118 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Jigawa",
+      lga: [
+        {
+          name: "Auyo",
+          area: [],
+        },
+        {
+          name: "Babura",
+          area: [],
+        },
+        {
+          name: "Biriniwa",
+          area: [],
+        },
+        {
+          name: "Birnin Kudu",
+          area: [],
+        },
+        {
+          name: "Buji",
+          area: [],
+        },
+        {
+          name: "Dutse",
+          area: [],
+        },
+        {
+          name: "Gagarawa",
+          area: [],
+        },
+        {
+          name: "Garki",
+          area: [],
+        },
+        {
+          name: "Gumel",
+          area: [],
+        },
+        {
+          name: "Guri",
+          area: [],
+        },
+        {
+          name: "Gwaram",
+          area: [],
+        },
+        {
+          name: "Gwiwa",
+          area: [],
+        },
+        {
+          name: "Hadejia",
+          area: [],
+        },
+        {
+          name: "Jahun",
+          area: [],
+        },
+        {
+          name: "Kafin Hausa",
+          area: [],
+        },
+        {
+          name: "Kazaure",
+          area: [],
+        },
+        {
+          name: "Kiri Kasama",
+          area: [],
+        },
+        {
+          name: "Kiyawa",
+          area: [],
+        },
+        {
+          name: "Kaugama",
+          area: [],
+        },
+        {
+          name: "Maigatari",
+          area: [],
+        },
+        {
+          name: "Malam Madori",
+          area: [],
+        },
+        {
+          name: "Miga",
+          area: [],
+        },
+        {
+          name: "Ringim",
+          area: [],
+        },
+        {
+          name: "Roni",
+          area: [],
+        },
+        {
+          name: "Sule Tankarkar",
+          area: [],
+        },
+        {
+          name: "Taura",
+          area: [],
+        },
+        {
+          name: "Yankwashi",
+          area: [],
+        },
+      ],
+    },
   ],
 };
