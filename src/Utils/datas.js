@@ -1928,5 +1928,102 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Kaduna",
+      lga: [
+        {
+          name: "Birnin Gwari",
+          area: [],
+        },
+        {
+          name: "Chikun",
+          area: [],
+        },
+        {
+          name: "Giwa",
+          area: [],
+        },
+        {
+          name: "Igabi",
+          area: [],
+        },
+        {
+          name: "Ikara",
+          area: [],
+        },
+        {
+          name: "Jaba",
+          area: [],
+        },
+        {
+          name: "Jema a",
+          area: [],
+        },
+        {
+          name: "Kachia",
+          area: [],
+        },
+        {
+          name: "Kaduna North",
+          area: [],
+        },
+        {
+          name: "Kaduna South",
+          area: [],
+        },
+        {
+          name: "Kagarko",
+          area: [],
+        },
+        {
+          name: "Kajuru",
+          area: [],
+        },
+        {
+          name: "Kaura",
+          area: [],
+        },
+        {
+          name: "Kauru",
+          area: [],
+        },
+        {
+          name: "Kubau",
+          area: [],
+        },
+        {
+          name: "Kudan",
+          area: [],
+        },
+        {
+          name: "Lere",
+          area: [],
+        },
+        {
+          name: "Makarfi",
+          area: [],
+        },
+        {
+          name: "Sabon Gari",
+          area: [],
+        },
+        {
+          name: "Sanga",
+          area: [],
+        },
+        {
+          name: "Soba",
+          area: [],
+        },
+        {
+          name: "Zangon Kataf",
+          area: [],
+        },
+        {
+          name: "Zaria",
+          area: [],
+        },
+      ],
+    },
   ],
 };
