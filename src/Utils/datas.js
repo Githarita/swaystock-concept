@@ -1482,6 +1482,74 @@ export const locationData = {
         },
       ],
     },
-    {}
+    {
+      name: "Ekiti",
+      lga: [
+        {
+          name: "Ado Ekiti",
+          area: [],
+        },
+        {
+          name: "Efon",
+          area: [],
+        },
+        {
+          name: "Ekiti East",
+          area: [],
+        },
+        {
+          name: "Ekiti South-West",
+          area: [],
+        },
+        {
+          name: "Ekiti West",
+          area: [],
+        },
+        {
+          name: "Emure",
+          area: [],
+        },
+        {
+          name: "Gbonyin",
+          area: [],
+        },
+        {
+          name: "Ido Osi",
+          area: [],
+        },
+        {
+          name: "Ijero",
+          area: [],
+        },
+        {
+          name: "Ikere",
+          area: [],
+        },
+        {
+          name: "Ikole",
+          area: [],
+        },
+        {
+          name: "Ilejemeje",
+          area: [],
+        },
+        {
+          name: "Irepodun-Ifelodun",
+          area: [],
+        },
+        {
+          name: "Ise-Orun",
+          area: [],
+        },
+        {
+          name: "Moba",
+          area: [],
+        },
+        {
+          name: "Oye",
+          area: [],
+        },
+      ],
+    },
   ],
 };
