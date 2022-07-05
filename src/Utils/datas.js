@@ -616,5 +616,134 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "AkwaIbom",
+      lga: [
+        {
+          name: "Abak",
+          area: [],
+        },
+        {
+          name: "Eastern Obolo",
+          area: [],
+        },
+        {
+          name: "Eket",
+          area: [],
+        },
+        {
+          name: "Esit Eket",
+          area: [],
+        },
+        {
+          name: "Essien Udim",
+          area: [],
+        },
+        {
+          name: "Etim Ekpo",
+          area: [],
+        },
+        {
+          name: "Etinan",
+          area: [],
+        },
+        {
+          name: "Ibeno",
+          area: [],
+        },
+        {
+          name: "Ibesikpo Asutan",
+          area: [],
+        },
+        {
+          name: "Ibiono Ibom",
+          area: [],
+        },
+        {
+          name: "Ika",
+          area: [],
+        },
+        {
+          name: "Ikono",
+          area: [],
+        },
+        {
+          name: "Ikot Abasi",
+          area: [],
+        },
+        {
+          name: "Ikot Ekpene",
+          area: [],
+        },
+        {
+          name: "Ini",
+          area: [],
+        },
+        {
+          name: "Itu",
+          area: [],
+        },
+        {
+          name: "Mbo",
+          area: [],
+        },
+        {
+          name: "Mkpat Enin",
+          area: [],
+        },
+        {
+          name: "Nsit Atai",
+          area: [],
+        },
+        {
+          name: "Nsit Ibom",
+          area: [],
+        },
+        {
+          name: "Nsit Ubium",
+          area: [],
+        },
+        {
+          name: "Obot Akara",
+          area: [],
+        },
+        {
+          name: "Okobo",
+          area: [],
+        },
+        {
+          name: "Onna",
+          area: [],
+        },
+        {
+          name: "Oron",
+          area: [],
+        },
+        {
+          name: "Oruk Anam",
+          area: [],
+        },
+        {
+          name: "Udung-Uko",
+          area: [],
+        },
+        {
+          name: "Ukanafun",
+          area: [],
+        },
+        {
+          name: "Uruan",
+          area: [],
+        },
+        {
+          name: "Urue Offong/Oruko",
+          area: [],
+        },
+        {
+          name: "Uyo",
+          area: [],
+        },
+      ],
+    },
   ],
 };
