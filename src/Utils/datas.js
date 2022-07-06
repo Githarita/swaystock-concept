@@ -2436,5 +2436,1304 @@ export const locationData = {
         },
       ],
     },
+    {
+      name: "Kogi",
+      lga: [
+        {
+          name: "Adavi",
+          area: [],
+        },
+        {
+          name: "Ajaokuta",
+          area: [],
+        },
+        {
+          name: "Ankpa",
+          area: [],
+        },
+        {
+          name: "Bassa",
+          area: [],
+        },
+        {
+          name: "Dekina",
+          area: [],
+        },
+        {
+          name: "Ibaji",
+          area: [],
+        },
+        {
+          name: "Idah",
+          area: [],
+        },
+        {
+          name: "Igalamela Odolu",
+          area: [],
+        },
+        {
+          name: "Ijumu",
+          area: [],
+        },
+        {
+          name: "Kabba Bunu",
+          area: [],
+        },
+        {
+          name: "Kogi",
+          area: [],
+        },
+        {
+          name: "Lokoja",
+          area: [],
+        },
+        {
+          name: "Mopa Muro",
+          area: [],
+        },
+        {
+          name: "Ofu",
+          area: [],
+        },
+        {
+          name: "Ogori Magongo",
+          area: [],
+        },
+        {
+          name: "Okehi",
+          area: [],
+        },
+        {
+          name: "Okene",
+          area: [],
+        },
+        {
+          name: "Olamaboro",
+          area: [],
+        },
+        {
+          name: "Omala",
+          area: [],
+        },
+        {
+          name: "Yagba East",
+          area: [],
+        },
+        {
+          name: "Yagba West",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Kwara",
+      lga: [
+        {
+          name: "Asa",
+          area: [],
+        },
+        {
+          name: "Baruten",
+          area: [],
+        },
+        {
+          name: "Edu",
+          area: [],
+        },
+        {
+          name: "Ekiti",
+          area: [],
+        },
+        {
+          name: "Ifelodun",
+          area: [],
+        },
+        {
+          name: "Ilorin East",
+          area: [],
+        },
+        {
+          name: "Ilorin South",
+          area: [],
+        },
+        {
+          name: "Ilorin West",
+          area: [],
+        },
+        {
+          name: "Irepodun",
+          area: [],
+        },
+        {
+          name: "Isin",
+          area: [],
+        },
+        {
+          name: "Kaiama",
+          area: [],
+        },
+        {
+          name: "Moro",
+          area: [],
+        },
+        {
+          name: "Offa",
+          area: [],
+        },
+        {
+          name: "Oke Ero",
+          area: [],
+        },
+        {
+          name: "Oyun",
+          area: [],
+        },
+        {
+          name: "Pategi",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Lagos",
+      lga: [
+        {
+          name: "Agege",
+          area: [],
+        },
+        {
+          name: "Ajeromi-Ifelodun",
+          area: [],
+        },
+        {
+          name: "Alimosho",
+          area: [],
+        },
+        {
+          name: "Amuwo-Odofin",
+          area: [],
+        },
+        {
+          name: "Apapa",
+          area: [],
+        },
+        {
+          name: "Badagry",
+          area: [],
+        },
+        {
+          name: "Epe",
+          area: [],
+        },
+        {
+          name: "Eti Osa",
+          area: [],
+        },
+        {
+          name: "Ibeju-Lekki",
+          area: [],
+        },
+        {
+          name: "Ifako-Ijaiye",
+          area: [],
+        },
+        {
+          name: "Ikeja",
+          area: [],
+        },
+        {
+          name: "Ikorodu",
+          area: [],
+        },
+        {
+          name: "Kosofe",
+          area: [],
+        },
+        {
+          name: "Lagos Island",
+          area: [],
+        },
+        {
+          name: "Lagos Mainland",
+          area: [],
+        },
+        {
+          name: "Mushin",
+          area: [],
+        },
+        {
+          name: "Ojo",
+          area: [],
+        },
+        {
+          name: "Oshodi-Isolo",
+          area: [],
+        },
+        {
+          name: "Shomolu",
+          area: [],
+        },
+        {
+          name: "Surulere",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Nasarawa",
+      lga: [
+        {
+          name: "Akwanga",
+          area: [],
+        },
+        {
+          name: "Awe",
+          area: [],
+        },
+        {
+          name: "Doma",
+          area: [],
+        },
+        {
+          name: "Karu",
+          area: [],
+        },
+        {
+          name: "Keana",
+          area: [],
+        },
+        {
+          name: "Keffi",
+          area: [],
+        },
+        {
+          name: "Kokona",
+          area: [],
+        },
+        {
+          name: "Lafia",
+          area: [],
+        },
+        {
+          name: "Nasarawa",
+          area: [],
+        },
+        {
+          name: "Nasarawa Egon",
+          area: [],
+        },
+        {
+          name: "Obi",
+          area: [],
+        },
+        {
+          name: "Toto",
+          area: [],
+        },
+        {
+          name: "Wamba",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Niger",
+      lga: [
+        {
+          name: "Agaie",
+          area: [],
+        },
+        {
+          name: "Agwara",
+          area: [],
+        },
+        {
+          name: "Bida",
+          area: [],
+        },
+        {
+          name: "Borgu",
+          area: [],
+        },
+        {
+          name: "Bosso",
+          area: [],
+        },
+        {
+          name: "Chanchaga",
+          area: [],
+        },
+        {
+          name: "Edati",
+          area: [],
+        },
+        {
+          name: "Gbako",
+          area: [],
+        },
+        {
+          name: "Gurara",
+          area: [],
+        },
+        {
+          name: "Katcha",
+          area: [],
+        },
+        {
+          name: "Kontagora",
+          area: [],
+        },
+        {
+          name: "Lapai",
+          area: [],
+        },
+        {
+          name: "Lavun",
+          area: [],
+        },
+        {
+          name: "Magama",
+          area: [],
+        },
+        {
+          name: "Mariga",
+          area: [],
+        },
+        {
+          name: "Mashegu",
+          area: [],
+        },
+        {
+          name: "Mokwa",
+          area: [],
+        },
+        {
+          name: "Moya",
+          area: [],
+        },
+        {
+          name: "Paikoro",
+          area: [],
+        },
+        {
+          name: "Rafi",
+          area: [],
+        },
+        {
+          name: "Rijau",
+          area: [],
+        },
+        {
+          name: "Shiroro",
+          area: [],
+        },
+        {
+          name: "Suleja",
+          area: [],
+        },
+        {
+          name: "Tafa",
+          area: [],
+        },
+        {
+          name: "Wushishi",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Ogun",
+      lga: [
+        {
+          name: "Abeokuta North",
+          area: [],
+        },
+        {
+          name: "Abeokuta South",
+          area: [],
+        },
+        {
+          name: "Ado-Odo Ota",
+          area: [],
+        },
+        {
+          name: "Egbado North",
+          area: [],
+        },
+        {
+          name: "Egbado South",
+          area: [],
+        },
+        {
+          name: "Ewekoro",
+          area: [],
+        },
+        {
+          name: "Ifo",
+          area: [],
+        },
+        {
+          name: "Ijebu East",
+          area: [],
+        },
+        {
+          name: "Ijebu North",
+          area: [],
+        },
+        {
+          name: "Ijebu North East",
+          area: [],
+        },
+        {
+          name: "Ijebu Ode",
+          area: [],
+        },
+        {
+          name: "Ikenne",
+          area: [],
+        },
+        {
+          name: "Imeko Afon",
+          area: [],
+        },
+        {
+          name: "Ipokia",
+          area: [],
+        },
+        {
+          name: "Obafemi Owode",
+          area: [],
+        },
+        {
+          name: "Odeda",
+          area: [],
+        },
+        {
+          name: "Odogbolu",
+          area: [],
+        },
+        {
+          name: "Ogun Waterside",
+          area: [],
+        },
+        {
+          name: "Remo North",
+          area: [],
+        },
+        {
+          name: "Shagamu",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Ondo",
+      lga: [
+        {
+          name: "Akoko North-East",
+          area: [],
+        },
+        {
+          name: "Akoko North-West",
+          area: [],
+        },
+        {
+          name: "Akoko South-West",
+          area: [],
+        },
+        {
+          name: "Akoko South-East",
+          area: [],
+        },
+        {
+          name: "Akure North",
+          area: [],
+        },
+        {
+          name: "Akure South",
+          area: [],
+        },
+        {
+          name: "Ese Odo",
+          area: [],
+        },
+        {
+          name: "Idanre",
+          area: [],
+        },
+        {
+          name: "Ifedore",
+          area: [],
+        },
+        {
+          name: "Ilaje",
+          area: [],
+        },
+        {
+          name: "Ile Oluji-Okeigbo",
+          area: [],
+        },
+        {
+          name: "Irele",
+          area: [],
+        },
+        {
+          name: "Odigbo",
+          area: [],
+        },
+        {
+          name: "Okitipupa",
+          area: [],
+        },
+        {
+          name: "Ondo East",
+          area: [],
+        },
+        {
+          name: "Ondo West",
+          area: [],
+        },
+        {
+          name: "Ose",
+          area: [],
+        },
+        {
+          name: "Owo",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Osun",
+      lga: [
+        {
+          name: "Atakunmosa East",
+          area: [],
+        },
+        {
+          name: "Atakunmosa West",
+          area: [],
+        },
+        {
+          name: "Aiyedaade",
+          area: [],
+        },
+        {
+          name: "Aiyedire",
+          area: [],
+        },
+        {
+          name: "Boluwaduro",
+          area: [],
+        },
+        {
+          name: "Boripe",
+          area: [],
+        },
+        {
+          name: "Ede North",
+          area: [],
+        },
+        {
+          name: "Ede South",
+          area: [],
+        },
+        {
+          name: "Ife Central",
+          area: [],
+        },
+        {
+          name: "Ife East",
+          area: [],
+        },
+        {
+          name: "Ife North",
+          area: [],
+        },
+        {
+          name: "Ife South",
+          area: [],
+        },
+        {
+          name: "Egbedore",
+          area: [],
+        },
+        {
+          name: "Ejigbo",
+          area: [],
+        },
+        {
+          name: "Ifedayo",
+          area: [],
+        },
+        {
+          name: "Ifelodun",
+          area: [],
+        },
+        {
+          name: "Ila",
+          area: [],
+        },
+        {
+          name: "Ilesa East",
+          area: [],
+        },
+        {
+          name: "Ilesa West",
+          area: [],
+        },
+        {
+          name: "Irepodun",
+          area: [],
+        },
+        {
+          name: "Irewole",
+          area: [],
+        },
+        {
+          name: "Isokan",
+          area: [],
+        },
+        {
+          name: "Iwo",
+          area: [],
+        },
+        {
+          name: "Obokun",
+          area: [],
+        },
+        {
+          name: "Odo Otin",
+          area: [],
+        },
+        {
+          name: "Ola Oluwa",
+          area: [],
+        },
+        {
+          name: "Olorunda",
+          area: [],
+        },
+        {
+          name: "Oriade",
+          area: [],
+        },
+        {
+          name: "Orolu",
+          area: [],
+        },
+        {
+          name: "Osogbo",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Oyo",
+      lga: [
+        {
+          name: "Afijio",
+          area: [],
+        },
+        {
+          name: "Akinyele",
+          area: [],
+        },
+        {
+          name: "Atiba",
+          area: [],
+        },
+        {
+          name: "Atisbo",
+          area: [],
+        },
+        {
+          name: "Egbeda",
+          area: [],
+        },
+        {
+          name: "Ibadan North",
+          area: [],
+        },
+        {
+          name: "Ibadan North-East",
+          area: [],
+        },
+        {
+          name: "Ibadan North-West",
+          area: [],
+        },
+        {
+          name: "Ibadan South-East",
+          area: [],
+        },
+        {
+          name: "Ibadan South-West",
+          area: [],
+        },
+        {
+          name: "Ibarapa Central",
+          area: [],
+        },
+        {
+          name: "Ibarapa East",
+          area: [],
+        },
+        {
+          name: "Ibarapa North",
+          area: [],
+        },
+        {
+          name: "Ido",
+          area: [],
+        },
+        {
+          name: "Irepo",
+          area: [],
+        },
+        {
+          name: "Iseyin",
+          area: [],
+        },
+        {
+          name: "Itesiwaju",
+          area: [],
+        },
+        {
+          name: "Iwajowa",
+          area: [],
+        },
+        {
+          name: "Kajola",
+          area: [],
+        },
+        {
+          name: "Lagelu",
+          area: [],
+        },
+        {
+          name: "Ogbomosho North",
+          area: [],
+        },
+        {
+          name: "Ogbomosho South",
+          area: [],
+        },
+        {
+          name: "Ogo Oluwa",
+          area: [],
+        },
+        {
+          name: "Olorunsogo",
+          area: [],
+        },
+        {
+          name: "Oluyole",
+          area: [],
+        },
+        {
+          name: "Ona Ara",
+          area: [],
+        },
+        {
+          name: "Orelope",
+          area: [],
+        },
+        {
+          name: "Ori Ire",
+          area: [],
+        },
+        {
+          name: "Oyo",
+          area: [],
+        },
+        {
+          name: "Oyo East",
+          area: [],
+        },
+        {
+          name: "Saki East",
+          area: [],
+        },
+        {
+          name: "Saki West",
+          area: [],
+        },
+        {
+          name: "Surulere",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Plateau",
+      lga: [
+        {
+          name: "Bokkos",
+          area: [],
+        },
+        {
+          name: "Barkin Ladi",
+          area: [],
+        },
+        {
+          name: "Bassa",
+          area: [],
+        },
+        {
+          name: "Jos East",
+          area: [],
+        },
+        {
+          name: "Jos North",
+          area: [],
+        },
+        {
+          name: "Jos South",
+          area: [],
+        },
+        {
+          name: "Kanam",
+          area: [],
+        },
+        {
+          name: "Kanke",
+          area: [],
+        },
+        {
+          name: "Langtang South",
+          area: [],
+        },
+        {
+          name: "Langtang North",
+          area: [],
+        },
+        {
+          name: "Mangu",
+          area: [],
+        },
+        {
+          name: "Mikang",
+          area: [],
+        },
+        {
+          name: "Pankshin",
+          area: [],
+        },
+        {
+          name: "Qua an Pan",
+          area: [],
+        },
+        {
+          name: "Riyom",
+          area: [],
+        },
+        {
+          name: "Shendam",
+          area: [],
+        },
+        {
+          name: "Wase",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Rivers",
+      lga: [
+        {
+          name: "Port Harcourt",
+          area: [],
+        },
+        {
+          name: "Obio-Akpor",
+          area: [],
+        },
+        {
+          name: "Okrika",
+          area: [],
+        },
+        {
+          name: "Ogu–Bolo",
+          area: [],
+        },
+        {
+          name: "Eleme",
+          area: [],
+        },
+        {
+          name: "Tai",
+          area: [],
+        },
+        {
+          name: "Gokana",
+          area: [],
+        },
+        {
+          name: "Khana",
+          area: [],
+        },
+        {
+          name: "Oyigbo",
+          area: [],
+        },
+        {
+          name: "Opobo–Nkoro",
+          area: [],
+        },
+        {
+          name: "Andoni",
+          area: [],
+        },
+        {
+          name: "Bonny",
+          area: [],
+        },
+        {
+          name: "Degema",
+          area: [],
+        },
+        {
+          name: "Asari-Toru",
+          area: [],
+        },
+        {
+          name: "Akuku-Toru",
+          area: [],
+        },
+        {
+          name: "Abua–Odual",
+          area: [],
+        },
+        {
+          name: "Ahoada West",
+          area: [],
+        },
+        {
+          name: "Ahoada East",
+          area: [],
+        },
+        {
+          name: "Ogba–Egbema–Ndoni",
+          area: [],
+        },
+        {
+          name: "Emohua",
+          area: [],
+        },
+        {
+          name: "Ikwerre",
+          area: [],
+        },
+        {
+          name: "Etche",
+          area: [],
+        },
+        {
+          name: "Omuma",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Sokoto",
+      lga: [
+        {
+          name: "Binji",
+          area: [],
+        },
+        {
+          name: "Bodinga",
+          area: [],
+        },
+        {
+          name: "Dange Shuni",
+          area: [],
+        },
+        {
+          name: "Gada",
+          area: [],
+        },
+        {
+          name: "Goronyo",
+          area: [],
+        },
+        {
+          name: "Gudu",
+          area: [],
+        },
+        {
+          name: "Gwadabawa",
+          area: [],
+        },
+        {
+          name: "Illela",
+          area: [],
+        },
+        {
+          name: "Isa",
+          area: [],
+        },
+        {
+          name: "Kebbe",
+          area: [],
+        },
+        {
+          name: "Kware",
+          area: [],
+        },
+        {
+          name: "Rabah",
+          area: [],
+        },
+        {
+          name: "Sabon Birni",
+          area: [],
+        },
+        {
+          name: "Shagari",
+          area: [],
+        },
+        {
+          name: "Silame",
+          area: [],
+        },
+        {
+          name: "Sokoto North",
+          area: [],
+        },
+        {
+          name: "Sokoto South",
+          area: [],
+        },
+        {
+          name: "Tambuwal",
+          area: [],
+        },
+        {
+          name: "Tangaza",
+          area: [],
+        },
+        {
+          name: "Tureta",
+          area: [],
+        },
+        {
+          name: "Wamako",
+          area: [],
+        },
+        {
+          name: "Wurno",
+          area: [],
+        },
+        {
+          name: "Yabo",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Taraba",
+      lga: [
+        {
+          name: "Ardo Kola",
+          area: [],
+        },
+        {
+          name: "Bali",
+          area: [],
+        },
+        {
+          name: "Donga",
+          area: [],
+        },
+        {
+          name: "Gashaka",
+          area: [],
+        },
+        {
+          name: "Gassol",
+          area: [],
+        },
+        {
+          name: "Ibi",
+          area: [],
+        },
+        {
+          name: "Jalingo",
+          area: [],
+        },
+        {
+          name: "Karim Lamido",
+          area: [],
+        },
+        {
+          name: "Kumi",
+          area: [],
+        },
+        {
+          name: "Lau",
+          area: [],
+        },
+        {
+          name: "Sardauna",
+          area: [],
+        },
+        {
+          name: "Takum",
+          area: [],
+        },
+        {
+          name: "Ussa",
+          area: [],
+        },
+        {
+          name: "Wukari",
+          area: [],
+        },
+        {
+          name: "Yorro",
+          area: [],
+        },
+        {
+          name: "Zing",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Yobe",
+      lga: [
+        {
+          name: "Bade",
+          area: [],
+        },
+        {
+          name: "Bursari",
+          area: [],
+        },
+        {
+          name: "Damaturu",
+          area: [],
+        },
+        {
+          name: "Fika",
+          area: [],
+        },
+        {
+          name: "Fune",
+          area: [],
+        },
+        {
+          name: "Geidam",
+          area: [],
+        },
+        {
+          name: "Gujba",
+          area: [],
+        },
+        {
+          name: "Gulani",
+          area: [],
+        },
+        {
+          name: "Jakusko",
+          area: [],
+        },
+        {
+          name: "Karasuwa",
+          area: [],
+        },
+        {
+          name: "Machina",
+          area: [],
+        },
+        {
+          name: "Nangere",
+          area: [],
+        },
+        {
+          name: "Nguru",
+          area: [],
+        },
+        {
+          name: "Potiskum",
+          area: [],
+        },
+        {
+          name: "Tarmuwa",
+          area: [],
+        },
+        {
+          name: "Yunusari",
+          area: [],
+        },
+        {
+          name: "Yusufari",
+          area: [],
+        },
+      ],
+    },
+    {
+      name: "Zamfara",
+      lga: [
+        {
+          name: "Anka",
+          area: [],
+        },
+        {
+          name: "Bakura",
+          area: [],
+        },
+        {
+          name: "Birnin Magaji Kiyaw",
+          area: [],
+        },
+        {
+          name: "Bukkuyum",
+          area: [],
+        },
+        {
+          name: "Bungudu",
+          area: [],
+        },
+        {
+          name: "Gummi",
+          area: [],
+        },
+        {
+          name: "Gusau",
+          area: [],
+        },
+        {
+          name: "Kaura Namoda",
+          area: [],
+        },
+        {
+          name: "Maradun",
+          area: [],
+        },
+        {
+          name: "Maru",
+          area: [],
+        },
+        {
+          name: "Shinkafi",
+          area: [],
+        },
+        {
+          name: "Talata Mafara",
+          area: [],
+        },
+        {
+          name: "Chafe",
+          area: [],
+        },
+        {
+          name: "Zurmi",
+          area: [],
+        },
+      ],
+    },
   ],
 };
