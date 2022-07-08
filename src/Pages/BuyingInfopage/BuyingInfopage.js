@@ -23,6 +23,13 @@ function BuyingInfopage() {
         <p className="settings-top-text">Buying Information</p>
       </header>
 
+      <div className="buying-info-container">
+        <div className="buying-info-container-btn">
+          <button className="buying-info-container-btn-btn">
+            Add Buying Information
+          </button>
+        </div>
+      </div>
     </>
   );
 }
