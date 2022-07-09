@@ -43,15 +43,15 @@ function BuyingInfopage() {
         {active === "showform" && (
           <div className="buying-info-container-form">
             <div className="buying-info-container-formitem">
-              <p className="bicftitle">Shipping Information</p>
+              <h5 className="bicftitle">Shipping Information</h5>
               <p className="bicfbtn">Add Shipping Information</p>
             </div>
             <div className="buying-info-container-formitem">
-              <p className="bicftitle">Billing Information</p>
+              <h5 className="bicftitle">Billing Information</h5>
               <p className="bicfbtn">Add Billing Address</p>
             </div>
             <div className="buying-info-container-formitem ">
-              <p className="bicftitle">Payment</p>
+              <h5 className="bicftitle">Payment</h5>
               <p className="bicfbtn">Add Payment Method</p>
             </div>
 
