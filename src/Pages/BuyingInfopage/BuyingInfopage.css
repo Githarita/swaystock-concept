@@ -60,6 +60,7 @@
     align-items: center;
     gap: .2rem;
     padding: 8px 0;
+    cursor: pointer;
 }
 
 .bicfremoveitem p {
