@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: ltr;
@@ -36,7 +36,7 @@ html {
 }
 
 code {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1,
@@ -44,7 +44,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 500px) {
@@ -52,6 +52,15 @@ h5 {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+  ::selection {
+    color: none;
+    background: none;
+  }
+  /* For Mozilla Firefox */
+  ::-moz-selection {
+    color: none;
+    background: none;
   }
 }
 
