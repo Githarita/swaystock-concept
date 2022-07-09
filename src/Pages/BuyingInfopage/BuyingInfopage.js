@@ -7,7 +7,9 @@ import "./BuyingInfopage.css";
 function BuyingInfopage() {
   const navigate = useNavigate();
   const [active, setActive] = useState("addbtn");
+  const [stateShow, setStateShow] = useState(false);
   const [selectedState, setSelectedState] = useState();
+  const [displayam, setDisplayam] = useState("");
   const [selectedLga, setSelectedLga] = useState();
 
   const availableStates = locationData.states.find(
@@ -83,14 +85,20 @@ function BuyingInfopage() {
                     <span className="omrs-input-label">City</span>
                   </label>
                 </div>
-                <div className="omrs-input-group">
+                <div
+                  className="omrs-input-group"
+                  onClick={() => setStateShow(true)}
+                >
                   <label className="omrs-input-underlined">
-                    <input type="text" />
+                    <input type="text" value={selectedState} />
 
                     <div className="omrs-input-label wegosplit">
-                      <span>State / Province</span>
+                      <span style={{ display: `${displayam}` }}>
+                        State / Province
+                      </span>
 
                       <svg
+                        style={{ display: `${displayam}` }}
                         width="15"
                         height="15"
                         viewBox="0 0 15 15"
@@ -188,17 +196,28 @@ function BuyingInfopage() {
         )}
       </div>
 
-      <div className="state-province">
-        <p className="state-province-title">Select State / Province</p>
-        <div className="state-prov">
-          {locationData.states.map((state, key) => {
-          return (
-            <p className="state-province-text" key={key}>{state.name}</p>
-          )
-        })}
+      {stateShow && (
+        <div className="state-province">
+          <p className="state-province-title">Select State / Province</p>
+          <div className="state-prov">
+            {locationData.states.map((state, key) => {
+              return (
+                <p
+                  className="state-province-text"
+                  key={key}
+                  onClick={() => {
+                    setSelectedState(state.name);
+                    setDisplayam("none");
+                    setStateShow(false);
+                  }}
+                >
+                  {state.name}
+                </p>
+              );
+            })}
+          </div>
         </div>
-        
-      </div>
+      )}
     </>
   );
 }
