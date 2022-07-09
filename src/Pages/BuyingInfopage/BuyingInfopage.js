@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BuyingInfopage.css";
 
 function BuyingInfopage() {
   const navigate = useNavigate();
+  const [active, setActive] = useState("addbtn");
   return (
     <>
       <header className="settings-top">
@@ -24,21 +26,28 @@ function BuyingInfopage() {
       </header>
 
       <div className="buying-info-container">
-        <div className="buying-info-container-btn">
-          <p className="buying-info-container-btn-text">
-            "Oops! you don't have a buying information yet!"
-          </p>
-          <button className="buying-info-container-btn-btn">
-            Add Buying Information
-          </button>
-        </div>
-
-        <div className="buying-info-container-form">
-          <div className="buying-info-container-formitem">
-            <p className="bicftitle">Shipping Information</p>
-            <p className="bicfbtn">Add Shipping Information</p>
+        {active === "addbtn" && (
+          <div className="buying-info-container-btn">
+            <p className="buying-info-container-btn-text">
+              "Oops! you don't have a buying information yet!"
+            </p>
+            <button
+              className="buying-info-container-btn-btn"
+              onClick={() => setActive("showform")}
+            >
+              Add Buying Information
+            </button>
           </div>
-        </div>
+        )}
+
+        {active === "showform" && (
+          <div className="buying-info-container-form">
+            <div className="buying-info-container-formitem">
+              <p className="bicftitle">Shipping Information</p>
+              <p className="bicfbtn">Add Shipping Information</p>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
