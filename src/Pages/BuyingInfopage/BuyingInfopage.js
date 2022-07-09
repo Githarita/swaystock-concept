@@ -25,7 +25,7 @@ function BuyingInfopage() {
 
       <div className="buying-info-container">
         <div className="buying-info-container-btn">
-          <p className="buying-info-container-btn-text">You don't have a buying information click to add</p>
+          <p className="buying-info-container-btn-text">You don't have a buying information</p>
           <button className="buying-info-container-btn-btn">
             Add Buying Information
           </button>

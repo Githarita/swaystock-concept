@@ -9,7 +9,7 @@
     font-family: inherit;
     padding: 12px 18px;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: rgb(58, 55, 55);
     cursor: pointer;
@@ -17,7 +17,7 @@
 }
 
 .buying-info-container-btn-text {
-    font-size: 10px;
+    font-size: 11px;
     color: #999;
     margin-bottom: 5px;
 }
