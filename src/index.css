@@ -47,6 +47,13 @@ h5 {
   font-family: "Lato", sans-serif;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: none;
+    background-color: transparent;
+  }
+}
+
 @media screen and (max-width: 500px) {
   body {
     -webkit-user-select: none;
