@@ -91,7 +91,7 @@
 .omrs-input-underlined > input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #1d1d1f;
     height: 3rem;
     font-size: 12px;
     padding-left: 0;
