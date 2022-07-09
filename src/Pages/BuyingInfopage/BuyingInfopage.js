@@ -85,14 +85,15 @@ function BuyingInfopage() {
                 </div>
 
                 {showInfo === "shipinfo" && (
-                  <div className="omrs-form">
-                    <input type="text" placeholder="Full Legal Name" />
+                  <form autoComplete="on" className="omrs-form">
+                    <input type="text" autoComplete="name"  placeholder="Full Legal Name" />
 
-                    <input type="text" placeholder="Street Address" />
+                    <input type="text" placeholder="Street Address" autoComplete="street-address" />
 
                     <input
                       type="text"
                       placeholder="Street Address2 (Optional)"
+                      autoComplete="street-address"
                     />
 
                     <input type="text" placeholder="City" />
@@ -146,10 +147,10 @@ function BuyingInfopage() {
                       </svg>
                     </div>
 
-                    <input type="number" placeholder="Postal Code" />
+                    <input type="number" placeholder="Postal Code" autoComplete="postal-code" />
 
-                    <input type="tel" placeholder="Phone Number" />
-                  </div>
+                    <input type="tel" placeholder="Phone Number" autoComplete="tel" />
+                  </form>
                 )}
               </div>
             )}
