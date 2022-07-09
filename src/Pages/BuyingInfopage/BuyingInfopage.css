@@ -15,3 +15,9 @@
     cursor: pointer;
 
 }
+
+.buying-info-container-btn-text {
+    font-size: 10px;
+    color: #999;
+    margin-bottom: 5px;
+}
