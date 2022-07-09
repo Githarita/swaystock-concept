@@ -59,6 +59,7 @@ h5 {
   body {
     -webkit-user-select: none;
     -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
     user-select: none;
   }
   ::selection {
