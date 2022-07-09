@@ -74,13 +74,13 @@ function BuyingInfopage() {
                 </div>
                 <div className="omrs-input-group">
                   <label className="omrs-input-underlined">
-                    <input type="text" />
+                    <input type="number" />
                     <span className="omrs-input-label">Postal Code</span>
                   </label>
                 </div>
                 <div className="omrs-input-group">
                   <label className="omrs-input-underlined">
-                    <input type="number" />
+                    <input type="tel" />
                     <span className="omrs-input-label">Phone Number</span>
                   </label>
                 </div>
