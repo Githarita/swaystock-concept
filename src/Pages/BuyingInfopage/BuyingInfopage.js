@@ -13,14 +13,22 @@ function BuyingInfopage() {
   const [displayam, setDisplayam] = useState("");
   const [displayamlga, setDisplayamlga] = useState("");
   const [selectedLga, setSelectedLga] = useState();
+  const [showInfo, setShowInfo] = useState("");
+  const [showaddship, setShowaddship] = useState(true);
+  const [showaddbill, setShowaddbill] = useState(true);
+  const [showaddpayment, setShowaddpayment] = useState(true);
+
+  const [showShippingInformation, setShippingInformation] = useState(true);
+  const [showBillingAddress, setBillingAddress] = useState(true);
+  const [showPaymentMethod, setPaymentMethod] = useState(true);
 
   const availableStates = locationData.states.find(
     (state) => state.name === selectedState
   );
 
-  const availableLgas = availableStates?.lga?.find(
-    (l) => l.name === selectedLga
-  );
+  // const availableLgas = availableStates?.lga?.find(
+  //   (l) => l.name === selectedLga
+  // );
   return (
     <>
       <header className="settings-top">
@@ -57,123 +65,151 @@ function BuyingInfopage() {
 
         {active === "showform" && (
           <div className="buying-info-container-form">
-            <div className="buying-info-container-formitem">
-              <h5 className="bicftitle">Shipping Information</h5>
-              <p className="bicfbtn">Add Shipping Information</p>
-              <div className="omrs-form">
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="text" />
-                    <span className="omrs-input-label">Full Legal Name</span>
-                  </label>
+            {showShippingInformation && (
+              <div className="buying-info-container-formitem">
+                <div>
+                  <h5 className="bicftitle">Shipping Information</h5>
+                  {showaddship && (
+                    <p
+                      className="bicfbtn"
+                      onClick={() => {
+                        setShowInfo("shipinfo");
+                        setShowaddship(false);
+                        setBillingAddress(false);
+                        setPaymentMethod(false);
+                      }}
+                    >
+                      Add Shipping Information
+                    </p>
+                  )}
                 </div>
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="text" />
-                    <span className="omrs-input-label">Street Address</span>
-                  </label>
-                </div>
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="text" />
-                    <span className="omrs-input-label">
-                      Street Address2 (Optional)
-                    </span>
-                  </label>
-                </div>
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="text" />
-                    <span className="omrs-input-label">City</span>
-                  </label>
-                </div>
-                <div
-                  className="omrs-input-group"
-                  onClick={() => {
-                    setStateShow(true);
-                    setLgaShow(false);
-                  }}
-                >
-                  <div className="omrs-input-underlined">
-                    <div className="omrsselect">{selectedState} </div>
 
-                    <div className="omrs-input-label wegosplit">
-                      <span style={{ display: `${displayam}` }}>
-                        State / Province
-                      </span>
+                {showInfo === "shipinfo" && (
+                  <div className="omrs-form">
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="text" />
+                        <span className="omrs-input-label">
+                          Full Legal Name
+                        </span>
+                      </label>
+                    </div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="text" />
+                        <span className="omrs-input-label">Street Address</span>
+                      </label>
+                    </div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="text" />
+                        <span className="omrs-input-label">
+                          Street Address2 (Optional)
+                        </span>
+                      </label>
+                    </div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="text" />
+                        <span className="omrs-input-label">City</span>
+                      </label>
+                    </div>
+                    <div className="omrs-input-group">
+                      <div className="omrs-input-underlined">
+                        <div className="omrsselect">{selectedState} </div>
 
-                      <svg
-                        style={{ display: `${displayam}` }}
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
+                        <div
+                          className="omrs-input-label wegosplit"
+                          onClick={() => {
+                            setStateShow(true);
+                            setLgaShow(false);
+                          }}
+                        >
+                          <span style={{ display: `${displayam}` }}>
+                            State / Province
+                          </span>
+
+                          <svg
+                            style={{ display: `${displayam}` }}
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="omrs-input-group">
+                      <div className="omrs-input-underlined">
+                        <div className="omrsselect">{selectedLga}</div>
+
+                        <div
+                          className="omrs-input-label wegosplit"
+                          onClick={() => {
+                            setLgaShow(true);
+                            setStateShow(false);
+                          }}
+                        >
+                          <span style={{ display: `${displayamlga}` }}>
+                            LGA
+                          </span>
+
+                          <svg
+                            style={{ display: `${displayamlga}` }}
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="number" />
+                        <span className="omrs-input-label">Postal Code</span>
+                      </label>
+                    </div>
+                    <div className="omrs-input-group">
+                      <label className="omrs-input-underlined">
+                        <input type="tel" />
+                        <span className="omrs-input-label">Phone Number</span>
+                      </label>
                     </div>
                   </div>
-                </div>
-                <div
-                  className="omrs-input-group"
-                  onClick={() => {
-                    setLgaShow(true);
-                    setStateShow(false);
-                  }}
-                >
-                  <div className="omrs-input-underlined">
-                    <div className="omrsselect">{selectedLga}</div>
-
-                    <div className="omrs-input-label wegosplit">
-                      <span style={{ display: `${displayamlga}` }}>LGA</span>
-
-                      <svg
-                        style={{ display: `${displayamlga}` }}
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="number" />
-                    <span className="omrs-input-label">Postal Code</span>
-                  </label>
-                </div>
-                <div className="omrs-input-group">
-                  <label className="omrs-input-underlined">
-                    <input type="tel" />
-                    <span className="omrs-input-label">Phone Number</span>
-                  </label>
-                </div>
+                )}
               </div>
-            </div>
+            )}
 
-            <div className="buying-info-container-formitem">
-              <h5 className="bicftitle">Billing Information</h5>
-              <p className="bicfbtn">Add Billing Address</p>
-            </div>
-            <div className="buying-info-container-formitem ">
-              <h5 className="bicftitle">Payment</h5>
-              <p className="bicfbtn">Add Payment Method</p>
-            </div>
+            {showBillingAddress && (
+              <div className="buying-info-container-formitem">
+                <h5 className="bicftitle">Billing Information</h5>
+                <p className="bicfbtn">Add Billing Address</p>
+              </div>
+            )}
+
+            {showPaymentMethod && (
+              <div className="buying-info-container-formitem ">
+                <h5 className="bicftitle">Payment</h5>
+                <p className="bicfbtn">Add Payment Method</p>
+              </div>
+            )}
 
             <div className="bicfremove">
               <div
@@ -192,7 +228,12 @@ function BuyingInfopage() {
 
               <div
                 className="bicfremoveitem"
-                onClick={() => setActive("addbtn")}
+                onClick={() => {
+                  setShowaddship(true);
+                  setBillingAddress(true);
+                  setPaymentMethod(true);
+                  setShowInfo(false);
+                }}
               >
                 <p>Save</p>
                 <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
