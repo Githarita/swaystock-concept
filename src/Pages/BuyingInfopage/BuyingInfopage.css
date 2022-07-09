@@ -93,7 +93,7 @@
     border: none;
     border-bottom: 1px solid #999;
     height: 3rem;
-    font-size: 13px;
+    font-size: 12px;
     padding-left: 0;
     line-height: 147.6%;
     padding-top: 0.825rem;
@@ -111,11 +111,11 @@
     line-height: 147.6%;
     color: #999;
     transition: top .2s;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .omrs-input-underlined > input:focus + .omrs-input-label {
     top: 0;
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 45px;
 }
