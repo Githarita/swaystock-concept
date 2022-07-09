@@ -95,7 +95,7 @@ function BuyingInfopage() {
                   }}
                 >
                   <label className="omrs-input-underlined">
-                    <input type="text" value={selectedState} />
+                    <input type="text" value={selectedState} name="lestse" />
 
                     <div className="omrs-input-label wegosplit">
                       <span style={{ display: `${displayam}` }}>
@@ -128,7 +128,7 @@ function BuyingInfopage() {
                   }}
                 >
                   <label className="omrs-input-underlined">
-                    <input type="text" value={selectedLga} />
+                    <input type="text" value={selectedLga} name="lestse" />
 
                     <div className="omrs-input-label wegosplit">
                       <span style={{ display: `${displayamlga}` }}>LGA</span>
