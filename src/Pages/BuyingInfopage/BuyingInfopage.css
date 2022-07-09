@@ -133,7 +133,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40vh;
+    height: 50vh;
     background-color: #fff;
     overflow-y: scroll;
     padding-top: 1rem;
@@ -142,7 +142,7 @@
 
 .state-province-text {
     font-size: 13px;
-    padding: 12px 15px;
+    padding: 12px 35px;
     cursor: pointer;
 }
 
