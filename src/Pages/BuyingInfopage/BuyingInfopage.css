@@ -80,10 +80,7 @@
   gap: 1rem;
 }
 
-.omrs-input-group {
-  position: relative;
-  width: 100%;
-}
+
 
 .omrs-input-underlined:hover {
   background-color: transparent;
