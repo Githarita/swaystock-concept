@@ -45,6 +45,13 @@ function BuyingInfopage() {
             <div className="buying-info-container-formitem">
               <h5 className="bicftitle">Shipping Information</h5>
               <p className="bicfbtn">Add Shipping Information</p>
+
+              <div className="omrs-input-group">
+                <label className="omrs-input-underlined">
+                  <input type="text" />
+                  <span className="omrs-input-label">Full Legal Name</span>
+                </label>
+              </div>
             </div>
             <div className="buying-info-container-formitem">
               <h5 className="bicftitle">Billing Information</h5>

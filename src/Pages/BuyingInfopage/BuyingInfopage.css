@@ -33,6 +33,7 @@
 .buying-info-container-formitem {
     border-bottom: 1px solid #f5f5f7;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 .bicftitle {
@@ -75,4 +76,41 @@
     fill: #1d1d1f;
     width: 18px;
     height: 18px;
+}
+
+.omrs-input-group {
+    position: relative;
+    width: 100%;
+}
+
+.omrs-input-underlined > input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    height: 3rem;
+    font-size: 13px;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 0.825rem;
+}
+
+.omrs-input-underlined > input:focus {
+    outline: none;
+    border-bottom: 2px solid #1d1d1f;
+}
+
+.omrs-input-underlined > .omrs-input-label {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.875rem;
+    line-height: 147.6%;
+    color: #999;
+    transition: top .2s;
+    font-size: 13px;
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label {
+    top: 0;
+    font-size: 13px;
+    margin-bottom: 45px;
 }
