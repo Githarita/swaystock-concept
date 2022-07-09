@@ -86,6 +86,9 @@
   width: 100%;
 }
 
+.omrs-input-underlined:hover {
+  background-color: transparent;
+}
 .omrs-input-underlined > input {
   width: 100%;
   border: none;
@@ -98,7 +101,7 @@
 }
 
 .omrsselect {
-    width: 100%;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #1d1d1f;
   height: 3rem;
@@ -108,8 +111,7 @@
   pointer-events: none;
 }
 
-.omrsselect:hover{
-
+.omrsselect:hover {
 }
 .omrs-input-underlined > input:focus {
   outline: none;
@@ -169,6 +171,6 @@
   cursor: pointer;
 }
 
-input[name=lestse] {
-    pointer-events: none;
- }
+input[name="lestse"] {
+  pointer-events: none;
+}
