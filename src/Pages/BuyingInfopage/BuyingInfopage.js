@@ -8,8 +8,10 @@ function BuyingInfopage() {
   const navigate = useNavigate();
   const [active, setActive] = useState("addbtn");
   const [stateShow, setStateShow] = useState(false);
+  const [lgaShow, setLgaShow] = useState(false);
   const [selectedState, setSelectedState] = useState();
   const [displayam, setDisplayam] = useState("");
+  const [displayamlga, setDisplayamlga] = useState("");
   const [selectedLga, setSelectedLga] = useState();
 
   const availableStates = locationData.states.find(
@@ -17,7 +19,7 @@ function BuyingInfopage() {
   );
 
   const availableLgas = availableStates?.lga?.find(
-    (lga) => lga.name === selectedLga
+    (l) => l.name === selectedLga
   );
   return (
     <>
@@ -87,7 +89,10 @@ function BuyingInfopage() {
                 </div>
                 <div
                   className="omrs-input-group"
-                  onClick={() => setStateShow(true)}
+                  onClick={() => {
+                    setStateShow(true);
+                    setLgaShow(false);
+                  }}
                 >
                   <label className="omrs-input-underlined">
                     <input type="text" value={selectedState} />
@@ -115,14 +120,21 @@ function BuyingInfopage() {
                     </div>
                   </label>
                 </div>
-                <div className="omrs-input-group">
+                <div
+                  className="omrs-input-group"
+                  onClick={() => {
+                    setLgaShow(true);
+                    setStateShow(false);
+                  }}
+                >
                   <label className="omrs-input-underlined">
-                    <input type="text" />
+                    <input type="text" value={selectedLga} />
 
                     <div className="omrs-input-label wegosplit">
-                      <span>LGA</span>
+                      <span style={{ display: `${displayamlga}` }}>LGA</span>
 
                       <svg
+                        style={{ display: `${displayamlga}` }}
                         width="15"
                         height="15"
                         viewBox="0 0 15 15"
@@ -212,6 +224,29 @@ function BuyingInfopage() {
                   }}
                 >
                   {state.name}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+      )}
+      {lgaShow && (
+        <div className="state-province">
+          <p className="state-province-title">Select Local Government Area</p>
+          <div className="state-prov">
+            {availableStates?.lga.map((lg, key) => {
+              return (
+                <p
+                  className="state-province-text"
+                  key={key}
+                  onClick={() => {
+                    setSelectedLga(lg.name);
+                    setDisplayamlga("none");
+                    setLgaShow(false);
+                    setStateShow(false);
+                  }}
+                >
+                  {lg.name}
                 </p>
               );
             })}
