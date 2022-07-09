@@ -9,10 +9,10 @@ function BuyingInfopage() {
   const [active, setActive] = useState("addbtn");
   const [stateShow, setStateShow] = useState(false);
   const [lgaShow, setLgaShow] = useState(false);
-  const [selectedState, setSelectedState] = useState();
+  const [selectedState, setSelectedState] = useState("State");
   const [displayam, setDisplayam] = useState("");
   const [displayamlga, setDisplayamlga] = useState("");
-  const [selectedLga, setSelectedLga] = useState();
+  const [selectedLga, setSelectedLga] = useState("Lga");
   const [showInfo, setShowInfo] = useState("");
   const [showaddship, setShowaddship] = useState(true);
   const [showaddbill, setShowaddbill] = useState(true);
@@ -86,112 +86,71 @@ function BuyingInfopage() {
 
                 {showInfo === "shipinfo" && (
                   <div className="omrs-form">
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="text" />
-                        <span className="omrs-input-label">
-                          Full Legal Name
-                        </span>
-                      </label>
-                    </div>
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="text" />
-                        <span className="omrs-input-label">Street Address</span>
-                      </label>
-                    </div>
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="text" />
-                        <span className="omrs-input-label">
-                          Street Address2 (Optional)
-                        </span>
-                      </label>
-                    </div>
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="text" />
-                        <span className="omrs-input-label">City</span>
-                      </label>
-                    </div>
-                    <div className="omrs-input-group">
-                      <div
-                        className="omrs-input-underlined"
-                        onClick={() => {
-                          setStateShow(true);
-                          setLgaShow(false);
-                        }}
-                      >
-                        <div className="omrsselect">{selectedState} </div>
+                    <input type="text" placeholder="Full Legal Name" />
 
-                        <div className="omrs-input-label wegosplit">
-                          <span style={{ display: `${displayam}` }}>
-                            State / Province
-                          </span>
+                    <input type="text" placeholder="Street Address" />
 
-                          <svg
-                            style={{ display: `${displayam}` }}
-                            width="15"
-                            height="15"
-                            viewBox="0 0 15 15"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                              fill="currentColor"
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                            ></path>
-                          </svg>
-                        </div>
+                    <input
+                      type="text"
+                      placeholder="Street Address2 (Optional)"
+                    />
+
+                    <input type="text" placeholder="City" />
+
+                    <div
+                      onClick={() => {
+                        setStateShow(true);
+                        setLgaShow(false);
+                      }}
+                    >
+                      <div className="">
+                        <p>{selectedState}</p>
+
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
                       </div>
                     </div>
-                    <div className="omrs-input-group">
-                      <div
-                        className="omrs-input-underlined"
-                        onClick={() => {
-                          setLgaShow(true);
-                          setStateShow(false);
-                        }}
-                      >
-                        <div className="omrsselect">{selectedLga}</div>
+                    <div
+                      onClick={() => {
+                        setLgaShow(true);
+                        setStateShow(false);
+                      }}
+                    >
+                      <div className="">
+                        <p>{selectedLga}</p>
 
-                        <div className="omrs-input-label wegosplit">
-                          <span style={{ display: `${displayamlga}` }}>
-                            LGA
-                          </span>
-
-                          <svg
-                            style={{ display: `${displayamlga}` }}
-                            width="15"
-                            height="15"
-                            viewBox="0 0 15 15"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                              fill="currentColor"
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                            ></path>
-                          </svg>
-                        </div>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
                       </div>
                     </div>
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="number" />
-                        <span className="omrs-input-label">Postal Code</span>
-                      </label>
-                    </div>
-                    <div className="omrs-input-group">
-                      <label className="omrs-input-underlined">
-                        <input type="tel" />
-                        <span className="omrs-input-label">Phone Number</span>
-                      </label>
-                    </div>
+
+                    <input type="number" placeholder="Postal Code" />
+
+                    <input type="tel" placeholder="Phone Number" />
                   </div>
                 )}
               </div>
