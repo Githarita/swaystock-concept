@@ -97,6 +97,17 @@
   padding-top: 0.825rem;
 }
 
+.omrsselect {
+    width: 100%;
+  border: none;
+  border-bottom: 1px solid #1d1d1f;
+  height: 3rem;
+  font-size: 12px;
+  padding-left: 0;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+}
+
 .omrs-input-underlined > input:focus {
   outline: none;
   border-bottom: 2px solid #1d1d1f;

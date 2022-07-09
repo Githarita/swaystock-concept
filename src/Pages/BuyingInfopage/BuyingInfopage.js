@@ -94,8 +94,8 @@ function BuyingInfopage() {
                     setLgaShow(false);
                   }}
                 >
-                  <label className="omrs-input-underlined">
-                    <input type="text" value={selectedState} name="lestse" />
+                  <div className="omrs-input-underlined">
+                    <div className="omrsselect">{selectedState} </div>
 
                     <div className="omrs-input-label wegosplit">
                       <span style={{ display: `${displayam}` }}>
@@ -118,7 +118,7 @@ function BuyingInfopage() {
                         ></path>
                       </svg>
                     </div>
-                  </label>
+                  </div>
                 </div>
                 <div
                   className="omrs-input-group"
@@ -127,8 +127,8 @@ function BuyingInfopage() {
                     setStateShow(false);
                   }}
                 >
-                  <label className="omrs-input-underlined">
-                    <input type="text" value={selectedLga} name="lestse" />
+                  <div className="omrs-input-underlined">
+                    <div className="omrsselect">{selectedLga}</div>
 
                     <div className="omrs-input-label wegosplit">
                       <span style={{ display: `${displayamlga}` }}>LGA</span>
@@ -149,7 +149,7 @@ function BuyingInfopage() {
                         ></path>
                       </svg>
                     </div>
-                  </label>
+                  </div>
                 </div>
                 <div className="omrs-input-group">
                   <label className="omrs-input-underlined">
