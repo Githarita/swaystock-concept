@@ -105,8 +105,12 @@
   font-size: 12px;
   padding-left: 0;
   padding-top: 0.825rem;
+  pointer-events: none;
 }
 
+.omrsselect:hover{
+
+}
 .omrs-input-underlined > input:focus {
   outline: none;
   border-bottom: 2px solid #1d1d1f;
