@@ -440,7 +440,6 @@ export const settingsPageList = {
       name: "Selling Info",
       link: "selling_info",
     },
-    { name: "Payment Method", link: "payment_method" },
     { name: "Return Address", link: "return_address" },
     { name: "Shipping Address", link: "shipping_address" },
     { name: "Notification", link: "notification" },
