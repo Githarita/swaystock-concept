@@ -87,7 +87,6 @@
 .omrs-input-group {
     position: relative;
     width: 100%;
-    z-index: -1;
 }
 
 .omrs-input-underlined > input {
@@ -99,7 +98,6 @@
     padding-left: 0;
     line-height: 147.6%;
     padding-top: 0.825rem;
-    z-index: -1;
 }
 
 .omrs-input-underlined > input:focus {
@@ -115,7 +113,6 @@
     color: #999;
     transition: top .2s;
     font-size: 12px;
-    z-index: -1;
 }
 
 .omrs-input-underlined > input:focus + .omrs-input-label {
