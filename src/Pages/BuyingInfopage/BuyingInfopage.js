@@ -191,7 +191,7 @@ function BuyingInfopage() {
       <div className="state-province">
         {locationData.states.map((state, key) => {
           return (
-            <p key={key}>{state.name}</p>
+            <p className="state-province-text" key={key}>{state.name}</p>
           )
         })}
       </div>
