@@ -66,6 +66,24 @@ function BuyingInfopage() {
                     </span>
                   </label>
                 </div>
+                <div className="omrs-input-group">
+                  <label className="omrs-input-underlined">
+                    <input type="text" />
+                    <span className="omrs-input-label">City</span>
+                  </label>
+                </div>
+                <div className="omrs-input-group">
+                  <label className="omrs-input-underlined">
+                    <input type="text" />
+                    <span className="omrs-input-label">Postal Code</span>
+                  </label>
+                </div>
+                <div className="omrs-input-group">
+                  <label className="omrs-input-underlined">
+                    <input type="number" />
+                    <span className="omrs-input-label">Phone Number</span>
+                  </label>
+                </div>
               </div>
             </div>
 
