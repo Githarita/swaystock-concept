@@ -32,6 +32,7 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   quotes: "“" "”";
 }
 
@@ -50,7 +51,7 @@ h5 {
 @media (hover: hover) and (pointer: fine) {
   a:hover {
     color: none;
-    background-color: transparent;
+    background: transparent;
   }
 }
 
