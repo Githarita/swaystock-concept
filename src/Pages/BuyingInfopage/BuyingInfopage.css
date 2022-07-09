@@ -54,3 +54,21 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.bicfremoveitem {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: 8px 0;
+}
+
+.bicfremoveitem p {
+    font-size: 13px;
+    color: #1d1d1f;
+}
+
+.bicfremoveitem svg {
+    fill: #1d1d1f;
+    width: 18px;
+    height: 18px;
+}
