@@ -12,7 +12,7 @@ function BuyingInfopage() {
   const [selectedState, setSelectedState] = useState("State");
   const [displayam, setDisplayam] = useState("");
   const [displayamlga, setDisplayamlga] = useState("");
-  const [selectedLga, setSelectedLga] = useState("Lga");
+  const [selectedLga, setSelectedLga] = useState("Local Government Area");
   const [showInfo, setShowInfo] = useState("");
   const [showaddship, setShowaddship] = useState(true);
   const [showaddbill, setShowaddbill] = useState(true);
