@@ -127,3 +127,13 @@
     justify-content: space-between;
     width: 100%;
 }
+
+.state-province {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    background-color: #fff;
+    overflow-y: scroll;
+}

@@ -1,11 +1,22 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { locationData } from "../../Utils/datas";
 import "./BuyingInfopage.css";
 
 function BuyingInfopage() {
   const navigate = useNavigate();
   const [active, setActive] = useState("addbtn");
+  const [selectedState, setSelectedState] = useState();
+  const [selectedLga, setSelectedLga] = useState();
+
+  const availableStates = locationData.states.find(
+    (state) => state.name === selectedState
+  );
+
+  const availableLgas = availableStates?.lga?.find(
+    (lga) => lga.name === selectedLga
+  );
   return (
     <>
       <header className="settings-top">
@@ -98,7 +109,7 @@ function BuyingInfopage() {
                 </div>
                 <div className="omrs-input-group">
                   <label className="omrs-input-underlined">
-                    <input type="text"/>
+                    <input type="text" />
 
                     <div className="omrs-input-label wegosplit">
                       <span>LGA</span>
@@ -175,6 +186,14 @@ function BuyingInfopage() {
             </div>
           </div>
         )}
+      </div>
+
+      <div className="state-province">
+        {locationData.states.map((state, key) => {
+          return (
+            <p key={key}>{state.name}</p>
+          )
+        })}
       </div>
     </>
   );
