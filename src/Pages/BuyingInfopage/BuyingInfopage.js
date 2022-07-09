@@ -25,10 +25,19 @@ function BuyingInfopage() {
 
       <div className="buying-info-container">
         <div className="buying-info-container-btn">
-          <p className="buying-info-container-btn-text">"Oops! you don't have a buying information yet!"</p>
+          <p className="buying-info-container-btn-text">
+            "Oops! you don't have a buying information yet!"
+          </p>
           <button className="buying-info-container-btn-btn">
             Add Buying Information
           </button>
+        </div>
+
+        <div className="buying-info-container-form">
+          <div className="buying-info-container-formitem">
+            <p className="bicftitle">Shipping Information</p>
+            <p className="bicfbtn">Add Shipping Information</p>
+          </div>
         </div>
       </div>
     </>
