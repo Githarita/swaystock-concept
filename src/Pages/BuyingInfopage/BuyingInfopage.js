@@ -189,11 +189,15 @@ function BuyingInfopage() {
       </div>
 
       <div className="state-province">
-        {locationData.states.map((state, key) => {
+        <p className="state-province-title">Select State / Province</p>
+        <div className="state-prov">
+          {locationData.states.map((state, key) => {
           return (
             <p className="state-province-text" key={key}>{state.name}</p>
           )
         })}
+        </div>
+        
       </div>
     </>
   );

@@ -1,149 +1,156 @@
 .buying-info-container {
-    padding: 18px 18px 18px 18px;
-    margin-top: 3.2rem;
+  padding: 18px 18px 18px 18px;
+  margin-top: 3.2rem;
 }
 
 .buying-info-container-btn-btn {
-    background-color: transparent;
-    font-family: inherit;
-    padding: 15px 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 13px;
-    color: #1d1d1f;
-    cursor: pointer;
-    border: 1px solid #f5f5f7;
-    
-
+  background-color: transparent;
+  font-family: inherit;
+  padding: 15px 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #1d1d1f;
+  cursor: pointer;
+  border: 1px solid #f5f5f7;
 }
 
-
 .buying-info-container-btn-text {
-    font-size: 11px;
-    color: #999;
-    margin-bottom: 8px;
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 8px;
 }
 
 .buying-info-container-form {
-    /* border: 1px solid #f5f5f7; */
-    border-radius: 10px;
-    padding-top: 5px;
+  /* border: 1px solid #f5f5f7; */
+  border-radius: 10px;
+  padding-top: 5px;
 }
 
 .buying-info-container-formitem {
-    border-bottom: 1px solid #f5f5f7;
-    padding: 10px 15px;
-    cursor: pointer;
+  border-bottom: 1px solid #f5f5f7;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .bicftitle {
-    font-size: 13px;
-    /* font-weight: 500; */
-    border-bottom: 1px solid #f5f5f7;
-    padding-bottom: 10px;
-    color: #1d1d1f;
+  font-size: 13px;
+  /* font-weight: 500; */
+  border-bottom: 1px solid #f5f5f7;
+  padding-bottom: 10px;
+  color: #1d1d1f;
 }
 
 .bicfbtn {
-    font-size: 12px;
-    color: #999;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  font-size: 12px;
+  color: #999;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .bicfremove {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 0 0 10px 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
 }
 
 .bicfremoveitem {
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-    padding: 8px 0;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 8px 0;
+  cursor: pointer;
 }
 
 .bicfremoveitem p {
-    font-size: 13px;
-    color: #1d1d1f;
+  font-size: 13px;
+  color: #1d1d1f;
 }
 
 .bicfremoveitem svg {
-    fill: #1d1d1f;
-    width: 18px;
-    height: 18px;
+  fill: #1d1d1f;
+  width: 18px;
+  height: 18px;
 }
 
 .omrs-form {
-    display: grid;
-    gap: 1rem;
-    z-index: -1;
+  display: grid;
+  gap: 1rem;
+  z-index: -1;
 }
 
 .omrs-input-group {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .omrs-input-underlined > input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #1d1d1f;
-    height: 3rem;
-    font-size: 12px;
-    padding-left: 0;
-    line-height: 147.6%;
-    padding-top: 0.825rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #1d1d1f;
+  height: 3rem;
+  font-size: 12px;
+  padding-left: 0;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
 }
 
 .omrs-input-underlined > input:focus {
-    outline: none;
-    border-bottom: 2px solid #1d1d1f;
+  outline: none;
+  border-bottom: 2px solid #1d1d1f;
 }
 
 .omrs-input-underlined > .omrs-input-label {
-    position: absolute;
-    top: 22px;
-    left: 0;
-    line-height: 147.6%;
-    color: #999;
-    transition: top .2s;
-    font-size: 12px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  line-height: 147.6%;
+  color: #999;
+  transition: top 0.2s;
+  font-size: 12px;
 }
 
 .omrs-input-underlined > input:focus + .omrs-input-label {
-    top: 0;
-    font-size: 12px;
-    margin-bottom: 45px;
+  top: 0;
+  font-size: 12px;
+  margin-bottom: 45px;
 }
 
 .wegosplit {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .state-province {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50vh;
-    background-color: #fff;
-    overflow-y: scroll;
-    padding-top: 1rem;
-    border-top: 1px solid #f5f5f7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #fff;
+
+  padding-top: 1rem;
+  border-top: 1px solid #f5f5f7;
 }
 
 .state-province-text {
-    font-size: 13px;
-    padding: 12px 35px;
-    cursor: pointer;
+  font-size: 13px;
+  padding: 12px 35px;
+  cursor: pointer;
 }
 
+.state-prov {
+  overflow-y: scroll;
+  height: 45vh;
+}
 
+.state-province-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 35px;
+  cursor: pointer;
+}
