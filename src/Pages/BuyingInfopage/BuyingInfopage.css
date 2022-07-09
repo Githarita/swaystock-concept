@@ -78,6 +78,11 @@
     height: 18px;
 }
 
+.omrs-form {
+    display: grid;
+    gap: 2rem;
+}
+
 .omrs-input-group {
     position: relative;
     width: 100%;
@@ -101,7 +106,7 @@
 
 .omrs-input-underlined > .omrs-input-label {
     position: absolute;
-    top: 0.9375rem;
+    top: 25px;
     left: 0;
     line-height: 147.6%;
     color: #999;
