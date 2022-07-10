@@ -10,11 +10,16 @@ function BuyingInfopage() {
   const [stateShow, setStateShow] = useState(false);
   const [lgaShow, setLgaShow] = useState(false);
   const [selectedState, setSelectedState] = useState("State");
+  const [selectedBillState, setSelectedBillState] = useState("State");
   const [displayam, setDisplayam] = useState("");
   const [displayamlga, setDisplayamlga] = useState("");
   const [selectedLga, setSelectedLga] = useState("Local Government Area");
+  const [selectedBillLga, setSelectedBillLga] = useState(
+    "Local Government Area"
+  );
   const [showInfo, setShowInfo] = useState("");
   const [showaddship, setShowaddship] = useState(true);
+
   const [showaddbill, setShowaddbill] = useState(true);
   const [showaddpayment, setShowaddpayment] = useState(true);
 
@@ -24,6 +29,10 @@ function BuyingInfopage() {
 
   const availableStates = locationData.states.find(
     (state) => state.name === selectedState
+  );
+
+  const availableBillStates = locationData.states.find(
+    (state) => state.name === selectedBillState
   );
 
   // const availableLgas = availableStates?.lga?.find(
@@ -86,9 +95,17 @@ function BuyingInfopage() {
 
                 {showInfo === "shipinfo" && (
                   <form autoComplete="on" className="omrs-form">
-                    <input type="text" autoComplete="name"  placeholder="Full Legal Name" />
+                    <input
+                      type="text"
+                      autoComplete="name"
+                      placeholder="Full Legal Name"
+                    />
 
-                    <input type="text" placeholder="Street Address" autoComplete="street-address" />
+                    <input
+                      type="text"
+                      placeholder="Street Address"
+                      autoComplete="street-address"
+                    />
 
                     <input
                       type="text"
@@ -147,9 +164,17 @@ function BuyingInfopage() {
                       </svg>
                     </div>
 
-                    <input type="number" placeholder="Postal Code" autoComplete="postal-code" />
+                    <input
+                      type="number"
+                      placeholder="Postal Code"
+                      autoComplete="postal-code"
+                    />
 
-                    <input type="tel" placeholder="Phone Number" autoComplete="tel" />
+                    <input
+                      type="tel"
+                      placeholder="Phone Number"
+                      autoComplete="tel"
+                    />
                   </form>
                 )}
               </div>
@@ -158,7 +183,18 @@ function BuyingInfopage() {
             {showBillingAddress && (
               <div className="buying-info-container-formitem">
                 <h5 className="bicftitle">Billing Information</h5>
-                <p className="bicfbtn">Add Billing Address</p>
+                {showaddbill && (
+                  <p
+                    className="bicfbtn"
+                    onClick={() => {
+                      setShowInfo("billaddress");
+                      setPaymentMethod(false);
+                      setShippingInformation(false);
+                    }}
+                  >
+                    Add Billing Address
+                  </p>
+                )}
               </div>
             )}
 
@@ -190,6 +226,7 @@ function BuyingInfopage() {
                   setShowaddship(true);
                   setBillingAddress(true);
                   setPaymentMethod(true);
+                  setShippingInformation(true);
                   setShowInfo(false);
                 }}
               >
