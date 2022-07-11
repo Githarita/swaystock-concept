@@ -384,7 +384,7 @@ function BuyingInfopage() {
             {showPaymentMethod && (
               <div className="buying-info-container-formitem ">
                 <div>
-                  <h5 className="bicftitle">Payment</h5>
+                  <h5 className="bicftitle">Payment Method</h5>
                   {showaddpayment && (
                     <p
                       className="bicfbtn"
@@ -402,7 +402,12 @@ function BuyingInfopage() {
                 </div>
                 {showInfo === "paymentmethod" && (
                   <form autoComplete="on" className="omrs-form">
-                    <h1>This is the payment stage</h1>
+                    <div className="buying-info-payment1">
+                      <p className="theselecta">Select Payment Method</p>
+                      <div className="thecredeb">
+                        <p>Credit/Debit</p>
+                      </div>
+                    </div>
                     <div className="bicfremove">
                       <div
                         className="bicfremoveitem"
