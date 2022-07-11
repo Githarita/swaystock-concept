@@ -158,7 +158,7 @@ input[name="lestse"] {
 
 .buying-info-payment1 {
   display: grid;
-  grid-gap: 0.8rem;
+  grid-gap: 0.3rem;
   margin-top: 0.5rem;
 }
 
