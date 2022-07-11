@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { locationData } from "../../Utils/datas";
@@ -8,9 +9,12 @@ function BuyingInfopage() {
   const navigate = useNavigate();
   const [active, setActive] = useState("addbtn");
   const [stateShow, setStateShow] = useState(false);
+  const [stateShoww, setStateShoww] = useState(false);
   const [lgaShow, setLgaShow] = useState(false);
-  const [selectedState, setSelectedState] = useState("State");
-  const [selectedBillState, setSelectedBillState] = useState("State");
+  const [lgaShoww, setLgaShoww] = useState(false);
+  const [selectedState, setSelectedState] = useState("State / Province");
+  const [selectedBillState, setSelectedBillState] =
+    useState("State / Province");
   const [selectedLga, setSelectedLga] = useState("Local Government Area");
   const [selectedBillLga, setSelectedBillLga] = useState(
     "Local Government Area"
@@ -26,16 +30,52 @@ function BuyingInfopage() {
   const [showPaymentMethod, setPaymentMethod] = useState(true);
 
   const availableStates = locationData.states.find(
-    (state) => state.name === selectedState
+    (s) => s.name === selectedState
   );
 
   const availableBillStates = locationData.states.find(
-    (state) => state.name === selectedBillState
+    (s) => s.name === selectedBillState
   );
 
-  // const availableLgas = availableStates?.lga?.find(
-  //   (l) => l.name === selectedLga
-  // );
+  useEffect(() => {
+    document.addEventListener("DomContentLoaded", () => {
+      for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
+        const pattern = el.getAttribute("placeholder");
+        const slots = new Set(el.dataset.slots || "_");
+        const prev = ((j) =>
+          Array.from(pattern, (c, i) => (slots.has(c) ? (j = i + 1) : j)))(0);
+        const first = [...pattern].findIndex((c) => slots.has(c));
+        const accept = new RegExp(el.dataset.accept || "\\d", "g");
+        const clean = (input) => {
+          input = input.match(accept) || [];
+          return Array.from(pattern, (c) =>
+            input[0] === c || slots.has(c) ? input.shift() || c : c
+          );
+        };
+        const format = () => {
+          const [i, j] = [el.selectionStart, el.selectionEnd].map((i) => {
+            i = clean(el.value.slice(0, i)).findIndex((c) => slots.has(c));
+            return i < 0
+              ? prev[prev.length - 1]
+              : back
+              ? prev[i - 1] || first
+              : i;
+          });
+          el.value = clean(el.value).join``;
+          el.setSelectionRange(i, j);
+          back = false;
+        };
+        let back = false;
+        el.addEventListener("keydown", (e) => (back = e.key === "Backspace"));
+        el.addEventListener("input", format);
+        el.addEventListener("focus", format);
+        el.addEventListener(
+          "blur",
+          () => el.value === pattern && (el.value = "")
+        );
+      }
+    });
+  });
   return (
     <>
       <header className="settings-top">
@@ -269,8 +309,8 @@ function BuyingInfopage() {
                     <div
                       className="wegosplit"
                       onClick={() => {
-                        setStateShow(true);
-                        setLgaShow(false);
+                        setStateShoww(true);
+                        setLgaShoww(false);
                       }}
                     >
                       <p>{selectedBillState}</p>
@@ -293,8 +333,8 @@ function BuyingInfopage() {
                     <div
                       className="wegosplit"
                       onClick={() => {
-                        setLgaShow(true);
-                        setStateShow(false);
+                        setLgaShoww(true);
+                        setStateShoww(false);
                       }}
                     >
                       <p>{selectedBillLga}</p>
@@ -423,7 +463,48 @@ function BuyingInfopage() {
                       </div>
                     </div>
                     <div>
-                      
+                      <div className="container">
+                        <div className="wrapper">
+                          <div className="outer-card">
+                            <div className="forms">
+                              <div className="input-items">
+                                <span>Card Number</span>
+                                <input
+                                  placeholder=".... .... .... ...."
+                                  data-slots="."
+                                  data-accept="\d"
+                                  size="19"
+                                />
+                              </div>
+                              <div className="input-items">
+                                <span>Name on card</span>
+                                <input placeholder="Samuel Iscon" />
+                              </div>
+                              <div className="one-line">
+                                <div className="input-items">
+                                  <span>Expiry Date</span>
+                                  <input
+                                    placeholder="mm/yyyy"
+                                    data-slots="my"
+                                  />
+                                </div>
+                                <div className="input-items">
+                                  <span>CVV</span>
+                                  <input
+                                    placeholder="..."
+                                    data-slots="."
+                                    data-accept="\d"
+                                    size="3"
+                                  />
+                                </div>
+                              </div>
+                              <div className="input-buttons">
+                                <button>Save Changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <div className="bicfremove">
@@ -484,50 +565,6 @@ function BuyingInfopage() {
           </div>
         )}
       </div>
-
-      {stateShow && (
-        <div className="state-province">
-          <p className="state-province-title">Select State / Province</p>
-          <div className="state-prov">
-            {locationData.states.map((state, key) => {
-              return (
-                <p
-                  className="state-province-text"
-                  key={key}
-                  onClick={() => {
-                    setSelectedState(state.name);
-                    setStateShow(false);
-                  }}
-                >
-                  {state.name}
-                </p>
-              );
-            })}
-          </div>
-        </div>
-      )}
-      {lgaShow && (
-        <div className="state-province">
-          <p className="state-province-title">Select Local Government Area</p>
-          <div className="state-prov">
-            {availableBillStates?.lga.map((lg, key) => {
-              return (
-                <p
-                  className="state-province-text"
-                  key={key}
-                  onClick={() => {
-                    setSelectedLga(lg.name);
-                    setLgaShow(false);
-                    setStateShow(false);
-                  }}
-                >
-                  {lg.name}
-                </p>
-              );
-            })}
-          </div>
-        </div>
-      )}
       {stateShow && (
         <div className="state-province">
           <p className="state-province-title">Select State / Province</p>
@@ -549,7 +586,52 @@ function BuyingInfopage() {
           </div>
         </div>
       )}
+      {stateShoww && (
+        <div className="state-province">
+          <p className="state-province-title">Select State / Province</p>
+          <div className="state-prov">
+            {locationData.states.map((state, key) => {
+              return (
+                <p
+                  className="state-province-text"
+                  key={key}
+                  onClick={() => {
+                    setSelectedState(state.name);
+                    setStateShow(false);
+                  }}
+                >
+                  {state.name}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {lgaShow && (
+        <div className="state-province">
+          <p className="state-province-title">Select Local Government Area</p>
+          <div className="state-prov">
+            {availableStates?.lga.map((lg, key) => {
+              return (
+                <p
+                  className="state-province-text"
+                  key={key}
+                  onClick={() => {
+                    setSelectedLga(lg.name);
+                    setLgaShow(false);
+                    setStateShow(false);
+                  }}
+                >
+                  {lg.name}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {lgaShoww && (
         <div className="state-province">
           <p className="state-province-title">Select Local Government Area</p>
           <div className="state-prov">
@@ -560,8 +642,8 @@ function BuyingInfopage() {
                   key={key}
                   onClick={() => {
                     setSelectedBillLga(lg.name);
-                    setLgaShow(false);
-                    setStateShow(false);
+                    setLgaShoww(false);
+                    setStateShoww(false);
                   }}
                 >
                   {lg.name}
