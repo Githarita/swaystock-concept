@@ -422,6 +422,10 @@ function BuyingInfopage() {
                         </svg>
                       </div>
                     </div>
+                    <div>
+                      
+                    </div>
+
                     <div className="bicfremove">
                       <div
                         className="bicfremoveitem"
