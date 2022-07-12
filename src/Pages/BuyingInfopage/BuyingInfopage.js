@@ -462,50 +462,7 @@ function BuyingInfopage() {
                         </svg>
                       </div>
                     </div>
-                    <div>
-                      <div className="container">
-                        <div className="wrapper">
-                          <div className="outer-card">
-                            <div className="forms">
-                              <div className="input-items">
-                                <span>Card Number</span>
-                                <input
-                                  placeholder=".... .... .... ...."
-                                  data-slots="."
-                                  data-accept="\d"
-                                  size="19"
-                                />
-                              </div>
-                              <div className="input-items">
-                                <span>Name on card</span>
-                                <input placeholder="Samuel Iscon" />
-                              </div>
-                              <div className="one-line">
-                                <div className="input-items">
-                                  <span>Expiry Date</span>
-                                  <input
-                                    placeholder="mm/yyyy"
-                                    data-slots="my"
-                                  />
-                                </div>
-                                <div className="input-items">
-                                  <span>CVV</span>
-                                  <input
-                                    placeholder="..."
-                                    data-slots="."
-                                    data-accept="\d"
-                                    size="3"
-                                  />
-                                </div>
-                              </div>
-                              <div className="input-buttons">
-                                <button>Save Changes</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                
 
                     <div className="bicfremove">
                       <div
@@ -597,7 +554,7 @@ function BuyingInfopage() {
                   key={key}
                   onClick={() => {
                     setSelectedState(state.name);
-                    setStateShow(false);
+                    setStateShoww(false);
                   }}
                 >
                   {state.name}
@@ -608,7 +565,7 @@ function BuyingInfopage() {
         </div>
       )}
 
-      {lgaShow && (
+      {lgaShoww && (
         <div className="state-province">
           <p className="state-province-title">Select Local Government Area</p>
           <div className="state-prov">
@@ -619,8 +576,8 @@ function BuyingInfopage() {
                   key={key}
                   onClick={() => {
                     setSelectedLga(lg.name);
-                    setLgaShow(false);
-                    setStateShow(false);
+                    setLgaShoww(false);
+                    setStateShoww(false);
                   }}
                 >
                   {lg.name}
@@ -631,7 +588,7 @@ function BuyingInfopage() {
         </div>
       )}
 
-      {lgaShoww && (
+      {lgaShow && (
         <div className="state-province">
           <p className="state-province-title">Select Local Government Area</p>
           <div className="state-prov">
