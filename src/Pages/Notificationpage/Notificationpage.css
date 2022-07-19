@@ -62,7 +62,11 @@ input:checked + .slider:before {
     justify-content: space-between;
     margin-bottom: 10px;
     border-bottom: 1px solid #f5f5f7;
-    padding: 14px 5px;
+    padding: 14px 0px;
+}
+
+.bicfitem h5 {
+    font-weight: 500;
 }
 
 .bicftils {
