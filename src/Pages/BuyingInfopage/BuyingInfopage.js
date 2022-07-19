@@ -78,22 +78,6 @@ function BuyingInfopage() {
                 </p>
               </div>
             </div>
-
-            <div className="buying-info-container-formitem ">
-              <div>
-                <h5 className="bicftitle">Payment Method</h5>
-
-                <p
-                  className="bicfbtn"
-                  onClick={() => {
-                    navigate("/account/settings/buying_info/payment_method");
-                    setActive("addbtn");
-                  }}
-                >
-                  Add Payment Method
-                </p>
-              </div>
-            </div>
           </div>
         )}
       </div>
