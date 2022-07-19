@@ -31,7 +31,8 @@
   left: -1px;
   bottom: -3px;
   background-color: white;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -39,8 +40,6 @@
 input:checked + .slider:before {
   background-color: #1d1d1f;
 }
-
-
 
 input:checked + .slider:before {
   -webkit-transform: translateX(20px);
@@ -57,22 +56,25 @@ input:checked + .slider:before {
 }
 
 .bicfitem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3px;
-    border-bottom: 1px solid #f5f5f7;
-    padding: 14px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #f5f5f7;
+  padding: 14px 5px;
+}
+
+.nobicf {
+  border-bottom: none;
 }
 
 .bicfitem h5 {
-    font-size: 13px;
-    font-weight: 500;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .bicftils {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: .5rem;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
-

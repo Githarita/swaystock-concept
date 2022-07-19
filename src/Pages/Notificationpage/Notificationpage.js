@@ -97,7 +97,7 @@ function Notificationpage() {
               <span className="slider round"></span>
             </label>
           </div>
-          <div className="bicfitem">
+          <div className="bicfitem nobicf">
             <h5 className="bicftitle">Asking, New Lowest Ask</h5>
 
             <label className="switch">
