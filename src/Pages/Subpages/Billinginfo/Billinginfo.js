@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { locationData } from "../../../Utils/datas";
-import "./Shippinginfo.css";
+import "./Billinginfo.css";
 
-function Shippinginfo() {
+function Billinginfo() {
   const navigate = useNavigate();
   const [selectedState, setSelectedState] = useState("State / Province");
   const [selectedLga, setSelectedLga] = useState("Local Government Area");
@@ -28,12 +28,12 @@ function Shippinginfo() {
           ></path>
         </svg>
 
-        <p className="settings-top-text">Shipping Information</p>
+        <p className="settings-top-text">Billing Information</p>
       </header>
       <div className="buying-info-container">
         <div className="buying-info-container-form">
           <div className="buying-info-container-formitem">
-            <h5 className="bicftitle">Shipping Address</h5>
+            <h5 className="bicftitle">Billing Address</h5>
             <form autoComplete="on" className="omrs-form">
               <input
                 type="text"
@@ -188,4 +188,4 @@ function Shippinginfo() {
   );
 }
 
-export default Shippinginfo;
+export default Billinginfo;

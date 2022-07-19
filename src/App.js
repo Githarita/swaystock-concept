@@ -17,6 +17,7 @@ import Sellingpage from "./Pages/Sellingpage/Sellingpage";
 import Settingspage from "./Pages/Settingspage/Settingspage";
 import Shippingaddresspage from "./Pages/Shippingaddresspage/Shippingaddresspage";
 import Storagepage from "./Pages/Storagepage/Storagepage";
+import Billinginfo from "./Pages/Subpages/Billinginfo/Billinginfo";
 import Shippinginfo from "./Pages/Subpages/Shippinginfo/Shippinginfo";
 import Termsofuse from "./Pages/Termsofuse/Termsofuse";
 
@@ -45,9 +46,13 @@ function App() {
           path="/account/settings/buying_info"
           element={<BuyingInfopage />}
         />
-          <Route
+        <Route
           path="/account/settings/buying_info/shipping_information"
           element={<Shippinginfo />}
+        />
+        <Route
+          path="/account/settings/buying_info/billing_information"
+          element={<Billinginfo />}
         />
         <Route
           path="/account/settings/selling_info"
