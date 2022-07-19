@@ -29,7 +29,6 @@ function Paymentmethod() {
             <h5 className="bicftitle">Payment Information</h5>
             <form autoComplete="on" className="omrs-form">
                   <div className="buying-info-payment1">
-                    <p className="theselecta">Select Payment Method</p>
                     <div className="thecredeb">
                       <p>Credit/Debit</p>
                       <svg
