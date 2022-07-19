@@ -25,7 +25,6 @@ function Notificationpage() {
       <div className="buying-info-container">
         <div className="buying-info-container-form">
           <div className="buying-info-container-formitem">
-            <h1 className="bicftils">SwayStock</h1>
             <div className="bicfitem">
               <h5 className="bicftitle">SwayStock Communication</h5>
 
@@ -58,7 +57,6 @@ function Notificationpage() {
                 <span className="slider round"></span>
               </label>
             </div>
-            <h1 className="bicftils">Buying</h1>
             <div className="bicfitem">
               <h5 className="bicftitle">Ask Matches Expired Bid</h5>
 
@@ -92,8 +90,6 @@ function Notificationpage() {
                 <span className="slider round"></span>
               </label>
             </div>
-
-            <h1 className="bicftils">Selling</h1>
             <div className="bicfitem">
               <h5 className="bicftitle">Asking, New Highest Bid</h5>
 
