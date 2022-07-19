@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import "./Notificationpage.css"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Notificationpage.css";
 
 function Notificationpage() {
   const navigate = useNavigate();
@@ -20,11 +20,101 @@ function Notificationpage() {
           ></path>
         </svg>
 
-        <p className="settings-top-text">Notification</p>
+        <p className="settings-top-text">Notifications</p>
       </header>
+      <div className="buying-info-container">
+        <div className="buying-info-container-form">
+          <div className="buying-info-container-formitem">
+            <h1 className="bicftils">SwayStock</h1>
+            <div className="bicfitem">
+              <h5 className="bicftitle">SwayStock Communication</h5>
 
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Whatsapp Messages</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Updates on your offer</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Available funds to withdraw</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <h1 className="bicftils">Buying</h1>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Ask Matches Expired Bid</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Bidding, New Highest Bid</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+
+            <div className="bicfitem">
+              <h5 className="bicftitle">Bidding, New Lowest Ask</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Buyer Nearby Match</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+
+            <h1 className="bicftils">Selling</h1>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Asking, New Highest Bid</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="bicfitem">
+              <h5 className="bicftitle">Asking, New Lowest Ask</h5>
+
+              <label className="switch">
+                <input type="checkbox" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Notificationpage
+export default Notificationpage;
