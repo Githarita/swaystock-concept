@@ -67,6 +67,7 @@ input:checked + .slider:before {
 
 .bicfitem h5 {
     font-size: 13px;
+    font-weight: 500;
 }
 
 .bicftils {
