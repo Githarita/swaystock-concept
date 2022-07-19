@@ -18,6 +18,7 @@ import Settingspage from "./Pages/Settingspage/Settingspage";
 import Shippingaddresspage from "./Pages/Shippingaddresspage/Shippingaddresspage";
 import Storagepage from "./Pages/Storagepage/Storagepage";
 import Billinginfo from "./Pages/Subpages/Billinginfo/Billinginfo";
+import Returnaddressinfo from "./Pages/Subpages/Returnaddressinfo/Returnaddressinfo";
 import Sellinginfo from "./Pages/Subpages/Sellinginfo/Sellinginfo";
 import Shippinginfo from "./Pages/Subpages/Shippinginfo/Shippinginfo";
 import Termsofuse from "./Pages/Termsofuse/Termsofuse";
@@ -71,6 +72,10 @@ function App() {
         <Route
           path="/account/settings/return_address"
           element={<Returnaddresspage />}
+        />
+        <Route
+          path="/account/settings/return_address/return_address_information"
+          element={<Returnaddressinfo />}
         />
         <Route
           path="/account/settings/shipping_address"
