@@ -1,9 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import "./Shippingaddresspage.css"
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Shippingaddresspage.css";
 
 function Shippingaddresspage() {
   const navigate = useNavigate();
+  const [active, setActive] = useState("addbtn");
   return (
     <>
       <header className="settings-top">
@@ -22,9 +23,26 @@ function Shippingaddresspage() {
 
         <p className="settings-top-text">Shipping Address</p>
       </header>
-
+      <div className="buying-info-container">
+        {active === "addbtn" && (
+          <div className="buying-info-container-btn">
+            <p className="buying-info-container-btn-text">
+              "Oops! you don't have a Shipping Address yet!"
+            </p>
+            <button
+              className="buying-info-container-btn-btn"
+              onClick={() => {
+                navigate("/account/settings/buying_info/shipping_information");
+                setActive("addbtn");
+              }}
+            >
+              Add Shipping Address
+            </button>
+          </div>
+        )}
+      </div>
     </>
-  )
+  );
 }
 
-export default Shippingaddresspage
+export default Shippingaddresspage;
