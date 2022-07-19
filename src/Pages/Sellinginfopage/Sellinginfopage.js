@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Sellinginfopage.css"
 
 function Sellinginfopage() {
   const navigate = useNavigate();
+  const [active, setActive] = useState("addbtn");
   return (
     <>
       <header className="settings-top">
@@ -22,6 +23,62 @@ function Sellinginfopage() {
 
         <p className="settings-top-text">Selling Info</p>
       </header>
+
+      <div className="buying-info-container">
+        {active === "addbtn" && (
+          <div className="buying-info-container-btn">
+            <p className="buying-info-container-btn-text">
+              "Oops! you don't have a Selling Info yet!"
+            </p>
+            <button
+              className="buying-info-container-btn-btn"
+              onClick={() => setActive("showform")}
+            >
+              Add Selling Information
+            </button>
+          </div>
+        )}
+
+        {active === "showform" && (
+          <div className="buying-info-container-form">
+            <div className="buying-info-container-formitem">
+              <div>
+                <h5 className="bicftitle">Selling Information</h5>
+
+                <p
+                  className="bicfbtn"
+                  onClick={() => {
+                    navigate(
+                      "/account/settings/selling_info/selling_information"
+                    );
+                    setActive("addbtn");
+                  }}
+                >
+                  Add Selling Information
+                </p>
+              </div>
+            </div>
+
+            <div className="buying-info-container-formitem">
+              <div>
+                <h5 className="bicftitle">Payout Information</h5>
+
+                <p
+                  className="bicfbtn"
+                  onClick={() => {
+                    navigate(
+                      "/account/settings/selling_info"
+                    );
+                    setActive("addbtn");
+                  }}
+                >
+                  Get Paid
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
 
     </>
   )
