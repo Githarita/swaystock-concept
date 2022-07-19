@@ -46,6 +46,12 @@ function Paymentmethod() {
                         ></path>
                       </svg>
                     </div>
+                    <div className="thepaymentpart">
+                        <input type="text" placeholder="Card Number"/>
+                        <div className="thepaymentpart-middle">
+                            <input type="date" />
+                        </div>
+                    </div>
                   </div>
 
                   <div className="bicfremove">
