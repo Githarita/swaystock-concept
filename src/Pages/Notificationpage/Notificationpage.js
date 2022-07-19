@@ -23,8 +23,6 @@ function Notificationpage() {
         <p className="settings-top-text">Notifications</p>
       </header>
       <div className="buying-info-container">
-        <div className="buying-info-container-form">
-          <div className="buying-info-container-formitem">
             <div className="dkls">
               <div className="bicfitem">
                 <h5 className="bicftitle">SwayStock Communication</h5>
@@ -109,8 +107,6 @@ function Notificationpage() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </>
   );
 }

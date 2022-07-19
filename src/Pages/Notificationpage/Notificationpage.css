@@ -62,7 +62,7 @@ input:checked + .slider:before {
     justify-content: space-between;
     margin-bottom: 3px;
     border-bottom: 1px solid #f5f5f7;
-    padding: 14px 0px;
+    padding: 14px 5px;
 }
 
 .bicfitem h5 {
@@ -75,6 +75,3 @@ input:checked + .slider:before {
     margin-bottom: .5rem;
 }
 
-.dkls {
-    margin-top: -1rem;
-}
