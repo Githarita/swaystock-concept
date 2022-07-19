@@ -1,7 +1,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 35px;
+  width: 30px;
   height: 13px;
 }
 
@@ -26,10 +26,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 23px;
-  width: 23px;
+  height: 20px;
+  width: 20px;
   left: -1px;
-  bottom: -4px;
+  bottom: -3px;
   background-color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   -webkit-transition: 0.4s;
@@ -45,7 +45,7 @@ input:checked + .slider:before {
 input:checked + .slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
-  transform: translateX(15px);
+  transform: translateX(13px);
 }
 
 .slider.round {
@@ -60,17 +60,21 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     border-bottom: 1px solid #f5f5f7;
     padding: 14px 0px;
 }
 
 .bicfitem h5 {
-    font-weight: 500;
+    font-size: 13px;
 }
 
 .bicftils {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: .5rem;
+}
+
+.dkls {
+    margin-top: -1rem;
 }

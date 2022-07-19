@@ -25,86 +25,88 @@ function Notificationpage() {
       <div className="buying-info-container">
         <div className="buying-info-container-form">
           <div className="buying-info-container-formitem">
-            <div className="bicfitem">
-              <h5 className="bicftitle">SwayStock Communication</h5>
+            <div className="dkls">
+              <div className="bicfitem">
+                <h5 className="bicftitle">SwayStock Communication</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Whatsapp Messages</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Whatsapp Messages</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Updates on your offer</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Updates on your offer</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Available funds to withdraw</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Available funds to withdraw</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Ask Matches Expired Bid</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Ask Matches Expired Bid</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Bidding, New Highest Bid</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Bidding, New Highest Bid</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
 
-            <div className="bicfitem">
-              <h5 className="bicftitle">Bidding, New Lowest Ask</h5>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Bidding, New Lowest Ask</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Buyer Nearby Match</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Buyer Nearby Match</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Asking, New Highest Bid</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Asking, New Highest Bid</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-            <div className="bicfitem">
-              <h5 className="bicftitle">Asking, New Lowest Ask</h5>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div className="bicfitem">
+                <h5 className="bicftitle">Asking, New Lowest Ask</h5>
 
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-              </label>
+                <label className="switch">
+                  <input type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
             </div>
           </div>
         </div>

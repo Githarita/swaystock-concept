@@ -1,6 +1,10 @@
 .buying-info-container {
   padding: 18px 18px 18px 18px;
-  margin-top: 3.2rem;
+  margin-top: 2.5rem;
+}
+
+.buying-info-container-btn {
+  margin-top: 1rem;
 }
 
 .buying-info-container-btn-btn {
