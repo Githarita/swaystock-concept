@@ -17,6 +17,7 @@ import Sellingpage from "./Pages/Sellingpage/Sellingpage";
 import Settingspage from "./Pages/Settingspage/Settingspage";
 import Shippingaddresspage from "./Pages/Shippingaddresspage/Shippingaddresspage";
 import Storagepage from "./Pages/Storagepage/Storagepage";
+import Shippinginfo from "./Pages/Subpages/Shippinginfo/Shippinginfo";
 import Termsofuse from "./Pages/Termsofuse/Termsofuse";
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
         <Route
           path="/account/settings/buying_info"
           element={<BuyingInfopage />}
+        />
+          <Route
+          path="/account/settings/buying_info/shipping_information"
+          element={<Shippinginfo />}
         />
         <Route
           path="/account/settings/selling_info"
