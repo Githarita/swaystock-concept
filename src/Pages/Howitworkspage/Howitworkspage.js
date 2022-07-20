@@ -195,6 +195,68 @@ function Howitworkspage() {
                 </div>
               </div>
             </div>
+            <div className="howitworksbottombuy">
+              <h1>Guaranteed Authenticity.</h1>
+              <p>
+                Every item. Every time. Shop on SwayStock with complete
+                confidence knowing every purchase is 100% Verified Authentic.
+              </p>
+
+              <div className="hiwbtrustproc">
+                <h1>Trust The Process</h1>
+                <p>
+                  Our global team of expert authenticators uses a rigorous,
+                  multi-step verification procedure that includes the following
+                  checkpoints:
+                </p>
+              </div>
+
+              <div className="hiwbtrustproc-item">
+                <h2>Condition</h2>
+                <p>
+                  We only allow deadstock on our marketplace. That means every
+                  item bought or sold must be brand new and never worn.
+                </p>
+              </div>
+              <div className="hiwbtrustproc-item">
+                <h2>Construction</h2>
+                <p>
+                  With checklists of 100+ data points, our authenticators are
+                  better equipped than anyone to ensure a product's
+                  authenticity.
+                </p>
+              </div>
+              <div className="hiwbtrustproc-item">
+                <h2>Packaging</h2>
+                <p>
+                  Equally important as the product itself, our team ensures
+                  packaging meets the hightest quality standards to deliver a
+                  brand new product.
+                </p>
+              </div>
+              <div className="hiwbtrustproc-item">
+                <h2>Accessories</h2>
+                <p>
+                  From the full list of accessories to all the additional
+                  add-ons, rest assured that your purchase on SwayStock will
+                  match any retail purchase experience.
+                </p>
+              </div>
+              <div className="hiwbtrustproc-item">
+                <h2>Advanced Technology</h2>
+                <p>
+                  We use machine learning to aid our authenticators in catching
+                  every minor detail.
+                </p>
+              </div>
+              <div className="hiwbtrustproc-item">
+                <h2>Quality Assurance</h2>
+                <p>
+                  A final check in our authentication practice, our QA experts
+                  ensure nothing slips through the cracks.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
