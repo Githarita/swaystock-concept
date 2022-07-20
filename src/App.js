@@ -1,13 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Accountpage from "./Pages/Accountpage/Accountpage";
+import Askpage from "./Pages/Askpage/Askpage";
+import Bidspage from "./Pages/Bidspage/Bidspage";
 import BuyingInfopage from "./Pages/BuyingInfopage/BuyingInfopage";
 import Buyingpage from "./Pages/Buyingpage/Buyingpage";
 import Categories from "./Pages/Categories/Categories";
 import Categoryproducts from "./Pages/Categoryproducts/Categoryproducts";
+import Followingpage from "./Pages/Followingpage/Followingpage";
 import Homepage from "./Pages/Homepage/Homepage";
+import Howitworkspage from "./Pages/Howitworkspage/Howitworkspage";
 import Notificationpage from "./Pages/Notificationpage/Notificationpage";
 import Paymentmethodpage from "./Pages/Paymentmethodpage/Paymentmethodpage";
+import Portfoliopage from "./Pages/Portfoliopage/Portfoliopage";
 import Privacypolicy from "./Pages/Privacypolicy/Privacypolicy";
 import Privacysettings from "./Pages/Privacysettings/Privacysettings";
 import Profilepage from "./Pages/Profilepage/Profilepage";
@@ -21,6 +26,8 @@ import Billinginfo from "./Pages/Subpages/Billinginfo/Billinginfo";
 import Returnaddressinfo from "./Pages/Subpages/Returnaddressinfo/Returnaddressinfo";
 import Sellinginfo from "./Pages/Subpages/Sellinginfo/Sellinginfo";
 import Shippinginfo from "./Pages/Subpages/Shippinginfo/Shippinginfo";
+import Suggestaproduct from "./Pages/Suggestaproduct/Suggestaproduct";
+import Supportpage from "./Pages/Supportpage/Supportpage";
 import Termsofuse from "./Pages/Termsofuse/Termsofuse";
 
 function App() {
@@ -36,13 +43,13 @@ function App() {
         <Route path="/account/storage" element={<Storagepage />} />
         <Route path="/account/buying" element={<Buyingpage />} />
         <Route path="/account/selling" element={<Sellingpage />} />
-        <Route path="/account/bids" element={<Storagepage />} />
-        <Route path="/account/ask" element={<Buyingpage />} />
-        <Route path="/account/portfolio" element={<Storagepage />} />
-        <Route path="/account/following" element={<Buyingpage />} />
-        <Route path="/account/how_it_works" element={<Sellingpage />} />
-        <Route path="/account/suggest_a_product" element={<Storagepage />} />
-        <Route path="/account/support" element={<Buyingpage />} />
+        <Route path="/account/bids" element={<Bidspage />} />
+        <Route path="/account/ask" element={<Askpage />} />
+        <Route path="/account/portfolio" element={<Portfoliopage />} />
+        <Route path="/account/following" element={<Followingpage />} />
+        <Route path="/account/how_it_works" element={<Howitworkspage />} />
+        <Route path="/account/suggest_a_product" element={<Suggestaproduct />} />
+        <Route path="/account/support" element={<Supportpage />} />
 
         <Route
           path="/account/settings/buying_info"
