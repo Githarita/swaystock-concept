@@ -25,10 +25,10 @@ function Howitworkspage() {
       <div className="buying-info-containerr">
         <div className="howitworkscnt">
           <div className="howitworkstop">
-            <div className="howitworkstopitem">
+            <div className="howitworkstopitem howbosd">
               <h1>BUY</h1>
             </div>
-            <div className="howitworkstopitem">
+            <div className="howitworkstopitem howbosd">
               <h1>SELL</h1>
             </div>
             <div className="howitworkstopitem">
