@@ -23,7 +23,7 @@ function Buyingpage() {
 
         <p className="settings-top-text">Buying</p>
       </header>
-      <div className="buying-info-container">
+      <div className="buying-info-containerr">
         <section className="catproductlist-grid">
           {categoryProductList.catProductType.map((catprolist, key) => {
             return (
