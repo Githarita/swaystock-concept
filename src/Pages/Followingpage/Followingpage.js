@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { categoryProductList } from '../../Utils/datas';
 import "./Followingpage.css"
 
 function Followingpage() {
@@ -22,6 +23,29 @@ function Followingpage() {
 
         <p className="settings-top-text">Following</p>
       </header>
+      <div className="buying-info-containerr">
+        <section className="catproductlist-grid">
+          {categoryProductList.catProductType.map((catprolist, key) => {
+            return (
+              <div className="catproductlist-item">
+                <div className="catproductlist-item-name" key={key}>
+                  <p className="catproductlisttag">{catprolist.tag}</p>
+                  <h2 className="catproductlistname">{catprolist.name}</h2>
+                </div>
+                <img
+                  src={`${catprolist.image}`}
+                  alt=""
+                  className="catproductlistimage"
+                />
+                <div className="catproductlistprice-cnt">
+                  <p className="catproductlistlwask">Lowest Ask</p>
+                  <p className="catproductlisprice">{catprolist.price}</p>
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </div>
 
     </>
   )
