@@ -101,7 +101,19 @@ function Howitworkspage() {
                 <div className="stepsonsuccess-item">
                   <h2>We Authenticate</h2>
                   <p>
-                    Kick back and relax while we get to work. We make sure items are shipped ASAP for verification. Once we verify it's 100% authentic,
+                    Kick back and relax while we get to work. We make sure items
+                    are shipped ASAP for verification. Once we verify it's 100%
+                    authentic, we ship it off to you! Our average delivery time
+                    is 7-12 busines days from order date.
+                  </p>
+                </div>
+                <div className="stepsonsuccess-item">
+                  <h2>Flex on Everyone</h2>
+                  <p>
+                    After we make sure the order is 100% authentic, we send it
+                    your way ASAP. Once it arrives you should feel free to flex
+                    on everyone by sharing with the hashtag #GotItOnSwayStock.
+                    We'll be sure to show you some love as well.
                   </p>
                 </div>
               </div>
