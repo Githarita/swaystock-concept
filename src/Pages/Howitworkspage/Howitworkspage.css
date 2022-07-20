@@ -20,6 +20,13 @@
     cursor: pointer;
 }
 
+.howitworkstopitem:hover {
+    background-color: #f7f7f5;
+}
+.howitworkstopitem:focus {
+    background-color: #f7f7f5;
+}
+
 .howitworkstopitem h1 {
     font-size: 14px;
 }
