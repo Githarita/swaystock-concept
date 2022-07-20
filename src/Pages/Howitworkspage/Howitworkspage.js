@@ -31,6 +31,9 @@ function Howitworkspage() {
             <div className="howitworkstopitem">
               <h1>SELL</h1>
             </div>
+            <div className="howitworkstopitem">
+              <h1>Authentication</h1>
+            </div>
           </div>
           <div className="howitworksbottom">
             <div className="howitworksbottombuy">
@@ -114,6 +117,80 @@ function Howitworkspage() {
                     your way ASAP. Once it arrives you should feel free to flex
                     on everyone by sharing with the hashtag #GotItOnSwayStock.
                     We'll be sure to show you some love as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="howitworksbottombuy">
+              <p>Place An Ask Or Sell Now</p>
+              <p>Ship Us Your Sold Item</p>
+              <p>We Authenticate & You Get Paid</p>
+
+              <div className="hiwbb">
+                <h2>Selling On SwayStock</h2>
+                <p>
+                  Whether you're looking to make quick cash or start a reselling
+                  business, we have the tools to help you succeed.
+                </p>
+              </div>
+
+              <div className="hiwbbnameprice">
+                <h2>Sell Quick with Zero Customer Base</h2>
+                <p>
+                  Just search for your product and set your price. You won't
+                  need to take product pictures, share personal information, or
+                  negotiate with potential Buyers.
+                </p>
+              </div>
+
+              <div className="hiwbbnameprice">
+                <h2>Reach Millions</h2>
+                <p>
+                  Our global reach extends to millions of customers in Nigeria.
+                  You're guaranteed to discover someone who can't wait to
+                  purchase the item you're selling.
+                </p>
+              </div>
+
+              <div className="hiwbbnameprice">
+                <h2>Unlock Rewards</h2>
+                <p>
+                  We pride ourselves on having some of the lowest commission
+                  rates in the industry and we wnat to share our thanks for
+                  making it happen. The more you sell, the lower your rates.
+                </p>
+              </div>
+
+              <div className="stepsonsuccess">
+                <h1>Our Steps For Selling Easily</h1>
+                <div className="stepsonsuccess-item">
+                  <h2>No Approval Needed! Sign Up & Sell</h2>
+                  <p>
+                    Your earnings, your rules. All you have to do is select a
+                    payout method and currency from our availbale options.
+                  </p>
+                </div>
+                <div className="stepsonsuccess-item">
+                  <h2>Create Smarter Listings</h2>
+                  <p>
+                    Decide when to sell and how to sell using the historical
+                    sales data for every item on our marketplace.
+                  </p>
+                </div>
+                <div className="stepsonsuccess-item">
+                  <h2>Ship Us Your Sold Items</h2>
+                  <p>
+                    We require that you send us the sold item within two
+                    business days. Simply print the label we send and follow our
+                    shipping guidelines to ensure your products arrive safely at
+                    our authentication center.
+                  </p>
+                </div>
+                <div className="stepsonsuccess-item">
+                  <h2>Get Paid</h2>
+                  <p>
+                    We release your payouts as soon as we confirm your sold
+                    items are new and authentic.
                   </p>
                 </div>
               </div>
