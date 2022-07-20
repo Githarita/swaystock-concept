@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import "./Storagepage.css"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Storagepage.css";
 
 function Storagepage() {
   const navigate = useNavigate();
@@ -23,8 +23,14 @@ function Storagepage() {
         <p className="settings-top-text">Storage</p>
       </header>
 
+      <div className="buying-info-container">
+        <div className="storagepage-cnt">
+          <h2>What is SwayStock Storage?</h2>
+          <p>SWAYSTOCK is ideal for reselling goods or saving space at home. Select SWAYSTOCK Storage as your shipping option at checkout and we'll secure your goods until you're ready to ship.</p>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Storagepage
+export default Storagepage;
