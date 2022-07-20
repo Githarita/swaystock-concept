@@ -98,6 +98,12 @@ function Howitworkspage() {
                     gamesmanship.
                   </p>
                 </div>
+                <div className="stepsonsuccess-item">
+                  <h2>We Authenticate</h2>
+                  <p>
+                    Kick back and relax while we get to work. We make sure items are shipped ASAP for verification. Once we verify it's 100% authentic,
+                  </p>
+                </div>
               </div>
             </div>
           </div>
