@@ -1,6 +1,7 @@
 .howitworkscnt {
-    margin-top: 3.5rem;
+    margin-top: 3.2rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .howitworkstop {
@@ -9,10 +10,13 @@
     justify-content: center;
     align-items: center;
     padding: 8px 14px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
 }
 .howitworkstopitem {
     /* background-color: #f7f7f5; */
-    padding: 8px 1rem;
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -29,7 +33,7 @@
 
 .howitworkstopitem h1 {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 500;padding: 8px 1rem;
 }
 
 .howbosd {
