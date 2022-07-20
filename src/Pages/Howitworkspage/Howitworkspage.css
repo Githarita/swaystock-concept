@@ -12,6 +12,7 @@
   background-color: #fff;
   position: fixed;
   width: 100%;
+  border-bottom: 1px solid #f7f7f5;
 }
 .howitworkstopitem {
   /* background-color: #f7f7f5; */
