@@ -20,7 +20,7 @@ function Bidspage() {
           ></path>
         </svg>
 
-        <p className="settings-top-text">Ask</p>
+        <p className="settings-top-text">Bids</p>
       </header>
 
     </>
