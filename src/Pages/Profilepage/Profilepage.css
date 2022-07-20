@@ -42,3 +42,15 @@
     height: 23px;
     fill: #1d1d1f;
 }
+
+.primage-item h2 {
+    font-size: 16px;
+    color: #1d1d1f;
+    margin-bottom: .2rem;
+
+}
+
+.primage-item p {
+    font-size: 12px;
+    color: #999;
+}
