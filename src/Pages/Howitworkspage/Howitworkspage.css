@@ -1,41 +1,40 @@
 .howitworkscnt {
-    margin-top: 3.2rem;
-    margin-bottom: 1rem;
-    position: relative;
+  margin-top: 3.2rem;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .howitworkstop {
-    border-bottom: 1px solid #f7f7f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 14px;
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
+  border-bottom: 1px solid #f7f7f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
 }
 .howitworkstopitem {
-    /* background-color: #f7f7f5; */
-    
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  /* background-color: #f7f7f5; */
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.howitworkstopitem:hover {
-    background-color: #f7f7f5;
+.howitworkstopitem:hover h1 {
+  font-weight: bolder;
 }
-.howitworkstopitem:focus {
-    background-color: #f7f7f5;
-}
+
 
 .howitworkstopitem h1 {
-    font-size: 13px;
-    font-weight: 500;padding: 8px 1rem;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 1rem;
 }
 
 .howbosd {
-    border-right: 1px solid #f7f7f5;
+  border-right: 1px solid #f7f7f5;
 }
