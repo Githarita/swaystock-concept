@@ -6,22 +6,25 @@
 
 .howitworkstop {
   display: flex;
-  justify-content: center;
+  gap: 0.5rem;
   align-items: center;
-  padding: 8px 14px;
+  padding: 10px 25px;
   background-color: #fff;
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid #f7f7f5;
+  /* border-bottom: 1px solid #f7f7f5; */
 }
 .howitworkstopitem {
   /* background-color: #f7f7f5; */
 
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 1px solid #f7f7f5;
+  border-radius: 20px;
+  margin-top: .2rem;
 }
 
 .howitworkstopitem:hover h1 {
@@ -34,9 +37,9 @@
   padding: 8px 1rem;
 }
 
-.howbosd {
+/* .howbosd {
   border-right: 1px solid #f7f7f5;
-}
+} */
 
 .howitworksbottom {
   padding: 4rem 25px 0px 25px;
