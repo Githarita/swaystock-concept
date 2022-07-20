@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import "./Howitworkspage.css"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Howitworkspage.css";
 
 function Howitworkspage() {
   const navigate = useNavigate();
@@ -22,9 +22,47 @@ function Howitworkspage() {
 
         <p className="settings-top-text">How it Works</p>
       </header>
+      <div className="buying-info-containerr">
+        <div className="buying-info-container-form">
+          <div className="howitworkscnt">
+            <div className="howitworkstop">
+              <div className="howitworkstopitem">
+                <h1>BUY</h1>
+              </div>
+              <div className="howitworkstopitem">
+                <h1>SELL</h1>
+              </div>
+            </div>
+            <div className="howitworksbottom">
+              <div className="howitworksbottombuy">
+                <p>Place A Bid Or Buy Now</p>
+                <p>We Authenticate</p>
+                <p>We Ship To You</p>
 
+                <div className="hiwbb">
+                  <h2>Buying On SwayStock</h2>
+                  <p>
+                    We don't determine the price, you do. As a live marketplace,
+                    SwayStock empowers you to Bid and Buy at real-time prices
+                    that reflect the current demand
+                  </p>
+                </div>
+
+                <div className="hiwbbnameprice">
+                  <h2>Name Your Price</h2>
+                  <p>
+                    Buy Now at the lowest Ask, or place a lower Bid at the price
+                    you want to pay. We will send you immediate updates as
+                    prices move on your Bids. Bids can be renewed or
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Howitworkspage
+export default Howitworkspage;
