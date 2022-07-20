@@ -1,90 +1,110 @@
 .profilepage-cnt {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .primage {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    border-bottom: 1px solid #f7f7f5;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid #f7f7f5;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .primageimg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .primageimg img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #f7f7f5;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f7f7f5;
 }
 
 .primageimgicon {
-    bottom: -15px;
-    position: absolute;
-    background-color: #f7f7f5;
-    width: 50px;
-    height: 30px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  bottom: -15px;
+  position: absolute;
+  background-color: #f7f7f5;
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primageimgicon-icon {
-    width: 23px;
-    height: 23px;
-    fill: #1d1d1f;
+  width: 23px;
+  height: 23px;
+  fill: #1d1d1f;
 }
 
 .primage-item h2 {
-    font-size: 16px;
-    color: #1d1d1f;
-    margin-bottom: .2rem;
-
+  font-size: 16px;
+  color: #1d1d1f;
+  margin-bottom: 0.2rem;
 }
 
 .primage-item p {
-    font-size: 12px;
-    color: #999;
+  font-size: 12px;
+  color: #999;
 }
 
 .profilelevel {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    border-bottom: 1px solid #f7f7f5;
-    padding-bottom: 1.2rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  border-bottom: 1px solid #f7f7f5;
+  padding-bottom: 1.2rem;
 }
 
 .profilelevel-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #f7f7f5;
-    width: 100%;
-    border-radius: 10px;
-    padding: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f7f7f5;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 8px;
 }
 
 .profilelevel-item h2 {
-    font-size: 14px;
-    color: #1d1d1f;
+  font-size: 14px;
+  color: #1d1d1f;
 }
 
 .profilelevel-item p {
-    font-size: 12px;
-    font-weight: 500;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.profilegpage-cnt-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 5px;
+  border-bottom: 1px solid #f5f5f7;
+  cursor: pointer;
+}
+
+.prcitbo {
+  border-bottom: none;
+}
+
+.profilegpage-cnt-item p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+.pfpciusername {
+  color: #999 !important;
 }

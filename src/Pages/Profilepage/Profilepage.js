@@ -83,7 +83,7 @@ function Profilepage() {
               <p className="pfpciuser">Phone</p>
               <p className="pfpciusername">09026863277</p>
             </div>
-            <div className="profilegpage-cnt-item">
+            <div className="profilegpage-cnt-item prcitbo">
               <p className="pfpciuser">Password</p>
               <p className="pfpciusername">Change Password</p>
             </div>
