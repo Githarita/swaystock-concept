@@ -138,9 +138,11 @@ function Howitworkspage() {
             )}
             {active === "sell" && (
               <div className="howitworksbottombuy">
-                <p>Place An Ask Or Sell Now</p>
-                <p>Ship Us Your Sold Item</p>
-                <p>We Authenticate & You Get Paid</p>
+                <ul className="hiwbbtop">
+                  <li>Place An Ask Or Sell Now</li>
+                  <li>Ship Us Your Sold Item</li>
+                  <li>We Authenticate & You Get Paid</li>
+                </ul>
 
                 <div className="hiwbb">
                   <h2>Selling On SwayStock</h2>
@@ -213,9 +215,9 @@ function Howitworkspage() {
               </div>
             )}
             {active === "authentication" && (
-              <div className="howitworksbottombuy">
-                <h1>Guaranteed Authenticity.</h1>
-                <p>
+              <div className="hiwbbnameprice">
+                <h1 className="hwtpsa">Guaranteed Authenticity.</h1>
+                <p className="hwtyep">
                   Every item. Every time. Shop on SwayStock with complete
                   confidence knowing every purchase is 100% Verified Authentic.
                 </p>
@@ -229,14 +231,14 @@ function Howitworkspage() {
                   </p>
                 </div>
 
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Condition</h2>
                   <p>
                     We only allow deadstock on our marketplace. That means every
                     item bought or sold must be brand new and never worn.
                   </p>
                 </div>
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Construction</h2>
                   <p>
                     With checklists of 100+ data points, our authenticators are
@@ -244,7 +246,7 @@ function Howitworkspage() {
                     authenticity.
                   </p>
                 </div>
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Packaging</h2>
                   <p>
                     Equally important as the product itself, our team ensures
@@ -252,7 +254,7 @@ function Howitworkspage() {
                     brand new product.
                   </p>
                 </div>
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Accessories</h2>
                   <p>
                     From the full list of accessories to all the additional
@@ -260,14 +262,14 @@ function Howitworkspage() {
                     match any retail purchase experience.
                   </p>
                 </div>
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Advanced Technology</h2>
                   <p>
                     We use machine learning to aid our authenticators in
                     catching every minor detail.
                   </p>
                 </div>
-                <div className="hiwbtrustproc-item">
+                <div className="stepsonsuccess-item">
                   <h2>Quality Assurance</h2>
                   <p>
                     A final check in our authentication practice, our QA experts
