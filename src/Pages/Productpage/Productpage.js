@@ -50,17 +50,54 @@ function Productpage() {
           <img src={sneaker5} alt="sneaker5" />
         </div>
 
-       <div className="productpage-itemname">
-        <h1>{productId}</h1>
-       </div>
+        <div className="productpage-itemname">
+          <h1>{productId}</h1>
+        </div>
 
-       
-
-       
-        
-
-       
-        
+        <div className="productpage-itemms">
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Brand</p>
+              <p className="prodbnd">Balenciaga</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Release Date</p>
+              <p className="prodbnd">04-02-22</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Nickname</p>
+              <p className="prodbnd">Metallic Multi</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Colorway</p>
+              <p className="prodbnd">Multi-Color/Metal Silver</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Main Color</p>
+              <p className="prodbnd">Multi-Color</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Upper Material</p>
+              <p className="prodbnd">Leather</p>
+            </div>
+          </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Silhouette</p>
+              <p className="prodbnd">Balenciaga Track</p>
+            </div>
+          </div>
+        </div>
       </div>
       {searchmodal && (
         <div className="searchproductmodal">
