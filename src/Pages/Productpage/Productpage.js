@@ -141,7 +141,9 @@ function Productpage() {
         </section>
       </div>
       
-
+          <div className="productbuynav">
+            
+          </div>
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
