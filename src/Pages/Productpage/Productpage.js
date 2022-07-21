@@ -62,7 +62,8 @@ function Productpage() {
             </div>
           </div>
           <div className="productpage-infomixitem2">
-            <svg
+            <div className="productpage-infomixitem2b">
+                 <svg
               className="productpage-infomixitem2-icon"
               viewBox="0 0 15 15"
               fill="none"
@@ -75,6 +76,11 @@ function Productpage() {
                 clip-rule="evenodd"
               ></path>
             </svg>
+            </div>
+           
+            <div className="productpage-category-item">
+              <p>Market Data</p>
+            </div>
           </div>
         </div>
 
@@ -94,77 +100,62 @@ function Productpage() {
           <h2 className="productpage-notifitext">7 Left for this item</h2>
         </div> */}
 
-        <div className="productpage-category">
-          <div
-            className="productpage-category-item"
-            onClick={() => setDiscriptactive("description")}
-          >
-            <p>Description</p>
-          </div>
-          <div
-            className="productpage-category-item"
-            onClick={() => setDiscriptactive("productdetails")}
-          >
-            <p>Product Details</p>
-          </div>
-          <div className="productpage-category-item">
-            <p>Market Data</p>
-          </div>
-          <div className="productpage-category-item">
-            <p>Price History</p>
-          </div>
+        <div
+          className="productpage-category-itemm"
+        >
+          <p>Description</p>
+        </div>
+        <div className="productpage-desciption">
+          <p>
+            From the school-spirited College Colors Program to the vibrant Nike
+            CO.JP collection, Nike Dunks have seen many colorways since the
+            design's inception in 1985. But with each new colorway, the Dunk's
+            classic color-blocking has remained in some capacity. Nike put its
+            timeless color-blocking to work with the Nike Dunk Low Retro White
+            Black.
+          </p>
+
+          <p>
+            The Upper Nike Dunk Low Retro White Black is constructed of white
+            leather with black leather overlays and Swooshes. Classic Nike
+            branding is featured on the nylon tongue, nodding to traditional
+            Dunk design elements. A white midsole and black outsole completes
+            the desing.
+          </p>
+
+          <p>
+            The Nike Dunk Low Retro White Black released in January of 2021 and
+            retailed for N90,000.
+          </p>
         </div>
 
-        {discriptactive === "description" && (
-          <div className="productpage-desciption">
-            <p>
-              From the school-spirited College Colors Program to the vibrant
-              Nike CO.JP collection, Nike Dunks have seen many colorways since
-              the design's inception in 1985. But with each new colorway, the
-              Dunk's classic color-blocking has remained in some capacity. Nike
-              put its timeless color-blocking to work with the Nike Dunk Low
-              Retro White Black.
-            </p>
-
-            <p>
-              The Upper Nike Dunk Low Retro White Black is constructed of white
-              leather with black leather overlays and Swooshes. Classic Nike
-              branding is featured on the nylon tongue, nodding to traditional
-              Dunk design elements. A white midsole and black outsole completes
-              the desing.
-            </p>
-
-            <p>
-              The Nike Dunk Low Retro White Black released in January of 2021
-              and retailed for N90,000.
-            </p>
+        <div
+          className="productpage-category-itemm"
+        >
+          <p>Product Details</p>
+        </div>
+        <div className="productpage-details">
+          <div className="productpage-details-item">
+            <p className="pditext">Category</p>
+            <p className="pdians">Sneakers</p>
           </div>
-        )}
-
-        {discriptactive === "productdetails" && (
-          <div className="productpage-details">
-            <div className="productpage-details-item">
-              <p className="pditext">Category</p>
-              <p className="pdians">Sneakers</p>
-            </div>
-            <div className="productpage-details-item">
-              <p className="pditext">Conditon</p>
-              <p className="pdians">New</p>
-            </div>
-            <div className="productpage-details-item">
-              <p className="pditext">Authencity</p>
-              <p className="pdians">100%</p>
-            </div>
-            <div className="productpage-details-item">
-              <p className="pditext">Retail Price</p>
-              <p className="pdians">N90,000</p>
-            </div>
-            <div className="productpage-details-item">
-              <p className="pditext">Realease Date</p>
-              <p className="pdians">02 June 2021</p>
-            </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Conditon</p>
+            <p className="pdians">New</p>
           </div>
-        )}
+          <div className="productpage-details-item">
+            <p className="pditext">Authencity</p>
+            <p className="pdians">100%</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Retail Price</p>
+            <p className="pdians">N90,000</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Realease Date</p>
+            <p className="pdians">02 June 2021</p>
+          </div>
+        </div>
       </div>
       {searchmodal && (
         <div className="searchproductmodal">
