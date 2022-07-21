@@ -34,6 +34,7 @@
 .productpage-infomix {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .productpage-infomixitem1 {
@@ -41,17 +42,16 @@
 }
 
 .productpage-infomixitem2 {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-radius: 50%;
+  gap: 10px;
 }
 
 .productpage-infomixitem2-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -105,70 +105,69 @@
 } */
 
 .productpage-category {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-    gap: .5rem;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #f7f7f5;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f7f7f5;
 }
 
 .productpage-category-item {
-    border: 1px solid #f7f7f5;
-    padding: 8px 15px;
-    border-radius: 9999px;
-    font-size: 12px;
-    font-weight: 600;
+  border: 1px solid #f7f7f5;
+  padding: 8px 15px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .productpage-category-item:hover {
-    background-color: #f7f7f5;
-    cursor: pointer;
+  background-color: #f7f7f5;
+  cursor: pointer;
 }
 
 .productpage-desciption {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .productpage-desciption p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .productpage-details {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .productpage-details-item {
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: .5rem;
-    text-align: left;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-align: left;
 }
 
 .pditext {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .pdians {
-    font-size: 12px;
-    font-weight: 600;
-    align-self: start;
-    
+  font-size: 12px;
+  font-weight: 600;
+  align-self: start;
 }
 
 .productpage-category-itemm {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .productpage-category-itemm p {
-    font-weight: 600;
-    font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
 }
