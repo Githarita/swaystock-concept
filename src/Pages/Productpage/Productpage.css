@@ -19,7 +19,7 @@
 }
 
 .daiasm {
-  margin-bottom: 7.8rem;
+  margin-bottom: 9rem;
 }
 
 .productpage-cnt {
@@ -143,13 +143,17 @@
   font-size: 12px;
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
 }
 
 .btna {
   background-color: #f2f7f2;
   color: #1d1d1f;
   border: none;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -157,8 +161,20 @@
 .btnb {
   background-color: #1d1d1f;
   border: none;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   color: #fff;
+}
+
+.splisa {
+    height: 20px;
+    width: 1px;
+    background-color: rgba(153, 153, 153, 0.39);
+}
+
+.splisaa {
+    height: 20px;
+    width: 1px;
+    background-color: rgba(153, 153, 153, 0.39);
 }

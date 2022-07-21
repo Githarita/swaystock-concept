@@ -145,12 +145,13 @@ function Productpage() {
           <p>N120,000</p>
         </div>
         <div className="productbuynav-btn">
-          <button className="productbuynav-btn-buy btna">
-            Buy or Bid
-          </button>
-          <button className="productbuynav-btn-buy btnb">
-            Sell or Ask
-          </button>
+          <div className="productbuynav-btn-buy btna">
+            <p>Buy</p> <div className="splisaa"></div> <p>Bid</p>
+          </div>
+          <div className="productbuynav-btn-buy btnb">
+            {" "}
+            <p>Buy</p> <div className="splisa"></div> <p>Bid</p>
+          </div>
         </div>
       </div>
       {searchmodal && (
