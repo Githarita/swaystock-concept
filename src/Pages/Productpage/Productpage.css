@@ -19,7 +19,7 @@
 }
 
 .daiasm {
-    margin-bottom: 7.8rem;
+  margin-bottom: 7.8rem;
 }
 
 .productpage-cnt {
@@ -101,64 +101,64 @@
 }
 
 .productyoumayalsolike {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
-    margin-bottom: -1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  margin-bottom: -1.8rem;
 }
 
 .productyoumayalsolike h2 {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .productbuynav {
-    position: fixed;
-    bottom: 3.1rem;
-    width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #f7f7f5;
-    padding: 20px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: fixed;
+  bottom: 3.1rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #f7f7f5;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .productbuynav-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .productbuynav-btn-buy {
-    width: 100px;
-    padding: 1rem 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 12px;
-    border: 1px solid #1d1d1f;
+  width: 100px;
+  padding: 1rem 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.btna{
-    background-color: #f2f7f2;
-    color: #1d1d1f;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
+.btna {
+  background-color: #f2f7f2;
+  color: #1d1d1f;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .btnb {
-    background-color:#1d1d1f;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #fff;
-
+  background-color: #1d1d1f;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
 }
