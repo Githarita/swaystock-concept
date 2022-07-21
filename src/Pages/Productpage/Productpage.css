@@ -67,3 +67,17 @@
 .productpage-info {
   margin-bottom: 15px;
 }
+
+.productpage-lowestask-subtext {
+    font-size: 11px;
+    color: #999;
+}
+
+.productpage-lowestask-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productpage-lowestask {
+    margin-bottom: 15px;
+}

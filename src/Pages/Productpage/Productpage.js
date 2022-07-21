@@ -51,7 +51,7 @@ function Productpage() {
             </div>
             <div className="productpage-lowestask">
               <p className="productpage-lowestask-subtext">Lowest Ask</p>
-              <p className="productpage-lowestask-price">N120,000</p>
+              <h1 className="productpage-lowestask-price">N120,000</h1>
             </div>
           </div>
           <div className="productpage-infomixitem2">
