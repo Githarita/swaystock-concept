@@ -20,7 +20,7 @@
 
 .productpage-cnt {
   margin-top: 3.5rem;
-  padding: 0px 15px;
+  padding: 0px 30px;
   margin-bottom: 5rem;
 }
 
@@ -31,145 +31,15 @@
   justify-content: center;
 }
 
-.productpage-infomix {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.productpage-itemname {
+    border-bottom: 1px solid #f7f7f5;
+    border-top: 1px solid #f7f7f5;
+    padding: 2rem 20px;
+    text-align: center;
+   
 }
 
-.productpage-infomixitem1 {
-  width: 200px;
-}
-
-.productpage-infomixitem2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.productpage-infomixitem2-icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.productpage-infocat {
-  color: #999;
-  font-size: 13px;
-}
-
-.productpage-infotitle {
-  margin-top: 5px;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.productpage-info {
-  margin-bottom: 8px;
-}
-
-
-
-.productpage-lowestask-subtext {
-  font-size: 9px;
-  color: #999;
-}
-
-.productpage-lowestask-price {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-/* .productpage-lowestask {
-  margin-bottom: 20px;
-} */
-
-/* .productpage-notifi {
-    border: 1px solid #f7f7f5;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    border-radius: 10px;
-    gap: .5rem;
-    margin-bottom: 15px;
-}
-
-.productpage-notifi-icon {
-    fill: red;
-    width: 20px;
-    height: 20px;
-}
-
-.productpage-notifitext {
-    font-size: 16px;
-} */
-
-.productpage-category {
-  display: flex;
-  align-items: center;
-  padding-bottom: 10px;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #f7f7f5;
-}
-
-.productpage-category-item {
-  border: 1px solid #f7f7f5;
-  padding: 8px 15px;
-  border-radius: 9999px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.productpage-category-item:hover {
-  background-color: #f7f7f5;
-  cursor: pointer;
-}
-
-.productpage-desciption {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.productpage-desciption p {
-  font-size: 12px;
-}
-
-.productpage-details {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.productpage-details-item {
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  text-align: left;
-}
-
-.pditext {
-  font-size: 12px;
-}
-
-.pdians {
-  font-size: 12px;
-  font-weight: 600;
-  align-self: start;
-}
-
-.productpage-category-itemm {
-  margin-top: 30px;
-}
-
-.productpage-category-itemm p {
-  font-weight: 600;
-  font-size: 14px;
+.productpage-itemname h1 {
+     font-size:20px;
+    font-weight: 500;
 }
