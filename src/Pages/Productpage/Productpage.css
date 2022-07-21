@@ -124,3 +124,14 @@
     background-color: #f7f7f5;
     cursor: pointer;
 }
+
+.productpage-desciption {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productpage-desciption p {
+    font-size: 12px;
+}
