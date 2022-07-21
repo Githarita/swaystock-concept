@@ -178,3 +178,8 @@
     width: 1px;
     background-color: rgba(153, 153, 153, 0.144);
 }
+
+.currencycolor {
+    color: #13544e;
+    font-weight: 600;
+}

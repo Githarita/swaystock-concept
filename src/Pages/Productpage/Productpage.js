@@ -142,14 +142,15 @@ function Productpage() {
 
       <div className="productbuynav">
         <div className="productbuynav-itemprice">
-          <p>NGN120,000</p>
+          <p>
+            <span className="currencycolor">NGN </span>120,000
+          </p>
         </div>
         <div className="productbuynav-btn">
           <div className="productbuynav-btn-buy btna">
             <p>Buy</p> <div className="splisaa"></div> <p>Bid</p>
           </div>
           <div className="productbuynav-btn-buy btnb">
-            
             <p>Sell</p> <div className="splisa"></div> <p>Ask</p>
           </div>
         </div>
