@@ -110,7 +110,7 @@
     align-items: center;
     padding-bottom: 10px;
     gap: .5rem;
-    flex-wrap: wrap;
+    overflow-x: scroll;
     border-bottom: 1px solid #f7f7f5;
 }
 
