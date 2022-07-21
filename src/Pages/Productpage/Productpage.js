@@ -95,6 +95,9 @@ function Productpage() {
             <p>Description</p>
           </div>
           <div className="productpage-category-item">
+            <p>Product Details</p>
+          </div>
+          <div className="productpage-category-item">
             <p>Market Data</p>
           </div>
           <div className="productpage-category-item">
@@ -112,9 +115,41 @@ function Productpage() {
             Black.
           </p>
 
-          <p>The Upper Nike Dunk Low Retro White Black is constructed of white leather with black leather overlays and Swooshes. Classic Nike branding is featured on the nylon tongue, nodding to traditional Dunk design elements. A white midsole and black outsole completes the desing.</p>
+          <p>
+            The Upper Nike Dunk Low Retro White Black is constructed of white
+            leather with black leather overlays and Swooshes. Classic Nike
+            branding is featured on the nylon tongue, nodding to traditional
+            Dunk design elements. A white midsole and black outsole completes
+            the desing.
+          </p>
 
-          <p>The Nike Dunk Low Retro White Black released in January of 2021 and retailed for N90,000.</p>
+          <p>
+            The Nike Dunk Low Retro White Black released in January of 2021 and
+            retailed for N90,000.
+          </p>
+        </div>
+
+        <div className="productpage-details">
+          <div className="productpage-details-item">
+            <p className="pditext">Category</p>
+            <p className="pdians">Sneakers</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Conditon</p>
+            <p className="pdians">New</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Authencity</p>
+            <p className="pdians">100%</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Retail Price</p>
+            <p className="pdians">N90,000</p>
+          </div>
+          <div className="productpage-details-item">
+            <p className="pditext">Realease Date</p>
+            <p className="pdians">02 June 2021</p>
+          </div>
         </div>
       </div>
     </>
