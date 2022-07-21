@@ -205,7 +205,7 @@ function Categoryproducts() {
       <section className={`${displayGrid}`}>
         {categoryProductList.catProductType.map((catprolist, key) => {
           return (
-            <div className="catproductlist-item">
+            <Link to={`/product/${catprolist.name}`} className="catproductlist-item">
               <div className="catproductlist-item-name" key={key}>
                 <p className="catproductlisttag">{catprolist.tag}</p>
                 <h2 className="catproductlistname">{catprolist.name}</h2>
@@ -219,7 +219,7 @@ function Categoryproducts() {
                 <p className="catproductlistlwask">Lowest Ask</p>
                 <p className="catproductlisprice">{catprolist.price}</p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </section>

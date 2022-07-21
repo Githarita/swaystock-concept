@@ -258,6 +258,7 @@
     border-radius: 18px; */
     border: 1px solid #f5f5f7;
     border-radius: 18px;
+    text-decoration: none;
   }
 
   .catproductlist-grid .catproductlist-item {

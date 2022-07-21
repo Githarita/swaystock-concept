@@ -15,6 +15,7 @@ import Paymentmethodpage from "./Pages/Paymentmethodpage/Paymentmethodpage";
 import Portfoliopage from "./Pages/Portfoliopage/Portfoliopage";
 import Privacypolicy from "./Pages/Privacypolicy/Privacypolicy";
 import Privacysettings from "./Pages/Privacysettings/Privacysettings";
+import Productpage from "./Pages/Productpage/Productpage";
 import Profilepage from "./Pages/Profilepage/Profilepage";
 import Returnaddresspage from "./Pages/Returnaddresspage/Returnaddresspage";
 import Sellinginfopage from "./Pages/Sellinginfopage/Sellinginfopage";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:categoryId" element={<Categoryproducts />} />
+        <Route path="/product/:productId" element={<Productpage />} />
         <Route path="/account" element={<Accountpage />} />
         <Route path="/account/settings" element={<Settingspage />} />
         <Route path="/account/profile" element={<Profilepage />} />
