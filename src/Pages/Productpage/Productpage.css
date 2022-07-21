@@ -21,6 +21,7 @@
 .productpage-cnt {
   margin-top: 3.5rem;
   padding: 0px 15px;
+  margin-bottom: 5rem;
 }
 
 .productpage-image {
@@ -134,4 +135,31 @@
 
 .productpage-desciption p {
     font-size: 12px;
+}
+
+.productpage-details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.productpage-details-item {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    text-align: left;
+}
+
+.pditext {
+    font-size: 12px;
+}
+
+.pdians {
+    font-size: 12px;
+    font-weight: 600;
+    align-self: start;
+    
 }
