@@ -145,10 +145,10 @@ function Productpage() {
           <p>N120,000</p>
         </div>
         <div className="productbuynav-btn">
-          <button className="productbuynav-btn-buy">
+          <button className="productbuynav-btn-buy btna">
             Buy or Bid
           </button>
-          <button className="productbuynav-btn-buy">
+          <button className="productbuynav-btn-buy btnb">
             Sell or Ask
           </button>
         </div>

@@ -120,7 +120,7 @@
     width: 100%;
     background-color: #fff;
     border-top: 1px solid #f7f7f5;
-    padding: 10px 15px;
+    padding: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,4 +142,23 @@
     font-weight: 500;
     font-size: 12px;
     border: 1px solid #1d1d1f;
+}
+
+.btna{
+    background-color: #f2f7f2;
+    color: #1d1d1f;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnb {
+    background-color:#1d1d1f;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+
 }
