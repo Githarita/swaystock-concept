@@ -18,10 +18,13 @@
   cursor: pointer;
 }
 
+.daiasm {
+    margin-bottom: 4rem;
+}
+
 .productpage-cnt {
   margin-top: 3.5rem;
   padding: 0px 30px;
-  margin-bottom: 5rem;
 }
 
 .productpage-image {
@@ -101,6 +104,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
+    margin-bottom: -1.8rem;
 }
 
 .productyoumayalsolike h2 {

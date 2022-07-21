@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import sneaker5 from "../../assets/sneaker5.png";
+import { categoryProductList } from "../../Utils/datas";
 import "./Productpage.css";
 
 function Productpage() {
@@ -45,7 +46,8 @@ function Productpage() {
           ></path>
         </svg>
       </header>
-      <div className="productpage-cnt">
+      <div className="daiasm">
+        <div className="productpage-cnt">
         <div className="productpage-image">
           <img src={sneaker5} alt="sneaker5" />
         </div>
@@ -113,6 +115,29 @@ function Productpage() {
             <h2>Related Products</h2>
         </div>
       </div>
+      <section className="catproductlist-grid">
+          {categoryProductList.catProductType.map((catprolist, key) => {
+            return (
+              <div className="catproductlist-item">
+                <div className="catproductlist-item-name" key={key}>
+                  <p className="catproductlisttag">{catprolist.tag}</p>
+                  <h2 className="catproductlistname">{catprolist.name}</h2>
+                </div>
+                <img
+                  src={`${catprolist.image}`}
+                  alt=""
+                  className="catproductlistimage"
+                />
+                <div className="catproductlistprice-cnt">
+                  <p className="catproductlistlwask">Lowest Ask</p>
+                  <p className="catproductlisprice">{catprolist.price}</p>
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </div>
+      
 
       {searchmodal && (
         <div className="searchproductmodal">
