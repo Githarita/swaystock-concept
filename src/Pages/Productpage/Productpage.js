@@ -110,6 +110,9 @@ function Productpage() {
           <button className="productpagecheck-marketdatabtn">
             Market Data
           </button>
+          <button className="productpagecheck-marketdatabtn">
+            Price History
+          </button>
         </div>
         <div className="productyoumayalsolike">
             <h2>Related Products</h2>
