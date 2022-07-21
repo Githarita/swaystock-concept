@@ -27,3 +27,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.productpage-infomix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productpage-infocat {
+    color: #999;
+    font-size: 13px;
+}
+
+.productpage-infotitle {
+    font-size: 18px;
+}
+
+.productpage-info {
+    margin-bottom: 15px;
+}

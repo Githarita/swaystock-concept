@@ -46,7 +46,7 @@ function Productpage() {
         <div className="productpage-infomix">
           <div className="productpage-infomixitem1">
             <div className="productpage-info">
-              <p className="productpage-infocat">Shoe</p>
+              <p className="productpage-infocat">Sneakers</p>
               <h1 className="productpage-infotitle">{productId}</h1>
             </div>
             <div className="productpage-lowestask">
