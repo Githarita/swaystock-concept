@@ -186,3 +186,15 @@
     color: #13544e;
     font-weight: 600;
 }
+
+.productbuynav-itemprice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prbiucut {
+    font-size: 11px;
+    font-weight: 500;
+    color: #999;
+}
