@@ -204,3 +204,7 @@
 .prbreall {
     font-size: 14px;
 }
+
+.productbottomnav {
+  border-top:none;
+}

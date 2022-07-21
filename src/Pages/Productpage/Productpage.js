@@ -228,7 +228,7 @@ function Productpage() {
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
 
-          <div className="bottomnav">
+          <div className="bottomnav productbottomnav">
             <div className="bottomnav_item">
               <Link to="/" className="bottonav_icon-cnt">
                 <svg
