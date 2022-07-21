@@ -15,3 +15,15 @@
     height: 20px;
     cursor: pointer;
 }
+
+.productpage-cnt {
+    margin-top: 3.5rem;
+    padding: 0px 25px;
+}
+
+.productpage-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import sneaker5 from "../../assets/sneaker5.png";
 import "./Productpage.css";
 
 function Productpage() {
@@ -37,6 +38,14 @@ function Productpage() {
           ></path>
         </svg>
       </header>
+      <div className="productpage-cnt">
+        <div className="productpage-image">
+            <img src={sneaker5} alt="sneaker5" />
+        </div>
+        <div className="productpage-info">
+            <p className="productpage-infocat">Shoe</p>
+        </div>
+      </div>
     </>
   );
 }
