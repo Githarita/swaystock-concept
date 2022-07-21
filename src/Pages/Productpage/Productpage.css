@@ -159,7 +159,7 @@
 }
 
 .btnb {
-  background-color: #1d1d1f;
+  background-color: #111111;
   border: none;
   font-size: 13px;
   font-weight: 500;
@@ -170,11 +170,11 @@
 .splisa {
     height: 60px;
     width: 1px;
-    background-color: rgba(153, 153, 153, 0.144);
+    background-color: rgba(153, 153, 153, 0.062);
 }
 
 .splisaa {
     height: 60px;
     width: 1px;
-    background-color: rgba(153, 153, 153, 0.144);
+    background-color: rgba(153, 153, 153, 0.062);
 }
