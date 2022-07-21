@@ -9,7 +9,6 @@ function Productpage() {
   const navigate = useNavigate();
   const [searchmodal, setSearchmodal] = useState(false);
   const [bottomnav, setBottomnav] = useState(true);
-  const [discriptactive, setDiscriptactive] = useState("description");
   const homebtnIconClick = () => {
     setBottomnav(false);
   };
@@ -48,77 +47,77 @@ function Productpage() {
       </header>
       <div className="daiasm">
         <div className="productpage-cnt">
-        <div className="productpage-image">
-          <img src={sneaker5} alt="sneaker5" />
-        </div>
-        <div className="productpage-itemname">
-          <h1>{productId}</h1>
-        </div>
-        <div className="productpage-itemms">
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Brand</p>
-              <p className="prodbnd">Balenciaga</p>
+          <div className="productpage-image">
+            <img src={sneaker5} alt="sneaker5" />
+          </div>
+          <div className="productpage-itemname">
+            <h1>{productId}</h1>
+          </div>
+          <div className="productpage-itemms">
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Brand</p>
+                <p className="prodbnd">Balenciaga</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Release Date</p>
+                <p className="prodbnd">04-02-22</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Nickname</p>
+                <p className="prodbnd">Metallic Multi</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Colorway</p>
+                <p className="prodbnd">Multi-Color/Metal Silver</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Main Color</p>
+                <p className="prodbnd">Multi-Color</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Upper Material</p>
+                <p className="prodbnd">Leather</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Silhouette</p>
+                <p className="prodbnd">Balenciaga Track</p>
+              </div>
+            </div>
+            <div className="productpage-item">
+              <div className="productpage-itema">
+                <p className="prodbarnd">Selin Adeyemi</p>
+                <p className="prodbnd">
+                  Seni cok seviyorum hayatim. I am coming soon.. 💋
+                </p>
+              </div>
             </div>
           </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Release Date</p>
-              <p className="prodbnd">04-02-22</p>
-            </div>
+          <div className="productpagecheck-marketdata">
+            <button className="productpagecheck-marketdatabtn">
+              Market Data
+            </button>
+            <button className="productpagecheck-marketdatabtn">
+              Price History
+            </button>
           </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Nickname</p>
-              <p className="prodbnd">Metallic Multi</p>
-            </div>
-          </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Colorway</p>
-              <p className="prodbnd">Multi-Color/Metal Silver</p>
-            </div>
-          </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Main Color</p>
-              <p className="prodbnd">Multi-Color</p>
-            </div>
-          </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Upper Material</p>
-              <p className="prodbnd">Leather</p>
-            </div>
-          </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Silhouette</p>
-              <p className="prodbnd">Balenciaga Track</p>
-            </div>
-          </div>
-          <div className="productpage-item">
-            <div className="productpage-itema">
-              <p className="prodbarnd">Selin Adeyemi</p>
-              <p className="prodbnd">
-                Seni cok seviyorum hayatim. I am coming soon.. 💋
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="productpagecheck-marketdata">
-          <button className="productpagecheck-marketdatabtn">
-            Market Data
-          </button>
-          <button className="productpagecheck-marketdatabtn">
-            Price History
-          </button>
-        </div>
-        <div className="productyoumayalsolike">
+          <div className="productyoumayalsolike">
             <h2>Related Products</h2>
+          </div>
         </div>
-      </div>
-      <section className="catproductlist-grid">
+        <section className="catproductlist-grid">
           {categoryProductList.catProductType.map((catprolist, key) => {
             return (
               <div className="catproductlist-item">
@@ -140,10 +139,20 @@ function Productpage() {
           })}
         </section>
       </div>
-      
-          <div className="productbuynav">
-            
-          </div>
+
+      <div className="productbuynav">
+        <div className="productbuynav-itemprice">
+          <p>N120,000</p>
+        </div>
+        <div className="productbuynav-btn">
+          <button className="productbuynav-btn-buy">
+            Buy or Bid
+          </button>
+          <button className="productbuynav-btn-buy">
+            Sell or Ask
+          </button>
+        </div>
+      </div>
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
