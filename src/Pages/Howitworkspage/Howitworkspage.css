@@ -24,7 +24,7 @@
   cursor: pointer;
   border: 1px solid #f7f7f5;
   border-radius: 20px;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 .howitworkstopitem:hover h1 {
@@ -58,3 +58,25 @@
 .howitworksbottom h1 {
     font-size: 16px;
 } */
+
+.howitworksbottombuy p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hiwbb {
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hiwbb h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hiwbb p {
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+}
