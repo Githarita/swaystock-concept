@@ -53,6 +53,20 @@ function Productpage() {
           <div className="productpage-itemname">
             <h1>{productId}</h1>
           </div>
+          <div className="productbuynav-itemprice">
+            <div className="productbuynav-itemprice-text">
+              <p className="prbiucut">Current price</p>
+              <p className="prbreall">
+                <span className="currencycolor">NGN </span>120,000
+              </p>
+            </div>
+            <div className="productbuynav-itemprice-text">
+              <p className="prbiucut">Lowest Ask price</p>
+              <p className="prbreall">
+                <span className="currencycolor">NGN </span>115,000
+              </p>
+            </div>
+          </div>
           <div className="productpage-itemms">
             <div className="productpage-item">
               <div className="productpage-itema">
@@ -147,20 +161,6 @@ function Productpage() {
           </div>
           <div className="productbuynav-btn-buy btnb">
             <p>Sell</p> <div className="splisa"></div> <p>Ask</p>
-          </div>
-        </div>
-        <div className="productbuynav-itemprice">
-          <div className="productbuynav-itemprice-text">
-            <p className="prbiucut">Current price</p>
-            <p className="prbreall">
-              <span className="currencycolor">NGN </span>120,000
-            </p>
-          </div>
-          <div className="productbuynav-itemprice-text">
-            <p className="prbiucut">Lowest Ask price</p>
-            <p className="prbreall">
-              <span className="currencycolor">NGN </span>115,000
-            </p>
           </div>
         </div>
       </div>
