@@ -37,7 +37,7 @@
 }
 
 .productpage-infomixitem1 {
-  width: 250px;
+  width: 200px;
 }
 
 .productpage-infomixitem2 {
@@ -118,6 +118,7 @@
     padding: 8px 15px;
     border-radius: 9999px;
     font-size: 12px;
+    font-weight: 600;
 }
 
 .productpage-category-item:hover {
