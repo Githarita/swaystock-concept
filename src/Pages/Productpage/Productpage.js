@@ -91,15 +91,30 @@ function Productpage() {
         </div>
 
         <div className="productpage-category">
-            <div className="productpage-category-item">
-                <p>Description</p>
-            </div>
-            <div className="productpage-category-item">
-                <p>Market Data</p>
-            </div>
-            <div className="productpage-category-item">
-                <p>Price History</p>
-            </div>
+          <div className="productpage-category-item">
+            <p>Description</p>
+          </div>
+          <div className="productpage-category-item">
+            <p>Market Data</p>
+          </div>
+          <div className="productpage-category-item">
+            <p>Price History</p>
+          </div>
+        </div>
+
+        <div className="productpage-desciption">
+          <p>
+            From the school-spirited College Colors Program to the vibrant Nike
+            CO.JP collection, Nike Dunks have seen many colorways since the
+            design's inception in 1985. But with each new colorway, the Dunk's
+            classic color-blocking has remained in some capacity. Nike put its
+            timeless color-blocking to work with the Nike Dunk Low Retro White
+            Black.
+          </p>
+
+          <p>The Upper Nike Dunk Low Retro White Black is constructed of white leather with black leather overlays and Swooshes. Classic Nike branding is featured on the nylon tongue, nodding to traditional Dunk design elements. A white midsole and black outsole completes the desing.</p>
+
+          <p>The Nike Dunk Low Retro White Black released in January of 2021 and retailed for N90,000.</p>
         </div>
       </div>
     </>
