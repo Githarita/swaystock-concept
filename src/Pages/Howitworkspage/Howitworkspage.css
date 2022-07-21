@@ -96,6 +96,7 @@
 .hwtpsa {
   font-size: 24px;
   margin-bottom: .2rem;
+  text-decoration: underline;
 
 }
 
@@ -126,6 +127,7 @@
 .stepsonsuccess h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .stepsonsuccess-item {
@@ -139,4 +141,5 @@
 .hiwbtrustproc h1 {
   font-size: 24px;
   margin-bottom: .2rem;
+  text-decoration: underline;
 }
