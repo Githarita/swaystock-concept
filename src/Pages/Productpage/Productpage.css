@@ -81,3 +81,22 @@
 .productpage-lowestask {
     margin-bottom: 15px;
 }
+
+.productpage-notifi {
+    border: 1px solid #f7f7f5;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    gap: .5rem;
+}
+
+.productpage-notifi-icon {
+    fill: red;
+    width: 20px;
+    height: 20px;
+}
+
+.productpage-notifitext {
+    font-size: 16px;
+}
