@@ -143,7 +143,7 @@ function Productpage() {
       <div className="productbuynav">
         <div className="productbuynav-itemprice">
           <p>
-            <span className="currencycolor">NGN </span>120,000
+            <span className="currencycolor">NG </span>120,000
           </p>
         </div>
         <div className="productbuynav-btn">
