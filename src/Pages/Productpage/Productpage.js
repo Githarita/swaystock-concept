@@ -71,7 +71,7 @@ function Productpage() {
           </div>
         </div>
 
-        <div className="productpage-notifi">
+        {/* <div className="productpage-notifi">
           <svg
             className="productpage-notifi-icon"
             viewBox="0 0 15 15"
@@ -85,7 +85,7 @@ function Productpage() {
             ></path>
           </svg>
           <h2 className="productpage-notifitext">7 Left for this item</h2>
-        </div>
+        </div> */}
 
         <div className="productpage-category">
           <div className="productpage-category-item">

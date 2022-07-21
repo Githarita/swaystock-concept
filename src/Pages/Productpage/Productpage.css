@@ -42,15 +42,15 @@
   height: 40px;
   background-color: #f7f7f5;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .productpage-infomixitem2-icon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .productpage-infocat {
@@ -69,26 +69,27 @@
 }
 
 .productpage-lowestask-subtext {
-    font-size: 11px;
-    color: #999;
+  font-size: 11px;
+  color: #999;
 }
 
 .productpage-lowestask-price {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .productpage-lowestask {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.productpage-notifi {
+/* .productpage-notifi {
     border: 1px solid #f7f7f5;
     display: flex;
     align-items: center;
     padding: 10px 10px;
     border-radius: 10px;
     gap: .5rem;
+    margin-bottom: 15px;
 }
 
 .productpage-notifi-icon {
@@ -99,4 +100,4 @@
 
 .productpage-notifitext {
     font-size: 16px;
-}
+} */
