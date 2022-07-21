@@ -19,7 +19,7 @@
 }
 
 .daiasm {
-    margin-bottom: 7rem;
+    margin-bottom: 7.8rem;
 }
 
 .productpage-cnt {
@@ -120,7 +120,7 @@
     width: 100%;
     background-color: #fff;
     border-top: 1px solid #f7f7f5;
-    padding: 15px 15px;
+    padding: 20px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
