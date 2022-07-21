@@ -37,7 +37,7 @@
 .productpage-itemname {
   border-bottom: 1px solid #f7f7f5;
   border-top: 1px solid #f7f7f5;
-  padding: 2rem 20px;
+  padding: 3rem 20px;
   text-align: center;
 }
 
@@ -137,7 +137,7 @@
 .productbuynav-btn-buy {
   width: 100%;
   padding: 0rem 15px;
-  height: 80px;
+  height: 70px;
   background-color: transparent;
   border-radius:10px;
   cursor: pointer;
