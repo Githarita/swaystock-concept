@@ -173,13 +173,13 @@
 .splisa {
     height: 60px;
     width: 1px;
-    background-color: #f7f7f5;
+    background-color: rgba(246, 246, 244, 0.144);
 }
 
 .splisaa {
     height: 60px;
     width: 1px;
-    background-color: #f7f7f5;
+    background-color: rgba(246, 246, 244, 0.144);
 }
 
 .currencycolor {
