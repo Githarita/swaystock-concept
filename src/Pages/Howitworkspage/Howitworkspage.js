@@ -48,11 +48,11 @@ function Howitworkspage() {
           <div className="howitworksbottom">
             {active === "buy" && (
               <div className="howitworksbottombuy">
-                <ol className="hiwbbtop">
+                <ul className="hiwbbtop">
                   <li>Place A Bid or Buy Now</li>
                   <li>We Authenticate</li>
                   <li>We Ship To You</li>
-                </ol>
+                </ul>
 
                 <div className="hiwbb">
                   <h2>Buying On SwayStock</h2>
