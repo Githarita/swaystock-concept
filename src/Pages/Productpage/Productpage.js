@@ -49,11 +49,9 @@ function Productpage() {
         <div className="productpage-image">
           <img src={sneaker5} alt="sneaker5" />
         </div>
-
         <div className="productpage-itemname">
           <h1>{productId}</h1>
         </div>
-
         <div className="productpage-itemms">
           <div className="productpage-item">
             <div className="productpage-itema">
@@ -106,7 +104,13 @@ function Productpage() {
             </div>
           </div>
         </div>
+        <div className="productpagecheck-marketdata">
+          <button className="productpagecheck-marketdatabtn">
+            Market Data
+          </button>
+        </div>
       </div>
+
       {searchmodal && (
         <div className="searchproductmodal">
           <div className="searchinput">
@@ -167,7 +171,6 @@ function Productpage() {
           </div>
         </div>
       )}
-
       {bottomnav && (
         <>
           {/* <div className="bottomnav_modalOverlay" /> */}
