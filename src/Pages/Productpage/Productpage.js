@@ -109,6 +109,9 @@ function Productpage() {
             Market Data
           </button>
         </div>
+        <div className="productyoumayalsolike">
+            <h2>Related Products</h2>
+        </div>
       </div>
 
       {searchmodal && (
