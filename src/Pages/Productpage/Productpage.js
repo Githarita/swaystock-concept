@@ -56,8 +56,7 @@ function Productpage() {
           </div>
           <div className="productpage-infomixitem2">
             <svg
-              width="15"
-              height="15"
+                className="productpage-infomixitem2-icon"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
