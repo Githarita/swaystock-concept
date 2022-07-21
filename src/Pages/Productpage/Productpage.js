@@ -150,7 +150,7 @@ function Productpage() {
           </div>
           <div className="productbuynav-btn-buy btnb">
             {" "}
-            <p>Buy</p> <div className="splisa"></div> <p>Bid</p>
+            <p>Sell</p> <div className="splisa"></div> <p>Ask</p>
           </div>
         </div>
       </div>

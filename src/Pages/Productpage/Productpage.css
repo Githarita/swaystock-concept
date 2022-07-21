@@ -120,7 +120,7 @@
   width: 100%;
   background-color: #fff;
   border-top: 1px solid #f7f7f5;
-  padding: 20px 15px;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,9 +134,10 @@
 
 .productbuynav-btn-buy {
   width: 100px;
-  padding: 1.3rem 15px;
+  padding: 0rem 15px;
+  height: 80px;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius:5px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -146,7 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: 10px;
 }
 
 .btna {
@@ -168,13 +169,13 @@
 }
 
 .splisa {
-    height: 20px;
+    height: 60px;
     width: 1px;
     background-color: rgba(153, 153, 153, 0.39);
 }
 
 .splisaa {
-    height: 20px;
+    height: 60px;
     width: 1px;
     background-color: rgba(153, 153, 153, 0.39);
 }
