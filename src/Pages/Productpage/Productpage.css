@@ -122,7 +122,8 @@
   border-top: 1px solid #f7f7f5;
   padding: 10px 10px;
   display: flex;
-  align-items: center;
+  gap: 10px;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -130,10 +131,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .productbuynav-btn-buy {
-  width: 110px;
+  width: 100%;
   padding: 0rem 15px;
   height: 60px;
   background-color: transparent;
