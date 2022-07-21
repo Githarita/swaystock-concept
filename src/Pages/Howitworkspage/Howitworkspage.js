@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Howitworkspage.css";
 
 function Howitworkspage() {
@@ -101,8 +101,6 @@ function Howitworkspage() {
                     completely authentic and brand new before it arrives at your
                     door.
                   </p>
-
-                  <Link to="/">Learn More about Authenticity</Link>
                 </div>
 
                 <div className="stepsonsuccess">
