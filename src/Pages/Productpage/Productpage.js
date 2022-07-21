@@ -24,7 +24,7 @@ function Productpage() {
           <p className="settings-top-text">{productId}</p>
         </div>
         <svg
-          className="settings-top-icon"
+          className="settings-top-iconn"
           viewBox="0 0 15 15"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -9,3 +9,9 @@
     align-items: center;
     gap: 1rem;
 }
+
+.settings-top-iconn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
