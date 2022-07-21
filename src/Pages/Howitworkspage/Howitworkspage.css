@@ -67,7 +67,7 @@
 .hiwbb {
   margin-top: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hiwbb h2 {
@@ -84,10 +84,11 @@
 .hiwbbtop {
   padding: 0px 15px;
   font-size: 12px;
+  margin-bottom: 30px;
 }
 
 .hiwbbnameprice {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 500;
 }
 
