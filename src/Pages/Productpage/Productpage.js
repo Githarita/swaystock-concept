@@ -97,6 +97,14 @@ function Productpage() {
               <p className="prodbnd">Balenciaga Track</p>
             </div>
           </div>
+          <div className="productpage-item">
+            <div className="productpage-itema">
+              <p className="prodbarnd">Selin Adeyemi</p>
+              <p className="prodbnd">
+                Seni cok seviyorum hayatim. I am coming soon.. 💋
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       {searchmodal && (
