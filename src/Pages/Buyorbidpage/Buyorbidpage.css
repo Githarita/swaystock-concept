@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 20px 0;
 }
 
 /* .buyorbidcnt-producttopimage {
@@ -23,6 +24,7 @@
 .buyorbcntpitpic {
   font-size: 10px;
   color: #999;
+  margin-top: 5px;
 }
 
 .buyorbcntpitpic span {
@@ -53,7 +55,7 @@
 }
 
 .buyorbid-cnt-sec p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .buyorbid-cnt-buybtn {
@@ -79,7 +81,7 @@
 
 .buyorbidinput {
   display: flex;
-  margin: 1.5rem 0px 1.5rem 0px;
+  margin: 2rem 0px 1.5rem 0px;
   align-items: center;
   justify-content: space-between;
 }
