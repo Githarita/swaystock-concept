@@ -28,7 +28,8 @@ function Productpage() {
               fillRule="evenodd"
               clipRule="evenodd"
             ></path>
-          </svg>
+          </svg>{" "}
+          <p className="settings-top-text dtptext">{productId}</p>
         </div>
         <svg
           className="settings-top-iconn"
