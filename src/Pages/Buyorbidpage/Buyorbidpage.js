@@ -75,7 +75,7 @@ function Buyorbidpage() {
             </svg>
           </div>
           <div className="buyorbidinputname">
-            <p className="buyorbcntpitname">NGN120,000</p>
+            <p className="buyorbcntpitname">NGN 120,000</p>
           </div>
         </div>
         <div className="buyorbidbtn">
