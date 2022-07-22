@@ -81,27 +81,10 @@
 
 .buyorbidinput {
   display: flex;
-  margin: 1rem 0px .5rem 0px;
-  border: 1px solid #f7f7f5;
+  margin: 1.5rem 0px 1.5rem 0px;
+  align-items: center;
+  justify-content: center;
 }
 
-.buyorbidinputname {
-  padding: .8rem 10px;
-  border-right: 1px solid #f7f7f5;
-}
 
-.buyorbidinputname p {
-  font-weight: 500;
-  color: #13544e;
-}
 
-.buyorbidinputplace {
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  font-family: inherit;
-  color: #1d1d1f !important;
-  outline: none;
-  padding: 0 10px;
-  border-bottom: 1px solid #1d1d1f;
-}

@@ -75,14 +75,8 @@ function Buyorbidpage() {
         </div>
         <div className="buyorbidinput">
           <div className="buyorbidinputname">
-            <p>NGN</p>
+            <p buyorbcntpitname>NGN120,000</p>
           </div>
-          <input
-            type="text"
-            inputMode="numeric"
-            placeholder="120,000"
-            className="buyorbidinputplace"
-          />
         </div>
         <div className="buyorbidbtn">
           <div className="buyorbid-cnt-buybtn">
