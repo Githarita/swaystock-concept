@@ -48,8 +48,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 0px;
+  margin: 2rem 0px 0px 0px;
   border: 1px solid #1d1d1f;
   padding: 1rem 20px;
   border-radius: 10px;
+}
+
+.buyorbid-cnt-sec p {
+  font-size: 14px;
+}
+
+.buyorbid-cnt-buybtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1f;
+  color: #fff;
+  padding: 1.5rem 20px;
+  border-radius: 10px;
+  margin-top: .5rem;
+}
+
+.buyorbid-cnt-buybtn p {
+  font-size: 14px;
+  font-weight: 600;
 }

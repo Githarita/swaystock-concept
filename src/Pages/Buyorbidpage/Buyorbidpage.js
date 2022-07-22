@@ -73,6 +73,9 @@ function Buyorbidpage() {
             ></path>
           </svg>
         </div>
+        <div className="buyorbid-cnt-buybtn">
+          <p>Buy {productId}</p>
+        </div>
       </div>
     </>
   );
