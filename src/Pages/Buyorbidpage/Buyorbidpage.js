@@ -22,9 +22,9 @@ function Buyorbidpage() {
               clipRule="evenodd"
             ></path>
           </svg>
-          <p className="settings-top-text dtptext">{productId}</p>
+          {/* <p className="settings-top-text dtptext">{productId}</p> */}
         </div>
-        <svg
+        {/* <svg
           className="settings-top-iconn"
           viewBox="0 0 15 15"
           fill="none"
@@ -36,7 +36,7 @@ function Buyorbidpage() {
             fill-rule="evenodd"
             clip-rule="evenodd"
           ></path>
-        </svg>
+        </svg> */}
       </header>
     </>
   );
