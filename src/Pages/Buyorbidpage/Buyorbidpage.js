@@ -42,7 +42,7 @@ function Buyorbidpage() {
 
       <div className="buyorbidcnt">
         <div className="buyorbidcnt-producttop">
-          <img src={sneaker5} alt="" className="buyorbidcnt-producttopimage" />
+          
           <div className=" buyorbidcnt-producttop-item">
             <p className="buyorbcntpitname">{productId}</p>
             <p className="buyorbcntpitpic">
@@ -51,7 +51,7 @@ function Buyorbidpage() {
             <p className="buyorbcntpitpic">
               Highest Bid: <span> NGN 120,000</span>
             </p>
-          </div>
+          </div><img src={sneaker5} alt="" className="buyorbidcnt-producttopimage" />
         </div>
       </div>
     </>
