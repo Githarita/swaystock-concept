@@ -73,8 +73,23 @@ function Buyorbidpage() {
             ></path>
           </svg>
         </div>
-        <div className="buyorbid-cnt-buybtn">
-          <p>Buy {productId}</p>
+        <div className="buyorbidinput">
+          <div className="buyorbidinputname">
+            <p>NGN</p>
+          </div>
+          <input
+            type="text"
+            placeholder="120,000"
+            className="buyorbidinputplace"
+          />
+        </div>
+        <div className="buyorbidbtn">
+          <div className="buyorbid-cnt-buybtn">
+            <p>Buy</p>
+          </div>
+          <div className="buyorbid-cnt-buybtn">
+            <p>Place a Bid</p>
+          </div>
         </div>
       </div>
     </>

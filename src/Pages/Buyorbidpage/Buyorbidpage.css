@@ -62,14 +62,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1d1d1f;
+  background-color: #13544e;
   color: #fff;
-  padding: 1.5rem 20px;
+  padding: 1rem 20px;
   border-radius: 10px;
-  margin-top: .5rem;
+  width: 100%;
 }
 
 .buyorbid-cnt-buybtn p {
   font-size: 14px;
   font-weight: 500;
+}
+
+.buyorbidbtn {
+  display: flex;
+  gap: .5rem;
+}
+
+.buyorbidinput {
+  display: flex;
+  margin: 1rem 0px .5rem 0px;
+  border: 1px solid #f7f7f5;
+  border-radius: 10px;
+}
+
+.buyorbidinputname {
+  padding: .8rem 10px;
+  border-right: 1px solid #f7f7f5;
+}
+
+.buyorbidinputname p {
+  font-weight: 500;
+  color: #13544e;
+}
+
+.buyorbidinputplace {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  color: #1d1d1f !important;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 0px 10px 10px 0px;
 }
