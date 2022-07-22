@@ -1,5 +1,33 @@
 .buyorbidcnt {
-    margin-top: 3.5rem;
-    padding: 0px 30px;
-    padding-top: 10px;
+  margin-top: 3.5rem;
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+
+.buyorbidcnt-producttop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buyorbidcnt-producttopimage {
+  object-fit: contain;
+}
+
+.buyorbcntpitname {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.buyorbcntpitpic {
+  font-size: 12px;
+  color: #999;
+}
+
+.buyorbcntpitpic span {
+  color: #1d1d1f;
+  font-weight: 600;
 }
