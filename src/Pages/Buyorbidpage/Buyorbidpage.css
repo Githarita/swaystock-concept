@@ -11,10 +11,8 @@
   gap: 20px;
 }
 
-.buyorbidcnt-producttopimage {
-  object-fit: contain;
-  width: 120px;
-}
+/* .buyorbidcnt-producttopimage {
+} */
 
 .buyorbcntpitname {
   font-size: 15px;
@@ -31,4 +29,17 @@
 .buyorbcntpitpic span {
   color: #1d1d1f;
   font-weight: 600;
+}
+
+.buyorbidcnt-producttop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.buyorbcntitname-item {
+  display: flex;
+  gap: 1rem;
 }
