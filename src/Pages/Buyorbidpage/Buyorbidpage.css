@@ -7,13 +7,14 @@
 .buyorbidcnt-producttop {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 
 .buyorbidcnt-producttopimage {
   object-fit: contain;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .buyorbcntpitname {
