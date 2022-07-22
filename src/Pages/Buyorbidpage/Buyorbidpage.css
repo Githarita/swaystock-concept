@@ -21,6 +21,12 @@
   line-height: 15px;
 }
 
+.buyorbcntpitnamee {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  line-height: 15px;
+}
+
 .buyorbcntpitpic {
   font-size: 10px;
   color: #999;
@@ -86,6 +92,10 @@
   justify-content: space-between;
 }
 
+.buyorbcntpitnamee span {
+  font-weight: 600;
+  color: #13544e;
+}
 
 
 
