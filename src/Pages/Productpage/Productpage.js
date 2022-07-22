@@ -28,7 +28,7 @@ function Productpage() {
               fillRule="evenodd"
               clipRule="evenodd"
             ></path>
-          </svg>{" "}
+          </svg>
           <p className="settings-top-text dtptext">{productId}</p>
         </div>
         <svg
@@ -156,9 +156,9 @@ function Productpage() {
 
       <div className="productbuynav">
         <div className="productbuynav-btn">
-          <div className="productbuynav-btn-buy btna">
+          <Link to={`/buy_or_bid/${productId}`} className="productbuynav-btn-buy btna">
             <p>Buy</p> <div className="splisaa"></div> <p>Bid</p>
-          </div>
+          </Link>
           <div className="productbuynav-btn-buy btnb">
             <p>Sell</p> <div className="splisa"></div> <p>Ask</p>
           </div>

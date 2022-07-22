@@ -138,7 +138,6 @@
   width: 100%;
   padding: 0rem 15px;
   height: 70px;
-  background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
   font-family: inherit;
@@ -149,6 +148,7 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 15px;
+  text-decoration: none;
 }
 
 .btna {
@@ -159,6 +159,10 @@
   font-weight: 500;
   cursor: pointer;
   text-align: center;
+}
+
+.btna:hover {
+  background-color: #13544db7;
 }
 
 .btnb {

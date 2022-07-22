@@ -5,6 +5,7 @@ import Askpage from "./Pages/Askpage/Askpage";
 import Bidspage from "./Pages/Bidspage/Bidspage";
 import BuyingInfopage from "./Pages/BuyingInfopage/BuyingInfopage";
 import Buyingpage from "./Pages/Buyingpage/Buyingpage";
+import Buyorbidpage from "./Pages/Buyorbidpage/Buyorbidpage";
 import Categories from "./Pages/Categories/Categories";
 import Categoryproducts from "./Pages/Categoryproducts/Categoryproducts";
 import Followingpage from "./Pages/Followingpage/Followingpage";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:categoryId" element={<Categoryproducts />} />
         <Route path="/product/:productId" element={<Productpage />} />
+        <Route path="/buy_or_bid/:productId" element={<Buyorbidpage />} />
         <Route path="/account" element={<Accountpage />} />
         <Route path="/account/settings" element={<Settingspage />} />
         <Route path="/account/profile" element={<Profilepage />} />
@@ -50,7 +52,10 @@ function App() {
         <Route path="/account/portfolio" element={<Portfoliopage />} />
         <Route path="/account/following" element={<Followingpage />} />
         <Route path="/account/how_it_works" element={<Howitworkspage />} />
-        <Route path="/account/suggest_a_product" element={<Suggestaproduct />} />
+        <Route
+          path="/account/suggest_a_product"
+          element={<Suggestaproduct />}
+        />
         <Route path="/account/support" element={<Supportpage />} />
 
         <Route
