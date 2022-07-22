@@ -79,6 +79,7 @@ function Buyorbidpage() {
           </div>
           <input
             type="text"
+            inputMode="numeric"
             placeholder="120,000"
             className="buyorbidinputplace"
           />
