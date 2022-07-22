@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import sneaker5 from "../../assets/sneaker5.png";
 import "./Buyorbidpage.css";
 
 function Buyorbidpage() {
@@ -38,6 +39,21 @@ function Buyorbidpage() {
           ></path>
         </svg> */}
       </header>
+
+      <div className="buyorbidcnt">
+        <div className="buyorbidcnt-product">
+          <img src={sneaker5} alt="" />
+          <div className="">
+            <p>{productId}</p>
+            <p>
+              Lowest Ask: <span>NGN 97,000</span>{" "}
+            </p>
+            <p>
+              Highest Bid: <span>NGN 120,000</span>{" "}
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
